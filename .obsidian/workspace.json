@@ -1,0 +1,169 @@
+{
+  "main": {
+    "id": "7249b8e0e4572b8d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f73d5887502dfa3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c8081b7dc88c57d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 Obdidian/5.使用技巧.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "82658460c30fe2ef",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1b9b515b48926e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "833431ade1f0fc76",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b3ca12b1d16c17fc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "66874e4047ea66fc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5c0d6b931c5b5cd2",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c8530d940dea805",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e38f54127c0779ad",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01 Obdidian/5.使用技巧.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9a7b860b92013e02",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01 Obdidian/5.使用技巧.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "13955fbf04be76ac",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1d69d4177a2aa070",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01 Obdidian/5.使用技巧.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "audio-recorder:开始/结束录音": false
+    }
+  },
+  "active": "c8081b7dc88c57d5",
+  "lastOpenFiles": [
+    "01 Obdidian/未命名 1.md",
+    "01 Obdidian/5.使用技巧.md",
+    "01 Obdidian/未命名.md",
+    "01 Obdidian/3.Markdown.md",
+    "00 templates/CHANGELOG模板.md",
+    "01 Obdidian/2.Obsidian基础.md",
+    "01 Obdidian/CHANGELOG.md",
+    "00 templates",
+    "sObdidian/4.双向链接.md",
+    "sObdidian/5.使用技巧.md",
+    "sObdidian/1.认识Obsidian.md",
+    "sObdidian/3.Markdown.md",
+    "sObdidian/2.Obsidian基础.md",
+    "sObdidian"
+  ]
+}
