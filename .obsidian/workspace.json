@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "f73d5887502dfa3a",
+        "id": "118e41dabb56d7cb",
         "type": "tabs",
         "children": [
           {
-            "id": "c8081b7dc88c57d5",
+            "id": "a391e0ae708c93cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Obdidian/5.使用技巧.md",
+                "file": "01 Obsidian/6.插件使用.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ebfd31555e934c51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 Obsidian/8.Obsidian新思路.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,12 +58,12 @@
             }
           },
           {
-            "id": "b3ca12b1d16c17fc",
+            "id": "fedc637bc3862ce8",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "使用 定位",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,12 +79,25 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "b3ca12b1d16c17fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 Obsidian/7.搜索和查询.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 223.5
   },
   "right": {
     "id": "5c0d6b931c5b5cd2",
@@ -86,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 Obdidian/5.使用技巧.md",
+                "file": "01 Obsidian/8.Obsidian新思路.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 Obdidian/5.使用技巧.md",
+                "file": "01 Obsidian/8.Obsidian新思路.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,19 +153,37 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 Obdidian/5.使用技巧.md"
+                "file": "01 Obsidian/8.Obsidian新思路.md"
               }
+            }
+          },
+          {
+            "id": "22914b22bbd01a24",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "40fa4e441126e87f",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-projects:Open projects": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -146,18 +191,35 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
-      "audio-recorder:开始/结束录音": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "audio-recorder:开始/结束录音": false,
+      "obsidian-memos:Memos": false
     }
   },
-  "active": "c8081b7dc88c57d5",
+  "active": "ebfd31555e934c51",
   "lastOpenFiles": [
-    "01 Obdidian/未命名 1.md",
-    "01 Obdidian/5.使用技巧.md",
-    "01 Obdidian/未命名.md",
-    "01 Obdidian/3.Markdown.md",
+    "01 Obsidian/6.插件使用.md",
+    "01 Obsidian/8.Obsidian新思路.md",
+    "01 Obsidian/7.搜索和查询.md",
+    "00 diaries/2023-10-28-星期六.md",
+    "00 Excalidraw/Drawing 2023-10-28 12.44.03.excalidraw.md",
+    "00 templates/日记模板.md",
     "00 templates/CHANGELOG模板.md",
-    "01 Obdidian/2.Obsidian基础.md",
-    "01 Obdidian/CHANGELOG.md",
+    "00 templates/YAML模板.md",
+    "01 Obsidian/3.Markdown.md",
+    "www.bilibili.com.md",
+    "01 Obsidian/5.使用技巧.md",
+    "00 Excalidraw/Drawing 2023-10-28 08.03.19.excalidraw.md",
+    "Excalidraw/Drawing 2023-10-28 08.02.39.excalidraw.md",
+    "00 Excalidraw",
+    "Excalidraw",
+    "CHANGELOG.md",
+    "2023-10-28.md",
+    "00 diaries",
+    "01 Obsidian/2.Obsidian基础.md",
+    "01 Obsidian/4.双向链接.md",
+    "01 Obdidian/未命名 1.md",
     "00 templates",
     "sObdidian/4.双向链接.md",
     "sObdidian/5.使用技巧.md",

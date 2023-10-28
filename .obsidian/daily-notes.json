@@ -1,3 +1,5 @@
 {
-  "format": ""
+  "format": "YYYY-MM-DD-dddd",
+  "folder": "00 diaries",
+  "template": "00 templates/日记模板"
 }
