@@ -1,6 +1,87 @@
 {
   "version": 2,
-  "projects": [],
+  "projects": [
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "orderFields": [
+              "path",
+              "name",
+              "aliases",
+              "author",
+              "category",
+              "excalidraw-plugin",
+              "rank",
+              "tags"
+            ],
+            "fieldConfig": {
+              "name": {
+                "hide": false
+              },
+              "rank": {
+                "hide": false
+              },
+              "tags": {
+                "hide": false
+              },
+              "File": {
+                "hide": false
+              }
+            }
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "path",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
+          },
+          "id": "c452d454-fbba-47f1-891b-dd65984fd3b7",
+          "name": "表格",
+          "type": "table"
+        },
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "cf5a5256-bfbd-453e-9069-242cea3d2c0a",
+          "name": "日历",
+          "type": "calendar"
+        }
+      ],
+      "id": "906f53aa-7dc0-49be-b9a5-e12195e84e4e",
+      "name": "知识库数据集"
+    }
+  ],
   "preferences": {
     "projectSizeLimit": 1000,
     "frontmatter": {

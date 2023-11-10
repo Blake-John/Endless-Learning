@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "118e41dabb56d7cb",
+        "id": "b38a3292aa6f8559",
         "type": "tabs",
         "children": [
           {
-            "id": "a391e0ae708c93cc",
+            "id": "eeeae41d95bd233c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Obsidian/6.插件使用.md",
+                "file": "07 C and C++/C++/4.Function.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "ebfd31555e934c51",
+            "id": "5ccb46c76fedfe04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Obsidian/8.Obsidian新思路.md",
+                "file": "CHANGELOG.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "使用 定位",
+                "query": "tag:#excalidraw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5
+    "width": 237.5
   },
   "right": {
     "id": "5c0d6b931c5b5cd2",
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 Obsidian/8.Obsidian新思路.md",
+                "file": "CHANGELOG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 Obsidian/8.Obsidian新思路.md",
+                "file": "CHANGELOG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,17 +148,7 @@
             }
           },
           {
-            "id": "1d69d4177a2aa070",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "01 Obsidian/8.Obsidian新思路.md"
-              }
-            }
-          },
-          {
-            "id": "22914b22bbd01a24",
+            "id": "fe8f170581af0c6b",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -166,7 +156,17 @@
             }
           },
           {
-            "id": "40fa4e441126e87f",
+            "id": "4729c975c48aaf77",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CHANGELOG.md"
+              }
+            }
+          },
+          {
+            "id": "ba40dd82f8dbe6d7",
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
@@ -174,7 +174,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -197,35 +197,53 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "ebfd31555e934c51",
+  "active": "5ccb46c76fedfe04",
   "lastOpenFiles": [
-    "01 Obsidian/6.插件使用.md",
-    "01 Obsidian/8.Obsidian新思路.md",
-    "01 Obsidian/7.搜索和查询.md",
-    "00 diaries/2023-10-28-星期六.md",
-    "00 Excalidraw/Drawing 2023-10-28 12.44.03.excalidraw.md",
-    "00 templates/日记模板.md",
-    "00 templates/CHANGELOG模板.md",
-    "00 templates/YAML模板.md",
-    "01 Obsidian/3.Markdown.md",
-    "www.bilibili.com.md",
-    "01 Obsidian/5.使用技巧.md",
-    "00 Excalidraw/Drawing 2023-10-28 08.03.19.excalidraw.md",
-    "Excalidraw/Drawing 2023-10-28 08.02.39.excalidraw.md",
-    "00 Excalidraw",
-    "Excalidraw",
-    "CHANGELOG.md",
-    "2023-10-28.md",
-    "00 diaries",
-    "01 Obsidian/2.Obsidian基础.md",
+    "07 C and C++/C++/5.Head File.md",
+    "07 C and C++/C++/4.Function.md",
+    "07 C and C++/C++/3.Variable.md",
+    "07 C and C++/C++/1.Introduction.md",
+    "07 C and C++/C++/2.How C++ Work.md",
+    "04 Git/Git.md",
+    "05 SSH/1.SSH.md",
+    "00 diaries/2023-10-30-星期一.md",
     "01 Obsidian/4.双向链接.md",
-    "01 Obdidian/未命名 1.md",
-    "00 templates",
-    "sObdidian/4.双向链接.md",
-    "sObdidian/5.使用技巧.md",
-    "sObdidian/1.认识Obsidian.md",
-    "sObdidian/3.Markdown.md",
-    "sObdidian/2.Obsidian基础.md",
-    "sObdidian"
+    "01 Obsidian/5.使用技巧.md",
+    "01 Obsidian/7.搜索和查询.md",
+    "01 Obsidian/3.Markdown.md",
+    "01 Obsidian/1.认识Obsidian.md",
+    "00 Excalidraw/Drawing 2023-10-28 12.44.03.excalidraw.md",
+    "01 Obsidian/2.Obsidian基础.md",
+    "01 Obsidian/6.插件使用.md",
+    "00 diaries/2023-10-29-星期日.md",
+    "00 diaries/2023-10-28-星期六.md",
+    "00 HOME.md",
+    "07 C and C++/CMake/CMake.md",
+    "07 C and C++/CMake",
+    "07 C and C++/C++",
+    "CHANGELOG.md",
+    "Projects - Demo Project/The Best Notes You'll Ever Make.md",
+    "Projects - Demo Project/5 Mistakes I Made When I Started Using Obsidian.md",
+    "Projects - Demo Project/What I Learned From Taking 15,000 Notes.md",
+    "Projects - Demo Project/Why You Should Be Taking More Notes.md",
+    "Projects - Demo Project/The Easiest Way to Start Taking Notes.md",
+    "Projects - Demo Project",
+    "05 SSH/imgs/windows安装服务.png",
+    "05 SSH/imgs/vscode4.png",
+    "05 SSH/imgs/vscode3.png",
+    "05 SSH/imgs/vscode2.png",
+    "05 SSH/imgs/vscode1.png",
+    "05 SSH/imgs/sshd_config编写2.png",
+    "05 SSH/imgs/sshd_config编写1.png",
+    "05 SSH/imgs/远程主机公钥.png",
+    "05 SSH/imgs/检查是否有SSH.png",
+    "05 SSH/imgs/公私钥.png",
+    "05 SSH/imgs",
+    "09 Algorithms",
+    "04 Git/imgs",
+    "03 Linux/imgs",
+    "06 Python/Basic",
+    "08 ROS",
+    "05 SSH"
   ]
 }

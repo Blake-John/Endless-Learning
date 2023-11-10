@@ -6,7 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "SiObsidian"
+      "FasHouse",
+      "SiThealgorithms",
+      "SiRos",
+      "RiRemoteControlLine",
+      "SiGit"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -20,5 +24,17 @@
     "iconInTitleEnabled": false,
     "iconsBackgroundCheckEnabled": false
   },
-  "01 Obsidian": "SiObsidian"
+  "01 Obsidian": "SiObsidian",
+  "00 diaries": "FasBook",
+  "00 Excalidraw": "RiFlowChart",
+  "00 templates": "RiBookletLine",
+  "02 Visual Studio Code": "SiVisualstudiocode",
+  "03 Linux": "SiLinux",
+  "04 Git": "SiGit",
+  "05 SSH": "RiRemoteControlLine",
+  "06 Python": "SiPython",
+  "07 C and C++": "SiC",
+  "08 ROS": "SiRos",
+  "09 Algorithms": "SiThealgorithms",
+  "00 HOME.md": "FasHouse"
 }
