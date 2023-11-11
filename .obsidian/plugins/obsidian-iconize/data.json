@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiChromatic",
       "FasHouse",
       "SiThealgorithms",
       "SiRos",
-      "RiRemoteControlLine",
-      "SiGit"
+      "RiRemoteControlLine"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -36,5 +36,6 @@
   "07 C and C++": "SiC",
   "08 ROS": "SiRos",
   "09 Algorithms": "SiThealgorithms",
-  "00 HOME.md": "FasHouse"
+  "00 HOME.md": "FasHouse",
+  "10 ChatGLM": "SiChromatic"
 }

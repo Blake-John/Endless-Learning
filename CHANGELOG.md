@@ -1,3 +1,23 @@
+## 2023-11-11
+### FEATURE 新增
+1. C++
+	1. Conditions
+2. ChatGLM
+	1. 本地部署ChatGLM3
+3. Visual Studio Code
+	1. Debug
+
+### CHANGE 变更
+1. C++
+	1. Head File
+
+### FIXED 修复
+无
+
+### ILLUSTRATION 说明
+无
+
+---
 ## 2023-11-10
 ### FEATURE 新增
 1. C++

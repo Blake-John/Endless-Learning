@@ -11,17 +11,12 @@
             "id": "eeeae41d95bd233c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "07 C and C++/C++/4.Function.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "memos_view",
+              "state": {}
             }
           },
           {
-            "id": "5ccb46c76fedfe04",
+            "id": "76b88ac5a9f646fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -63,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#excalidraw",
+                "query": "tag:#学习技巧",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -174,12 +169,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,36 +191,38 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "5ccb46c76fedfe04",
+  "active": "76b88ac5a9f646fc",
   "lastOpenFiles": [
-    "07 C and C++/C++/5.Head File.md",
+    "00 diaries/2023-11-11-星期六.md",
+    "00 diaries/2023-10-28-星期六.md",
+    "01 Obsidian/7.搜索和查询.md",
+    "CHANGELOG.md",
+    "07 C and C++/C++/6.Conditions.md",
+    "10 ChatGLM/本地部署ChatGLM3.md",
+    "10 ChatGLM/().md",
     "07 C and C++/C++/4.Function.md",
+    "03 Linux/4.显卡管理.md",
+    "04 Git/Git.md",
+    "02 Visual Studio Code/1.VSCode使用.md",
+    "07 C and C++/C++/未命名.md",
+    "10 ChatGLM",
+    "07 C and C++/CMake/CMake.md",
+    "00 HOME.md",
+    "02 Visual Studio Code/2.Debug.md",
+    "07 C and C++/C++/5.Head File.md",
+    "06 Python/Python学习路径",
     "07 C and C++/C++/3.Variable.md",
     "07 C and C++/C++/1.Introduction.md",
     "07 C and C++/C++/2.How C++ Work.md",
-    "04 Git/Git.md",
     "05 SSH/1.SSH.md",
     "00 diaries/2023-10-30-星期一.md",
     "01 Obsidian/4.双向链接.md",
     "01 Obsidian/5.使用技巧.md",
-    "01 Obsidian/7.搜索和查询.md",
     "01 Obsidian/3.Markdown.md",
     "01 Obsidian/1.认识Obsidian.md",
     "00 Excalidraw/Drawing 2023-10-28 12.44.03.excalidraw.md",
-    "01 Obsidian/2.Obsidian基础.md",
-    "01 Obsidian/6.插件使用.md",
-    "00 diaries/2023-10-29-星期日.md",
-    "00 diaries/2023-10-28-星期六.md",
-    "00 HOME.md",
-    "07 C and C++/CMake/CMake.md",
     "07 C and C++/CMake",
     "07 C and C++/C++",
-    "CHANGELOG.md",
-    "Projects - Demo Project/The Best Notes You'll Ever Make.md",
-    "Projects - Demo Project/5 Mistakes I Made When I Started Using Obsidian.md",
-    "Projects - Demo Project/What I Learned From Taking 15,000 Notes.md",
-    "Projects - Demo Project/Why You Should Be Taking More Notes.md",
-    "Projects - Demo Project/The Easiest Way to Start Taking Notes.md",
     "Projects - Demo Project",
     "05 SSH/imgs/windows安装服务.png",
     "05 SSH/imgs/vscode4.png",
@@ -242,8 +238,6 @@
     "09 Algorithms",
     "04 Git/imgs",
     "03 Linux/imgs",
-    "06 Python/Basic",
-    "08 ROS",
-    "05 SSH"
+    "06 Python/Basic"
   ]
 }
