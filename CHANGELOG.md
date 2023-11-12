@@ -1,3 +1,21 @@
+## 2023-11-12
+### FEATURE 新增
+1. C++
+	1. Loops
+	2. Control Statement
+	3. Pointers
+	4. References
+
+### CHANGE 变更
+无
+
+### FIXED 修复
+无
+
+### ILLUSTRATION 说明
+无
+
+---
 ## 2023-11-11
 ### FEATURE 新增
 1. C++
