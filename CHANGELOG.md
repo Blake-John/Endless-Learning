@@ -1,3 +1,19 @@
+## 2023-11-13
+### FEATURE 新增
+1. C++
+	1. Array
+
+### CHANGE 变更
+1. C++
+	1. Pointers
+
+### FIXED 修复
+无
+
+### ILLUSTRATION 说明
+无
+
+---
 ## 2023-11-12
 ### FEATURE 新增
 1. C++
