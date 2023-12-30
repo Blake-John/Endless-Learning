@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiProjectorLine",
+      "SiOnnx",
       "SiChromatic",
       "FasHouse",
-      "SiThealgorithms",
-      "SiRos",
-      "RiRemoteControlLine"
+      "SiThealgorithms"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -37,5 +37,7 @@
   "08 ROS": "SiRos",
   "09 Algorithms": "SiThealgorithms",
   "00 HOME.md": "FasHouse",
-  "10 ChatGLM": "SiChromatic"
+  "10 ChatGLM": "SiChromatic",
+  "11 ONNX": "SiOnnx",
+  "Project": "RiProjectorLine"
 }

@@ -4,32 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "b38a3292aa6f8559",
+        "id": "97edeb91d8a5edd6",
         "type": "tabs",
         "children": [
           {
-            "id": "eeeae41d95bd233c",
-            "type": "leaf",
-            "state": {
-              "type": "memos_view",
-              "state": {}
-            }
-          },
-          {
-            "id": "76b88ac5a9f646fc",
+            "id": "b7b08b84fbe7ee4d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CHANGELOG.md",
+                "file": "Project/OCR-Python.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8a9c9981053ce03a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 HOME.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CHANGELOG.md",
+                "file": "Project/OCR-Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CHANGELOG.md",
+                "file": "Project/OCR-Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CHANGELOG.md"
+                "file": "Project/OCR-Python.md"
               }
             }
           },
@@ -192,36 +196,41 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "76b88ac5a9f646fc",
+  "active": "b7b08b84fbe7ee4d",
   "lastOpenFiles": [
-    "07 C and C++/C++/09.Pointers.md",
-    "07 C and C++/C++/08.Control Statement.md",
-    "07 C and C++/C++/10.References.md",
-    "07 C and C++/C++/11.Array.md",
-    "CHANGELOG.md",
-    "07 C and C++/C++/06.Conditions.md",
-    "07 C and C++/C++/07.Loops.md",
-    "07 C and C++/C++/05.Head File.md",
-    "07 C and C++/C++/04.Function.md",
-    "07 C and C++/C++/03.Variable.md",
-    "07 C and C++/C++/02.How C++ Work.md",
-    "07 C and C++/C++/01.Introduction.md",
-    "00 diaries/2023-11-11-星期六.md",
-    "00 diaries/2023-10-28-星期六.md",
-    "01 Obsidian/7.搜索和查询.md",
-    "10 ChatGLM/本地部署ChatGLM3.md",
-    "10 ChatGLM/().md",
-    "03 Linux/4.显卡管理.md",
-    "04 Git/Git.md",
-    "02 Visual Studio Code/1.VSCode使用.md",
-    "07 C and C++/C++/未命名.md",
-    "10 ChatGLM",
-    "07 C and C++/CMake/CMake.md",
+    "Project/Summary.md",
+    "Project/OCR-Python.md",
     "00 HOME.md",
-    "02 Visual Studio Code/2.Debug.md",
+    "01 Obsidian/7.搜索和查询.md",
+    "Project",
+    "11 ONNX/部署ONNX.md",
+    "07 C and C++/C++/13.Class.md",
+    "11 ONNX/ONNXRUNTIME.md",
+    "11 ONNX/模型部署通用流程.png",
+    "11 ONNX/原型.png",
+    "11 ONNX/优势.png",
+    "11 ONNX",
+    "07 C and C++/C++/11.Array.md",
+    "07 C and C++/C++/12.OOP.md",
+    "07 C and C++/C++/10.References.md",
+    "07 C and C++/C++/09.Pointers.md",
+    "07 C and C++/C++/9.Pointers.md",
+    "07 C and C++/C++/08.Control Statement.md",
+    "07 C and C++/C++/8.Control Statement.md",
+    "07 C and C++/C++/07.Loops.md",
+    "07 C and C++/C++/7.Loops.md",
+    "07 C and C++/C++/06.Conditions.md",
+    "07 C and C++/C++/6.Conditions.md",
+    "07 C and C++/C++/05.Head File.md",
+    "07 C and C++/C++/5.Head File.md",
+    "07 C and C++/C++/04.Function.md",
+    "07 C and C++/C++/4.Function.md",
+    "07 C and C++/C++/03.Variable.md",
+    "07 C and C++/C++/3.Variable.md",
+    "07 C and C++/C++/02.How C++ Work.md",
+    "07 C and C++/C++/2.How C++ Work.md",
+    "10 ChatGLM",
     "06 Python/Python学习路径",
-    "05 SSH/1.SSH.md",
-    "00 diaries/2023-10-30-星期一.md",
     "07 C and C++/CMake",
     "07 C and C++/C++",
     "Projects - Demo Project",
@@ -232,13 +241,8 @@
     "05 SSH/imgs/vscode1.png",
     "05 SSH/imgs/sshd_config编写2.png",
     "05 SSH/imgs/sshd_config编写1.png",
-    "05 SSH/imgs/远程主机公钥.png",
-    "05 SSH/imgs/检查是否有SSH.png",
-    "05 SSH/imgs/公私钥.png",
     "05 SSH/imgs",
     "09 Algorithms",
-    "04 Git/imgs",
-    "03 Linux/imgs",
-    "06 Python/Basic"
+    "04 Git/imgs"
   ]
 }
