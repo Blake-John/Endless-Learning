@@ -1,0 +1,9 @@
+/home/blake/桌面/CMake_learn/program2_detect/build/CMakeFiles/rebuild_cache.dir
+/home/blake/桌面/CMake_learn/program2_detect/build/CMakeFiles/edit_cache.dir
+/home/blake/桌面/CMake_learn/program2_detect/build/CMakeFiles/main.dir
+/home/blake/桌面/CMake_learn/program2_detect/build/mathfunc/CMakeFiles/rebuild_cache.dir
+/home/blake/桌面/CMake_learn/program2_detect/build/mathfunc/CMakeFiles/edit_cache.dir
+/home/blake/桌面/CMake_learn/program2_detect/build/mathfunc/CMakeFiles/mathfunc.dir
+/home/blake/桌面/CMake_learn/program2_detect/build/detectfunc/CMakeFiles/rebuild_cache.dir
+/home/blake/桌面/CMake_learn/program2_detect/build/detectfunc/CMakeFiles/edit_cache.dir
+/home/blake/桌面/CMake_learn/program2_detect/build/detectfunc/CMakeFiles/detectfunc.dir

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Gun.h
+string
+-
+
+../include/Solider.h
+iostream
+-
+string
+-
+Gun.h
+../include/Gun.h
+
+/home/blake/桌面/CMake_learn/project1/src/Solider.cpp
+Gun.h
+/home/blake/桌面/CMake_learn/project1/src/Gun.h
+Solider.h
+/home/blake/桌面/CMake_learn/project1/src/Solider.h
+

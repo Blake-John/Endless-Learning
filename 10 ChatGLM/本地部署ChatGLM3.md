@@ -19,6 +19,7 @@
 ```bash
 	nvcc --version
 ```
+
 # 1.克隆仓库
 - 从 [`github`](https://github.com/THUDM/ChatGLM3) 上克隆ChatGLM的源码
 ```bash
@@ -26,6 +27,7 @@
 	# 或者
 	git clone https://github.com/THUDM/ChatGLM3.git
 ```
+
 # 2.安装依赖库
 ==强烈建议使用 `Anaconda` 进行管理==
 ## 2.1 创建虚拟环境
@@ -102,6 +104,7 @@
 >>> model_dir = snapshot_download("ZhipuAI/chatglm3-6b", revision = "v1.0.0")
 ```
 - 下载好的文件会存放在 `~/.cache/modelscope/hub`
+
 
 # 4.运行
 ## 4.0 文件结构

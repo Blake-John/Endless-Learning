@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/blake/桌面/CMake_learn/program2_detect/build",
+  "command": "/usr/bin/g++   -I/home/blake/桌面/CMake_learn/program2_detect/mathfunc/include -I/home/blake/桌面/CMake_learn/program2_detect/detectfunc/include -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/main.dir/main.cpp.o -c /home/blake/桌面/CMake_learn/program2_detect/main.cpp",
+  "file": "/home/blake/桌面/CMake_learn/program2_detect/main.cpp"
+},
+{
+  "directory": "/home/blake/桌面/CMake_learn/program2_detect/build/mathfunc",
+  "command": "/usr/bin/g++   -I/home/blake/桌面/CMake_learn/program2_detect/mathfunc/include -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/mathfunc.dir/src/mathfunc.cpp.o -c /home/blake/桌面/CMake_learn/program2_detect/mathfunc/src/mathfunc.cpp",
+  "file": "/home/blake/桌面/CMake_learn/program2_detect/mathfunc/src/mathfunc.cpp"
+},
+{
+  "directory": "/home/blake/桌面/CMake_learn/program2_detect/build/detectfunc",
+  "command": "/usr/bin/g++   -I/home/blake/桌面/CMake_learn/program2_detect/detectfunc/include -I/home/blake/桌面/CMake_learn/program2_detect/mathfunc/include -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/detectfunc.dir/src/detectfunc.cpp.o -c /home/blake/桌面/CMake_learn/program2_detect/detectfunc/src/detectfunc.cpp",
+  "file": "/home/blake/桌面/CMake_learn/program2_detect/detectfunc/src/detectfunc.cpp"
+}
+]

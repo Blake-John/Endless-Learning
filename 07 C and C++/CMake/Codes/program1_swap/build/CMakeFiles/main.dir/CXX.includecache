@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/swap.h
+iostream
+-
+
+/home/blake/桌面/CMake_learn/program1_swap/include/swap.h
+iostream
+-
+
+/home/blake/桌面/CMake_learn/program1_swap/main.cpp
+../include/swap.h
+/home/blake/桌面/CMake_learn/include/swap.h
+iostream
+-
+
+/home/blake/桌面/CMake_learn/program1_swap/src/swap.cpp
+../include/swap.h
+/home/blake/桌面/CMake_learn/program1_swap/include/swap.h
+

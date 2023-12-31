@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiOpencv",
       "RiProjectorLine",
       "SiOnnx",
       "SiChromatic",
-      "FasHouse",
-      "SiThealgorithms"
+      "FasHouse"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -39,5 +39,6 @@
   "00 HOME.md": "FasHouse",
   "10 ChatGLM": "SiChromatic",
   "11 ONNX": "SiOnnx",
-  "Project": "RiProjectorLine"
+  "Project": "RiProjectorLine",
+  "12 OpenCV": "SiOpencv"
 }

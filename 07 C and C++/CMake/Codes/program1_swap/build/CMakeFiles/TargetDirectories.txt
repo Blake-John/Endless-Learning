@@ -1,0 +1,3 @@
+/home/blake/桌面/CMake_learn/program1_swap/build/CMakeFiles/rebuild_cache.dir
+/home/blake/桌面/CMake_learn/program1_swap/build/CMakeFiles/edit_cache.dir
+/home/blake/桌面/CMake_learn/program1_swap/build/CMakeFiles/main.dir
