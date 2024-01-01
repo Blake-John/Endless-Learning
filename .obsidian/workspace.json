@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5,
-    "collapsed": true
+    "width": 237.5
   },
   "right": {
     "id": "5c0d6b931c5b5cd2",
@@ -165,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,25 +182,29 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "833431ade1f0fc76",
+  "active": "8a9c9981053ce03a",
   "lastOpenFiles": [
-    "07 C and C++/CMake/未命名.md",
+    "07 C and C++/CMake/imgs/cmake-gui设置缓存条目.png",
+    "07 C and C++/CMake/cmake -L 查看缓存条目.md",
     "07 C and C++/CMake/CMake.md",
+    "07 C and C++/CMake/imgs/cmake -L 查看缓存条目.png",
+    "07 C and C++/CMake/imgs/cmake -L 查看缓存条目",
+    "07 C and C++/CMake/imgs/cmake-gui查看缓存条目.png",
+    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/Makefile.cmake",
+    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/Makefile2",
+    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/progress.marks",
+    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/TargetDirectories.txt",
+    "07 C and C++/CMake/Codes/program0_hello_world/cmake_install.cmake",
+    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/CMakeDirectoryInformation.cmake",
+    "07 C and C++/CMake/Codes/program0_hello_world/Makefile",
+    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/main.dir/progress.make",
+    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/main.dir/link.txt",
+    "07 C and C++/CMake/未命名.md",
+    "07 C and C++/C++/02.How C++ Work.md",
     "07 C and C++/CMake/imgs/添加项目的操作.png",
     "07 C and C++/CMake/imgs/CMake工作.png",
-    "07 C and C++/CMake/imgs",
     "07 C and C++/C++/01.Introduction.md",
-    "07 C and C++/C++/02.How C++ Work.md",
     "07 C and C++/环境/Cpp环境配置及编译器使用.md",
-    "07 C and C++/环境/Codes/Lib_and_Include/gdb_main",
-    "07 C and C++/环境/Codes/Lib_and_Include/dynamic_main",
-    "07 C and C++/环境/Codes/Lib_and_Include/src/libmylib.so",
-    "07 C and C++/环境/Codes/Lib_and_Include/static2_main",
-    "07 C and C++/环境/Codes/Lib_and_Include/static1_main",
-    "07 C and C++/环境/Codes/Lib_and_Include/src/sthPzd8H",
-    "07 C and C++/环境/Codes/Lib_and_Include/src/libmylib.a",
-    "07 C and C++/环境/Codes/Lib_and_Include/src/mylib.o",
-    "07 C and C++/环境/Codes/Lib_and_Include/src/a.out",
     "07 C and C++/环境/imgs/example_gdb.png",
     "07 C and C++/环境/imgs/example_target.png",
     "07 C and C++/环境/imgs/compile.png",
@@ -210,7 +212,6 @@
     "07 C and C++/环境/imgs/src.png",
     "07 C and C++/环境/Pasted image 20231230175240.png.md",
     "07 C and C++/环境/imgs/Pasted image 20231230175240.png",
-    "Pasted image 20231230175138.png",
     "07 C and C++/CMake/Codes/CMake_I/README.md",
     "10 ChatGLM/本地部署ChatGLM3.md",
     "12 OpenCV/C++/未命名.md",
@@ -224,13 +225,10 @@
     "11 ONNX/部署ONNX.md",
     "07 C and C++/C++/13.Class.md",
     "11 ONNX/ONNXRUNTIME.md",
-    "11 ONNX/模型部署通用流程.png",
     "07 C and C++/C++/11.Array.md",
     "07 C and C++/C++/12.OOP.md",
     "07 C and C++/C++/10.References.md",
     "07 C and C++/C++/09.Pointers.md",
-    "07 C and C++/C++/9.Pointers.md",
-    "07 C and C++/C++/08.Control Statement.md",
-    "07 C and C++/C++/8.Control Statement.md"
+    "07 C and C++/C++/9.Pointers.md"
   ]
 }
