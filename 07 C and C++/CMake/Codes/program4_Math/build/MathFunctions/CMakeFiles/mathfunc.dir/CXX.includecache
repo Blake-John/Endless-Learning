@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../MathFunctions/include/mathfunc.h
+
+/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/MathFunctions/src/mathfunc.cpp
+mathfunc.h
+/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/MathFunctions/src/mathfunc.h
+cmath
+-
+

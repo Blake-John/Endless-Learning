@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world"
+CMAKE_SOURCE_DIR = "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world"
+CMAKE_BINARY_DIR = "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles" "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/build/CMakeFiles" "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,19 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+#=============================================================================
+# Target rules for targets named mathfunc
+
+# Build rule for target.
+mathfunc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mathfunc
+.PHONY : mathfunc
+
+# fast build rule for target.
+mathfunc/fast:
+	$(MAKE) -f MathFunctions/CMakeFiles/mathfunc.dir/build.make MathFunctions/CMakeFiles/mathfunc.dir/build
+.PHONY : mathfunc/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +172,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
+	@echo "... mathfunc"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

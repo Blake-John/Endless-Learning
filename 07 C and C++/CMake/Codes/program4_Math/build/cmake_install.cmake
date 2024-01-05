@@ -1,4 +1,4 @@
-# Install script for directory: /home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world
+# Install script for directory: /home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,6 +37,12 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/build/MathFunctions/cmake_install.cmake")
+
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
@@ -45,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

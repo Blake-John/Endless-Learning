@@ -81,7 +81,7 @@
 	program
 		├── build
 		│   ├── CMakeCache.txt
-		│   ├── CMakeFiles
+		│   ├── CMakeFiles/
 		│   ├── cmake_install.cmake
 		│   ├── main (目标可执行文件，是由我们代码生成的可执行文件)
 		│   └── Makefile (生成的用于 make 编译项目的 Makefile)
@@ -198,6 +198,160 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 - 生成目标可执行文件
 
 接下来，我们将讲讲更适合于一般项目的编写规则
+
+## 3.1 设置变量优化指令
+
+若习惯将目标可执行文件的名称设置为项目的名称，则可以：
+
+```CMake
+	add_executable (${PROJECT_NAME} main.cpp)
+```
+
+若由多个源文件生成一个可执行文件，则可以：
+
+```CMake
+	set (SRC_LIST a.cpp b.cpp c.cpp)
+	add_executable (${PROJECT_NAME} ${SRC_LIST})
+```
+
+若源文件分多个文件存放，则可以通过 `aux_source_directory ()` 来获取一个目录下的所有文件，并存储于变量中
+
+```CMake
+	aux_source_directory (<dir> <variable_name>)
+	
+	aux_source_directory (/mylib SRC_LIST)
+	add_executable (${PROJECT_NAME} main.cpp ${SRC_LIST})
+```
+
+## 3.2 指定 C++版本
+
+我们在编写的时候可以指定 C++ 的编译版本。注意，从 GCC/G++ 6.1 开始，当不指定任何 C++ 版本标准时，默认版本为 c++14
+
+```CMake
+	set (CMAKE_CXX_STANDARD 11)
+	set (CMAKE_CXX_STANDARD_REQUIRED TRUE)
+```
+
+## 3.3 添加库
+
+一个中等大小的项目，一般会有自己所编写的库，这个时候，我们便需要将自己编写的库纳入编译中
+
+### 3.3.1 生成目标库
+
+要想向项目中添加一个自建库，首先要将自己的源码编译成库文件。生成一个库可以在根目录下的 `CMakeLists.txt` 中构建该库，但是，我们更倾向于在子模块中重新编写 `CMakeLists.txt` 文件，使整个项目更加有条理
+
+生成库的命令为 `add_library (<lib_name> [SHARED|STATIC|MOUDLE] <source>)`，其中：
+- `<lib_name>` : 为指定的库名，这与使用 g++ 命令行生成库不同，g++ 需要将整个库名写完整，如 `g++ mathfunc.cpp -Iinclude -c -o libmathfunc.a` ，而CMake中只需要写我们调用时的库名 `mathfunc`  ^a4c4bc
+- `[SHARED|STATIC|MOUDLE]` 为生成的库的属性，默认为 `STATIC` 
+- `<source>` 是用于生成库的目标源文件
+
+假设我们有这样一个项目：
+
+```CMake
+	HELLO_WORLD
+		|__ CMakeLists.txt
+		|__ MathFunctions
+		|	|__ CMakeLists.txt
+		|	|__ include
+		|		|__ mathfunc.h
+		|	|__src
+		|		|__ mathfunc.cpp
+		|__ main.cpp
+```
+
+则在 `HELLO_WORLD/MathFunctions/CMakeLists.txt` 中应该写入：
+
+```CMake
+	add_library (mathfunc ./src/mathfunc.cpp)
+	target_include_directories (mathfunc PUBLIC ./include)
+```
+
+- `add_library` 设置以 `mathfunc.cpp` 文件生成名为 `mathfunc` 的 **静态库** 
+- `target_include_directory (<target> <PUBLIC|PRIVATE|INTERFACE> <source>)`  用于 **将头文件所在的路径与该项目绑定** 
+	- `target` 表示需要被链接的目标文件
+	- `PUBLIC|PRIVATE|INTERFACE` 为链接的方式
+		- `PUBLIC` 表示共享该包含目录
+		- `PRIVATE` 表示该包含目录为私有的
+		- `INTERFACE` 表示该库文件为接口库，没有具体的实现文件
+	- `source` 是用于生成库文件的源文件
+
+当我们在子模块中的 `CMakeLists.txt` 中编写好库的生成规则时，还需要将子模块添加到整个项目中，这样构建项目的时候才能根据子模块中的 `CMakeLists.txt` 文件对子模块进行构建。我们应该在 `HELLO_WORLD/CMakeLists.txt` 中写到：
+
+```CMake
+	add_subdirectory (MathFunctions)
+```
+
+这样，子模块 `MathFunctions` 就会在构建整个项目的时候被找到并进行构建
+
+### 3.3.2 链接可执行文件和目标库
+
+可执行文件想要使用库文件，需要将 **库文件** 和 **对应的头文件** 与该可执行文件链接起来，这个时候需要用到 `target_include_directories ()` 和 `target_link_libraries ()` 。链接库文件需要 **依据库文件链接头文件的方式** 分为两种情况： `PUBLIC` or `PRIVATE` 
+
+#### 1. `PRIVATE` 链接
+
+当库文件链接头文件时选择的是 `PRIVATE` 属性，表示该链接是 **私有于该目标的属性** ，其他目标在链接当前目标的时候， **无法访问该属性** ，这时我们需要包含这些头文件，才能在主函数中调用该库：
+
+```CMake
+	# HELLO_WORLD/MathFunctions/CMakeLists.txt
+	add_library (mathfunc ./src/mathfunc.cpp)
+	target_include_directories (mathfunc PRIVATE ./include)
+
+	# HELLO_WORLD/CMakeLists.txt
+	cmake_minimum_required (VERSION 3.10)
+	project (HELLO_WORLD)
+
+	add_subdirectory (MathFunctions)
+
+	add_executable (main main.cpp)
+	target_include_directories (main PRIVATE ./MathFunctions/include)
+	target_link_libraries (main mathfunc)
+```
+
+#### 2. `PUBLIC` 链接
+
+当库文件链接头文件时选择的是 `PUBLIC` 属性，表示该链接是 **该目标的公有属性** ，其他目标在链接当前目标的时候，当前目标会共享该属性，即其他目标 **能够直接访问该目标所绑定的头文件** ：
+
+```CMake
+	# HELLO_WORLD/MathFunctions/CMakeLists.txt
+	add_library (mathfunc ./src/mathfunc.cpp)
+	target_include_directories (mathfunc PUBLIC ./include)
+
+	# HELLO_WORLD/CMakeLists.txt
+	cmake_minimum_required (VERSION 3.10)
+	project (HELLO_WORLD)
+
+	add_subdirectory (MathFunctions)
+
+	add_executable (main main.cpp)
+	target_link_library (main mathfunc)
+```
+
+## 3.4 编译
+
+在一般编译中，我们选择在项目的根目录下新建 `build` 文件夹用于存放编译信息和编译产物，项目 `HELLO_WORLD` 的 `build` 目录为：
+
+```
+	build
+		├── CMakeCache.txt
+		├── CMakeFiles/
+		├── cmake_install.cmake
+		├── main*
+		├── Makefile
+		└── MathFunctions/
+			├── CMakeFiles
+			├── cmake_install.cmake
+			├── libmathfunc.a
+			└── Makefile
+```
+
+- `CMakeCache.txt` 为存放缓存变量，编译信息的文件 
+- `Makefile` 为根据顶级 `CMakeLists.txt` 文件生成的含有构建规则的文件， `make` 将根据该文件中的规则对项目进行构建
+- `main*` 为生成的可执行文件
+- `CMakeFiles/` 为存放中间编译文件的目录
+- `cmake_install.cmake` 是用于设置 **目标安装** 的配置文件
+- `MathFunctions/` 为子模块(子目录)的编译文件
+	- `libmathfunc.a` 为根据该模块中的源文件生成的 **静态库** 
+
 
 # 04 CMake语法规则
 
@@ -353,10 +507,15 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 ##### 2. 一般自定义缓存变量
 
 ```CMake
+	# 定义缓存变量
 	set (<variable_name> <value> CACHE <type> [comment] [FORCE])
 	set (USE_CUDA OFF CACHE BOOL "choose to use cuda or not")
 	set (MYLIB_PATH /home/mylib CACHE PATH "the path to my libs")
 	set (MY_INCLUDE "include" CACHE PATH "the path to include dir")
+
+	# 解除缓存变量
+	unset (<variable_name> CACHE)
+	unset (USE_CUDA CACHE)
 ```
 
 - 使用 `CACHE` 指定改变量为缓存变量
@@ -415,3 +574,406 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 
 ![[cmake-gui设置缓存条目.png]]
 
+## 4.2 常用与语句块
+
+### 4.2.1 运算符
+
+#### 4.2.1.1 一元运算符
+
+###### 1. `EXISTS` 
+
+用于判断文件或者目录是否存在，存在时结果为真，需要提供全路径，也可以是符号链接
+
+`if (EXISTS <path>)` 
+
+```CMake
+	if (NOT EXISTS ${CMAKE_CURRENT_BINARY_DIR}/test)
+```
+
+###### 2. `IS_DIRECTORY` 
+
+用于判断指定内容是否为文件夹，是文件夹则为真
+
+`if (IS_DIRECTORY <path>)` 
+
+###### 3. `COMMAND` 
+
+用于判断所给对象是否为 **命令、宏或函数** 等 **可以被调用的对象** ，是则为真
+
+`if (COMMAND <target>)` 
+
+###### 4. `DEFINED` 
+
+用于判断说给变量是否存在，存在为真
+
+`if (DEFINED [ENV] <variable_name>)` 
+
+> 注意：
+> 若判断的对象为 **环境变量** ，则需要在前面加上 `ENV` 选项
+
+#### 4.2.1.2 二元运算符
+
+###### 1. 数字逻辑运算符
+
+- `LESS` : <
+- `GREATER` : >
+- `EQUAL` : =
+- `LESS_EQUAL` : <=
+- `GREATER_EQUAL` : >=
+
+用于判断左右两边是否符合条件，符合为真为真
+
+`if (<variable_name> EQUAL <value>)`
+
+###### 2. `STREQUAL` 
+
+利用 **[[14.String|字典序]]** 比较两边的字符串是否相等，相等为真
+
+`if (<STR1> STREQUAL <STR2>)`
+
+###### 3. `MATCHES` 
+
+判断左右两边是否匹配，如果左边的值与右边的正则表达式匹配，结果为真
+
+`if (<variable1> MATCH <re>)`
+
+```CMake
+	if (CMAKE_SYSTEM_NAME MATCH "Linux")
+		message (STATUS "Current Platform : Linux")
+	elseif (CMAKE_SYSTEM_NAME MATCH "Windows")
+		message (STATUS "Current Platform : Windows")
+	endif ()
+```
+
+#### 4.2.1.3 逻辑操作符
+
+- `NOT`
+- `AND`
+- `OR`
+
+### 4.2.2 条件控制
+
+```CMake
+	if (<condition>)
+		<codes>
+	elseif (<condition>)
+		<codes>
+	else ()
+		<codes>
+	endif ()
+```
+
+> 注意：每次结束判断不能忘记加 `endif ()` 语句
+
+### 4.2.3 遍历循环
+
+#### 1. `foreach` 
+
+```CMake
+	foreach (<循环变量> <循环目标>)
+		<codes>
+	endforeach ()
+```
+
+```CMake
+	foreach (i 1 2 3)
+		message ("value : ${i}")
+	endforeach ()
+
+	# value : 1
+	# value : 2
+	# value : 3
+```
+
+#### 2. `RANGE`
+
+与 `Python` 中的 `range` 函数 [[|使用方法]] 相同，但不需要括号，而且在 `Python` 中， `range ()` 左闭右开，在 `CMake` 中， `RANGE` 为闭区间
+
+```CMake
+	foreach (i RANGE 2)
+		message ("value : ${i}")
+	endforeach ()
+
+	# value : 0
+	# value : 1
+	# value : 2
+```
+
+```CMake
+	foreach (i RANGE 1 5 2)
+		message ("value : ${i}")
+	endforeach ()
+
+	# value : 1
+	# value : 3
+	# value : 5
+```
+
+```ad-attention
+注意！
+在 `if` 和 `foreach` 语句中设置的变量 **仍会在条件体，循环体外生效** ，对于设置的变量 **要养成使用 `unset ()` 解除变量的习惯** ！
+```
+
+# 05 构建
+
+## 5.1 可执行文件的构建
+
+`可执行文件` 在 `CMake` 中视为一个 **变量** ，具有 `TARGET` 属性，通过 `add_executable ()` 命令进行构建，所以将库文件或头文件路径链接到可执行文件时的命令为 `target_link_libraries ()` 或 `target_include_directories ()` ：
+
+```CMake
+	cmake_minimum_required (VERSION 3.10)
+	project (HELLO_WORLD)
+	add_executable (main main.cpp)
+
+	target_link_libraries (main mylib)
+```
+
+如果需要使用到 **第三方库** ，则需要手动为其添加库和头文件的链接，如 `OpenCV` 库，我们可以通过 `find_package ()` 来找到我们想要的库：
+
+```CMake
+	find_package (<package> [mode])
+	find_package (OpenCV REQUIRED)
+```
+
+其中， `REQUIRED` 选项会在没有找到相应包的时候 **停止整个项目的构建** 
+
+然后，我们可以将 `OpenCV` 包链接到目标文件：
+
+```CMake
+	target_include_directories (main PUBLIC ${OpenCV_INCLUDE_DIRS})
+	target_link_libraries (main ${OpenCV_LIBS})
+```
+
+## 5.2 库文件的构建
+
+### 5.2.1 静态库/动态库
+
+在 Linux 中，以 **`.so`** 为后缀的文件属于 **动态库** ，以 **`.a`** 为后缀的文件属于 **静态库** 
+
+1. 静态库：
+	优点：静态库在编译的时候会将库文件 **直接整合进目标程序中** ，所以利用静态库编译成功的可执行文件 **可以独立运行，不需要外部依赖** 
+	缺点：利用静态库编译成的文件 **体积一般比较大，因为包含了整个库的内容** ，同时，从 **更新升级** 的难易程度来讲，静态库没有优势， **想要更新其中一个库，就需要将整个项目重新编译** 
+2. 动态库：
+	优点： **体积小，更新容易** 
+	缺点： **运行需要外部依赖，不如静态库更快速** 
+
+### 5.2.2 普通库的构建
+
+在多文件架构中，我们需要将某个功能模块抽象出来时，通常需要 **为某个模块构建一个库** ，最终将这些库链接至可执行文件上。我们使用 `add_library ()` 语句来添加库文件
+
+`add_library (<lib_name> [SHARED|STATIC|MODULE] <source>` 
+- [[CMake#^a4c4bc|<lib_name>]] 
+- `[SHARED|STATIC|MODULE]` : 指定库的类型为 **动态库** ， **静态库** 或 **[[|模块库]]** ，若没有指定默认静态库
+- `<source>` 用于构建库文件的源文件，可以有多个
+
+假设有这样一个文件架构：
+
+```
+	project1
+    ├── CMakeLists.txt
+    ├── MyLib1
+	|	├── include
+	|	├── src
+	|	└── CMakeLists.txt(待创建)
+    └── main.cpp
+```
+
+根据上面的实践，我们已经知道，在多文件架构中，每一个模块最好使用独立的 `CMakeLists.txt` 进行管理，因此，我们在 `/Mylib1/CMakeLists.txt` 中写：
+
+```CMake
+	add_library (mylib1 STATIC ./src/mylib1.cpp)
+```
+
+同时，由于该库存在非默认包含路径，需要：
+
+```CMake
+	target_include_directories (mylib1 PUBLIC ./include)
+```
+
+如果该库使用了第三方库的内容，也需要将第三方库链接到该库
+
+```CMake
+	target_include_directories (mylib1 PUBLIC <third_lib_include_path>)
+	target_link_libraries (mylib1 <third_lib>)
+```
+
+```ad-attention
+我们使用 `add_library (mylib SHARED mylib.cpp)` 生成的动态库 `libmylib.so` 在调用时 **无法做到内存上的复用** ，在 **多个程序同时使用该动态库时，仍然会开辟一块内存存储该动态库的内容**
+
+为了实现内存上的复用，我们应该使用 `地址无关代码机制(position-independent code)`
+
+`list (APPEND CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")`
+
+在编译选项后追加 `-fPIC` 选项
+
+```
+
+### 5.2.3 头文件包含有关的属性
+
+1. `PUBLIC` : [[CMake#2. `PUBLIC` 链接|Look]] 
+2. `PRIVATE` : [[CMake#1. `PRIVATE` 链接|Look]] 
+3. `INTERFACE` : 在绑定该当前目标时给指定的内容设置 **接口属性** ，通常用于 **接口库头文件的绑定** ，其他目标在链接当前目标的时候 **只能获得其接口(只能访问其声明)** 
+
+### 5.2.4 接口库的构建
+
+在程序的开发过程中，会遇到 **只有头文件 `.h/.hpp`** 而 **没有源文件 `.cpp`** 的情况，而一般的 `add_library ()` 只能为源文件生成目标库，而不能用头文件生成目标库
+
+我们想要对只含头文件的模块生成目标库，只使用其中的声明而不需要具体的实现方法，此时我们称生成的库为 **接口库** 
+
+假设在刚刚的文件架构基础上上再添加一个用于构建接口库的模块：
+
+```
+	project1
+    ├── CMakeLists.txt
+    ├── MyLib1
+	|	├── include
+	|	|	└──MyLib1.hpp
+	|	├── src
+	|	|	└──MyLib1.cpp
+	|	└── CMakeLists.txt
+	├── MyLib2
+	|	├── include
+	|	|	└──MyLib2.hpp
+	|	└── CMakeLists.txt(待创建)
+    └── main.cpp
+```
+
+创建接口库的语法与创建普通库类似，只不过少了源文件的添加，在 `/Mylib2/CMakeLists.txt` 中，我们写入：
+
+```CMake
+	add_library (mylib2 INTERFACE)
+
+	target_include_directories (mylib2 INTERFACE include)
+```
+
+- 我们设置生成的库的属性为 `INTERFACE` 并且不对其添加源文件
+- 然后，我们需要将头文件路径绑定到该库上，从而使其能够调用头文件中的声明，此时我们设置头文件的链接属性为 `INTERFACE` 
+- 接着，如果当前库需要用到其他库，还需要用接口库的链接形式来链接其他库：
+	- `target_link_libraries (mylib2 INTERFACE ${OpenCV_LIBS})`
+
+### 5.2.5 访问库文件的方式
+
+在访问第三方库的时候，第三方库并 **不提供头文件和源文件** ，而是提供 **头文件和库文件** ，在访问本例的 `mylib1` 时，若该库绑定头文件的属性为 `PUBLIC` ，则不需要再将该库的头文件与目标可执行文件绑定
+
+> 注意：
+> 在调用第三方库如 `OpenCV` 时，需要 **同时将头文件和库文件与目标可执行文件链接**
+
+### 5.2.6 库链接方式
+
+在链接头文件和库的时候，我们常使用 `target_include_directories ()` 和 `target_link_libraries ()` 而不去使用 `include_directories ()` 和 `link_diretories ()` 
+
+# 06 命令手册
+
+## 1. `cmake_minimum_required ()`
+
+用于指定构建工具 CMake 的最小版本要求
+
+```CMake
+	cmake_minimum_required (VERSION <version>)
+	cmake_minimum_required (VERSION 3.10)
+```
+
+## 2. `project ()`
+
+用于定义工程的名称，版本和支持的语言
+
+```CMake
+	project (<project_name> [VERSION <version>] [language])
+	project (HELLO_WORLD)
+	project (HELLO_WORLD VERSION 1.0)
+	project (HELLO_WORLD VERSION 1.0 C++)
+```
+
+- `<project_name>` 会存贮在环境变量 `PROJECT_NAME` 中
+- `[language]` 默认为 C/C++
+
+## 3. `set ()` and `unset ()`
+
+用于[[CMake#4.1 变量|定义变量和解除变量]] 
+
+```CMake
+	set (<variable_name> <value>)
+	unset (<variable_name>)
+	
+	set (<variable_name> <value> CACHE <type> [discription] [FORCE])
+	unset (<variable_name> CACHE)
+```
+
+## 4. `include_directories ()` 
+
+向工程添加多个特定的头文件路径
+
+```CMake
+	include_directories (<path>)
+```
+
+## 5. `link_directories ()` 
+
+向工程添加多个特定的库文件路径
+
+```CMake
+	link_directories (<path>)
+```
+
+## 6. `add_library ()` 
+
+[[CMake#3.3.1 生成目标库|生成目标库]] ， [[CMake#5.2 库文件的构建|构建库文件]] 
+
+```CMake
+	add_library (<lib_name> [SHARED|STATIC|MOUDLE] <source>)
+```
+
+## 7. `add_compile_options ()` 
+
+添加编译参数
+
+```CMake
+	add_compile_options (<option>)
+	add_compile_options (-Wall -std=c++11 -O2)
+```
+
+## 8. `add_executable ()` 
+
+[[CMake#5.1 可执行文件的构建|构建可执行文件]] 
+
+```CMake
+	add_executable (<exe_name> <source>)
+```
+
+## 9. `target_link_libraries ()`
+
+[[CMake#3.3.2 链接可执行文件和目标库|为target添加需要链接的库]] 
+
+```CMake
+	target_link_libraries (<target> <lib>)
+```
+
+## 10. `target_include_directories ()` 
+
+[[CMake#3.3.1 生成目标库|为target添加头文件路径]] 
+
+```CMake
+	target_include_directories (<target> <PUBLIC|PRIVATE|INTERFACE> <path>)
+```
+
+## 11. `add_subdirectory ()`
+
+向CMake项目中添加子模块
+
+```CMake
+	add_subdirectory (<path>)
+```
+
+> 注意：
+> 子模块中必须包含 `CMakeLists.txt` 文件
+
+## 12. `aux_source_directory ()` 
+
+发现一个目录下所有源代码文件并将其存储在一个变量中
+
+```CMake
+	aux_source_directory (<path> <variable_name>)
+	
+	aux_source_directory (. SRC)
+	add_executable (main ${SRC})
+```

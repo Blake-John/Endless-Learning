@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "97edeb91d8a5edd6",
+        "id": "0f83fdfe69c5adf5",
         "type": "tabs",
         "children": [
           {
-            "id": "8a9c9981053ce03a",
+            "id": "34d3c2351de66854",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07 C and C++/CMake/CMake.md",
+                "file": "12 OpenCV/C++/Notes/00 Introduction.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "07 C and C++/CMake/CMake.md",
+                "file": "12 OpenCV/C++/Notes/00 Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "07 C and C++/CMake/CMake.md",
+                "file": "12 OpenCV/C++/Notes/00 Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "07 C and C++/CMake/CMake.md"
+                "file": "12 OpenCV/C++/Notes/00 Introduction.md"
               }
             }
           },
@@ -164,7 +164,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,43 +177,46 @@
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
       "audio-recorder:开始/结束录音": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-projects:Open projects": false,
       "obsidian-memos:Memos": false
     }
   },
-  "active": "8a9c9981053ce03a",
+  "active": "34d3c2351de66854",
   "lastOpenFiles": [
+    "12 OpenCV/C++/Notes/imgs/windows_env_path.png",
+    "12 OpenCV/C++/Notes/00 Introduction.md",
+    "12 OpenCV/C++/Notes/imgs",
+    "11 ONNX/ONNXRUNTIME.md",
+    "11 ONNX/模型部署通用流程.png",
+    "11 ONNX/部署ONNX.md",
+    "07 C and C++/CMake/CMake.md",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2/src/M2.cpp",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2/src",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2/include/M2.h",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2/include",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2/CMakeLists.txt",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M1/src/M1.cpp",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M1/src",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M1/include/M1.h",
+    "07 C and C++/CMake/Codes/CMake_I/README.md",
+    "07 C and C++/CMake/Codes/CMake_I/CMake_I/README.md",
+    "07 C and C++/C++/01.Introduction.md",
     "07 C and C++/CMake/imgs/cmake-gui设置缓存条目.png",
     "07 C and C++/CMake/cmake -L 查看缓存条目.md",
-    "07 C and C++/CMake/CMake.md",
     "07 C and C++/CMake/imgs/cmake -L 查看缓存条目.png",
-    "07 C and C++/CMake/imgs/cmake -L 查看缓存条目",
     "07 C and C++/CMake/imgs/cmake-gui查看缓存条目.png",
-    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/Makefile.cmake",
-    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/Makefile2",
-    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/progress.marks",
-    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/TargetDirectories.txt",
-    "07 C and C++/CMake/Codes/program0_hello_world/cmake_install.cmake",
-    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/CMakeDirectoryInformation.cmake",
-    "07 C and C++/CMake/Codes/program0_hello_world/Makefile",
-    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/main.dir/progress.make",
-    "07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/main.dir/link.txt",
     "07 C and C++/CMake/未命名.md",
     "07 C and C++/C++/02.How C++ Work.md",
     "07 C and C++/CMake/imgs/添加项目的操作.png",
     "07 C and C++/CMake/imgs/CMake工作.png",
-    "07 C and C++/C++/01.Introduction.md",
     "07 C and C++/环境/Cpp环境配置及编译器使用.md",
     "07 C and C++/环境/imgs/example_gdb.png",
     "07 C and C++/环境/imgs/example_target.png",
     "07 C and C++/环境/imgs/compile.png",
-    "07 C and C++/环境/imgs/preprocess.png",
-    "07 C and C++/环境/imgs/src.png",
     "07 C and C++/环境/Pasted image 20231230175240.png.md",
-    "07 C and C++/环境/imgs/Pasted image 20231230175240.png",
-    "07 C and C++/CMake/Codes/CMake_I/README.md",
     "10 ChatGLM/本地部署ChatGLM3.md",
     "12 OpenCV/C++/未命名.md",
     "05 SSH/1.SSH.md",
@@ -222,13 +226,9 @@
     "Project/Summary.md",
     "00 HOME.md",
     "01 Obsidian/7.搜索和查询.md",
-    "11 ONNX/部署ONNX.md",
     "07 C and C++/C++/13.Class.md",
-    "11 ONNX/ONNXRUNTIME.md",
     "07 C and C++/C++/11.Array.md",
     "07 C and C++/C++/12.OOP.md",
-    "07 C and C++/C++/10.References.md",
-    "07 C and C++/C++/09.Pointers.md",
-    "07 C and C++/C++/9.Pointers.md"
+    "07 C and C++/C++/10.References.md"
   ]
 }

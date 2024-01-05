@@ -1,3 +1,0 @@
-/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/rebuild_cache.dir
-/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/edit_cache.dir
-/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/main.dir

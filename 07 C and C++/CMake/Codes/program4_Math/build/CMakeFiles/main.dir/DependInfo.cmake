@@ -4,16 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world/main.cpp" "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program0_hello_world/CMakeFiles/main.dir/main.cpp.o"
+  "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/main.cpp" "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/build/CMakeFiles/main.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../MathFunctions/./include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/build/MathFunctions/CMakeFiles/mathfunc.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

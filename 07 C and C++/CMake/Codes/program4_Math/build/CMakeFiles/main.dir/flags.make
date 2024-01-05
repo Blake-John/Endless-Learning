@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I"/home/blake/桌面/Nutstore Files/学无止境/07 C and C++/CMake/Codes/program4_Math/MathFunctions/./include" 
 
