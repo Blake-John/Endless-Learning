@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "12 OpenCV/C++/Notes/00 Introduction.md",
+                "file": "12 OpenCV/C++/Notes/01 CHAPTER 1.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5
+    "width": 237.5,
+    "collapsed": true
   },
   "right": {
     "id": "5c0d6b931c5b5cd2",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "12 OpenCV/C++/Notes/00 Introduction.md",
+                "file": "12 OpenCV/C++/Notes/01 CHAPTER 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "12 OpenCV/C++/Notes/00 Introduction.md",
+                "file": "12 OpenCV/C++/Notes/01 CHAPTER 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "12 OpenCV/C++/Notes/00 Introduction.md"
+                "file": "12 OpenCV/C++/Notes/01 CHAPTER 1.md"
               }
             }
           },
@@ -185,8 +186,11 @@
   },
   "active": "34d3c2351de66854",
   "lastOpenFiles": [
-    "12 OpenCV/C++/Notes/imgs/windows_env_path.png",
+    "12 OpenCV/C++/Notes/CMake of OpenCV.md",
+    "12 OpenCV/C++/Notes/01 CHAPTER 1.md",
     "12 OpenCV/C++/Notes/00 Introduction.md",
+    "04 Git/Git.md",
+    "12 OpenCV/C++/Notes/imgs/windows_env_path.png",
     "12 OpenCV/C++/Notes/imgs",
     "11 ONNX/ONNXRUNTIME.md",
     "11 ONNX/模型部署通用流程.png",
@@ -220,7 +224,6 @@
     "10 ChatGLM/本地部署ChatGLM3.md",
     "12 OpenCV/C++/未命名.md",
     "05 SSH/1.SSH.md",
-    "04 Git/Git.md",
     "00 Excalidraw/Drawing 2023-10-28 12.44.03.excalidraw.md",
     "Project/11 OCR-Python.md",
     "Project/Summary.md",
@@ -228,7 +231,6 @@
     "01 Obsidian/7.搜索和查询.md",
     "07 C and C++/C++/13.Class.md",
     "07 C and C++/C++/11.Array.md",
-    "07 C and C++/C++/12.OOP.md",
-    "07 C and C++/C++/10.References.md"
+    "07 C and C++/C++/12.OOP.md"
   ]
 }
