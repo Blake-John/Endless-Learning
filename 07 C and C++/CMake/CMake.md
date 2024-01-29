@@ -6,9 +6,9 @@
 
 ## 0.2 How do the CMake work ?
 
-![[CMake工作.png]]
+![CMake工作.png](CMake工作.png)
 
-![[添加项目的操作.png]]
+![添加项目的操作.png](添加项目的操作.png)
 
 ## 0.3 语法特性
 
@@ -546,11 +546,11 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 查看缓存条目主要有两种方式：
 1. 通过 `cmake-gui` 查看
 
-![[cmake-gui查看缓存条目.png]]
+![cmake-gui查看缓存条目.png](cmake-gui查看缓存条目.png)
 
 2. 通过调用 `cmake` 的时候使用 `-L` 选项来查看
 
-![[cmake -L 查看缓存条目.png]]
+![](cmake%20-L%20查看缓存条目.png)
 
 > 注意：
 > 这两种方式均要对项目进行构建编译信息后才能查看，原因是我们可能会定义一些外部缓存条目用于编译信息的构建，如 OpenCV 有着大量外部缓存条目
@@ -572,7 +572,7 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 
 或者通过GUI：
 
-![[cmake-gui设置缓存条目.png]]
+![cmake-gui设置缓存条目.png](cmake-gui设置缓存条目.png)
 
 ## 4.2 常用与语句块
 
@@ -810,7 +810,7 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 
 ### 5.2.3 头文件包含有关的属性
 
-1. `PUBLIC` : [[CMake#2. `PUBLIC` 链接|Look]] 
+1. `PUBLIC` : [[CMake#2. `PUBLIC` 链接|Look]]
 2. `PRIVATE` : [[CMake#1. `PRIVATE` 链接|Look]] 
 3. `INTERFACE` : 在绑定该当前目标时给指定的内容设置 **接口属性** ，通常用于 **接口库头文件的绑定** ，其他目标在链接当前目标的时候 **只能获得其接口(只能访问其声明)** 
 

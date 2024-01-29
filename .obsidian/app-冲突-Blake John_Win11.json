@@ -1,0 +1,10 @@
+{
+  "trashOption": "local",
+  "newFileLocation": "current",
+  "strictLineBreaks": false,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./imgs",
+  "showUnsupportedFiles": true,
+  "showLineNumber": true,
+  "spellcheck": false
+}

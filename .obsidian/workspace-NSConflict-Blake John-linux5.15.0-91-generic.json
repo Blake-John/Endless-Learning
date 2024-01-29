@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "7249b8e0e4572b8d",
+    "type": "split",
+    "children": [
+      {
+        "id": "1a410bd07cac4f19",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef3e36e366d188fe",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "82658460c30fe2ef",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1b9b515b48926e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "833431ade1f0fc76",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fedc637bc3862ce8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Pasted image 20231220131443.png",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "66874e4047ea66fc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "b3ca12b1d16c17fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 Obsidian/7.搜索和查询.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 237.5
+  },
+  "right": {
+    "id": "5c0d6b931c5b5cd2",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c8530d940dea805",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e38f54127c0779ad",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9a7b860b92013e02",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "13955fbf04be76ac",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fe8f170581af0c6b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "4729c975c48aaf77",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "ba40dd82f8dbe6d7",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "audio-recorder:开始/结束录音": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-projects:Open projects": false,
+      "obsidian-regex-pipeline:Regex Rulesets": false,
+      "obsidian-memos:Memos": false
+    }
+  },
+  "active": "833431ade1f0fc76",
+  "lastOpenFiles": [
+    "imgs/Pasted image 20231220131443.png.md",
+    "07 C and C++/C++/14.String.md",
+    "imgs",
+    "07 C and C++/C++/imgs/Pasted image 20231113124429.png",
+    "07 C and C++/C++/13.Class.md",
+    "07 C and C++/C++/12.OOP.md",
+    "07 C and C++/C++/11.Array.md",
+    "07 C and C++/C++/10.References.md",
+    "07 C and C++/C++/09.Pointers.md",
+    "07 C and C++/C++/08.Control Statement.md",
+    "07 C and C++/C++/07.Loops.md",
+    "07 C and C++/C++/06.Conditions.md",
+    "07 C and C++/C++/05.Head File.md",
+    "07 C and C++/C++/04.Function.md",
+    "07 C and C++/C++/03.Variable.md",
+    "07 C and C++/C++/02.How C++ Work.md",
+    "07 C and C++/C++/01.Introduction.md",
+    "07 C and C++/环境/Cpp环境配置及编译器使用.md",
+    "05 SSH/1.SSH.md",
+    "07 C and C++/CMake/CMake.md",
+    "07 C and C++/C++/imgs/Pasted image 20231113121805.png",
+    "07 C and C++/C++/Pasted.md",
+    "07 C and C++/C++/imgs/屏幕截图 2023-11-25 114922.png",
+    "09 Algorithms/递归与递推/递归与递推.md",
+    "09 Algorithms/Hello-algo/02 复杂度分析.md",
+    "09 Algorithms/Hello-algo/01 初始算法.md",
+    "10 ChatGLM/本地部署ChatGLM3.md",
+    "11 ONNX/部署ONNX.md",
+    "12 OpenCV/C++/Notes/00 Introduction.md",
+    "12 OpenCV/C++/Notes/02 CHAPTER 2.md",
+    "12 OpenCV/C++/Notes/imgs/Image_blur.png",
+    "12 OpenCV/C++/Notes/imgs/Image_erode.png",
+    "12 OpenCV/C++/Notes/imgs/Image_dilate2.png",
+    "12 OpenCV/C++/Notes/imgs/Image_dilate1.png",
+    "12 OpenCV/C++/Notes/imgs/Image_canny.png",
+    "12 OpenCV/C++/Notes/imgs/Image_gray.png",
+    "12 OpenCV/C++/Notes/imgs/Image_show.png",
+    "12 OpenCV/C++/Notes/imgs",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2/src/M2.cpp",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2/src",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2/include/M2.h",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2/include",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2/CMakeLists.txt",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M2",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M1/src/M1.cpp",
+    "07 C and C++/CMake/Codes/CMake_I/modules/M1/src"
+  ]
+}

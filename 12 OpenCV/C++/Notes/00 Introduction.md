@@ -48,7 +48,10 @@
 	sudo make install
 ```
 
-`OpenCV` 模块会被安装在 
+`OpenCV` 模块会被安装在 `/usr/local/bin` 目录下，且都为 **动态库** 
+
+> [!attention] 
+> 在编译OpenCV之前 **不要安装 `anaconda` ，不要安装 `anaconda` ，不要安装 `anaconda` ！** 因为 `anaconda` 会将系统原本的一些 `python` 库 **屏蔽掉** ，导致编译出错
 
 ### 4. Check the Installation
 
@@ -80,4 +83,4 @@ Windows安装C++版OpenCV也需要从源码进行编译，但是用于编译的�
 
 ### 3. Add the Path to the Environment
 
-![[windows_env_path.png]]
+![](windows_env_path.png)

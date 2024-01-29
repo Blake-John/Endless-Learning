@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiCamera",
+      "SiStmicroelectronics",
       "SiOpencv",
       "RiProjectorLine",
-      "SiOnnx",
-      "SiChromatic",
-      "FasHouse"
+      "SiOnnx"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -40,5 +40,7 @@
   "10 ChatGLM": "SiChromatic",
   "11 ONNX": "SiOnnx",
   "Project": "RiProjectorLine",
-  "12 OpenCV": "SiOpencv"
+  "12 OpenCV": "SiOpencv",
+  "13 STM32": "SiStmicroelectronics",
+  "14 Camera": "LiCamera"
 }

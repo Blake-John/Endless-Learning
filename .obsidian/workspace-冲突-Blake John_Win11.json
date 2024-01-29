@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "7249b8e0e4572b8d",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f83fdfe69c5adf5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "34d3c2351de66854",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "12 OpenCV/C++/Notes/02 CHAPTER 2.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "82658460c30fe2ef",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1b9b515b48926e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "833431ade1f0fc76",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fedc637bc3862ce8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "66874e4047ea66fc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "b3ca12b1d16c17fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 Obsidian/7.搜索和查询.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 237.5
+  },
+  "right": {
+    "id": "5c0d6b931c5b5cd2",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c8530d940dea805",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e38f54127c0779ad",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "12 OpenCV/C++/Notes/02 CHAPTER 2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9a7b860b92013e02",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "12 OpenCV/C++/Notes/02 CHAPTER 2.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "13955fbf04be76ac",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fe8f170581af0c6b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "4729c975c48aaf77",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "12 OpenCV/C++/Notes/02 CHAPTER 2.md"
+              }
+            }
+          },
+          {
+            "id": "ba40dd82f8dbe6d7",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "audio-recorder:开始/结束录音": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-projects:Open projects": false,
+      "obsidian-memos:Memos": false
+    }
+  },
+  "active": "833431ade1f0fc76",
+  "lastOpenFiles": [
+    "12 OpenCV/C++/Notes/imgs/Image_dilate2.png",
+    "12 OpenCV/C++/Notes/imgs/Image_blur.png",
+    "12 OpenCV/C++/Notes/imgs/Image_erode.png",
+    "12 OpenCV/C++/Notes/imgs/Image_dilate1.png",
+    "12 OpenCV/C++/Notes/imgs/Image_canny.png",
+    "12 OpenCV/C++/Notes/imgs/Image_gray.png",
+    "12 OpenCV/C++/Notes/imgs/Image_show.png",
+    "07 C and C++/环境/Cpp环境配置及编译器使用.md",
+    "07 C and C++/C++/imgs/Pasted image 20231113124344.png.nssyncsc",
+    "07 C and C++/C++/imgs/Pasted image 20231113124247.png.nssyncsc",
+    "07 C and C++/C++/imgs/Pasted image 20231113124140.png.nssyncsc",
+    "07 C and C++/C++/imgs/Pasted image 20231113121805.png.nssyncsc",
+    "07 C and C++/C++/imgs/Pasted image 20231113124429.png.nssyncsc",
+    "12 OpenCV/C++/Notes/imgs/Image_dilate2.png.nssyncsc",
+    "12 OpenCV/C++/Notes/imgs/Image_blur.png.nssyncsc",
+    "12 OpenCV/C++/Notes/imgs/Image_erode.png.nssyncsc",
+    "12 OpenCV/C++/Notes/imgs/Image_dilate1.png.nssyncsc",
+    "12 OpenCV/C++/Notes/imgs/Image_canny.png.nssyncsc",
+    "12 OpenCV/C++/Notes/01 CHAPTER 1.md",
+    "12 OpenCV/C++/Notes/02 CHAPTER 2.md",
+    "12 OpenCV/C++/Notes/00 Introduction.md",
+    "12 OpenCV/C++/Notes/CMake of OpenCV.md",
+    "04 Git/Git.md",
+    "12 OpenCV/C++/Notes/imgs/windows_env_path.png",
+    "11 ONNX/ONNXRUNTIME.md",
+    "11 ONNX/模型部署通用流程.png",
+    "11 ONNX/部署ONNX.md",
+    "07 C and C++/CMake/CMake.md",
+    "07 C and C++/CMake/Codes/CMake_I/README.md",
+    "07 C and C++/CMake/Codes/CMake_I/CMake_I/README.md",
+    "07 C and C++/C++/01.Introduction.md",
+    "07 C and C++/CMake/imgs/cmake-gui设置缓存条目.png",
+    "07 C and C++/CMake/cmake -L 查看缓存条目.md",
+    "07 C and C++/CMake/imgs/cmake -L 查看缓存条目.png",
+    "07 C and C++/CMake/未命名.md",
+    "07 C and C++/C++/02.How C++ Work.md",
+    "07 C and C++/环境/Pasted image 20231230175240.png.md",
+    "10 ChatGLM/本地部署ChatGLM3.md",
+    "12 OpenCV/C++/未命名.md",
+    "05 SSH/1.SSH.md",
+    "00 Excalidraw/Drawing 2023-10-28 12.44.03.excalidraw.md",
+    "Project/11 OCR-Python.md",
+    "Project/Summary.md",
+    "00 HOME.md",
+    "01 Obsidian/7.搜索和查询.md",
+    "07 C and C++/C++/13.Class.md"
+  ]
+}

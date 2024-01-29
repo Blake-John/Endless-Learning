@@ -63,7 +63,7 @@
 
 假设我们有如下代码：
 
-![[src.png]]
+![src.png](src.png)
 
 ### 1.1.1 预处理 Pre-Processing
 
@@ -74,7 +74,7 @@
 - `-E` 选项指示编译器仅对输入文件进行 **[[02.How C++ Work#2.2.1 Preprocess Statement|预处理]]** 
 - 通过这一步生成的文件如下所示：
 
-![[preprocess.png]]
+![preprocess.png](preprocess.png)
 
 - 可以看到，在我们编写的代码中
 	1. `#include <iostream>` 变成了长达 28639 行的代码
@@ -90,7 +90,7 @@
 
 通过这一步生成的文件如下：
 
-![[compile.png]]
+![compile.png](compile.png)
 
 - 这个文件中的代码都是汇编语言
 
@@ -116,7 +116,7 @@
 
 - 这一步会将二进制文件编译成可执行文件，并且将需要的库进行 **[[02.How C++ Work#2.2.3 Link|链接]]** ，链接完成后我们可以执行该文件
 
-![[example_target.png]]
+![example_target.png](example_target.png)
 
 ## 1.2 重要编译参数
 
@@ -130,7 +130,7 @@
 
 - `-g` 选项会指示编译器产生能被 **GNU调试器GDB所使用的调试信息** 
 
-![[example_gdb.png]]
+![example_gdb.png](example_gdb.png)
 
 ### 1.2.2 `-O<n>`
 

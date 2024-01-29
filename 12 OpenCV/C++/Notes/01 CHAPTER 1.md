@@ -1,4 +1,3 @@
-> In this chapter, we are going to learn how to
 > Read the Images, Videos, and Get the Images from Webcams
 
 # 1.1 How to Import the Packages ?
@@ -56,9 +55,13 @@ In the code above :
 - `cv::watiKey ()` will **wait the particular $ms$ for the keys being press**
 - `27` is the **ASCII code of `esc`**
 
+Result : 
+
+![](Image_show.png)
+
 # 1.3 Read the Videos
 
-We will use the **`cv::VideoCapture` class** to declare a videocapture to read the video.But all the videos are **stored as a set of imgs** , so we need to **read every img** from the capture and **show them one by one** . That is, we will show the video **in a loop**
+We will use the **`cv::VideoCapture` class** to declare a videocapture to read the video.But all the videos are **stored as a set of imgs** , so we need to **read every img** from the capture and **show them frame by frame** . That is, we will show the video **in a loop**
 
 ```C++
 int main ()
@@ -86,6 +89,7 @@ In the codes above :
 - `cap.read (img);` will **get the img from the capture** 
 - `cv::waitKey (20)` : a video should have the fps
 
+
 # 1.4 Webcams
 
 We will also use the `cv::VideoCapture` class to deal with a camera. It is like the video, but we will **set the port of camera to the instance instead of the path** 
@@ -93,7 +97,7 @@ We will also use the `cv::VideoCapture` class to deal with a camera. It is like 
 ```C++
 int main ()
 {
-	cv::VideoCapture cap (0) // 0 is the port of the default camera
+	cv::VideoCapture cap (0); // 0 is the port of the default camera
 	cv::Mat img;
 
 	while (true)
@@ -110,6 +114,66 @@ int main ()
 ```
 
 
-# 1.5 The Detals of the Functions and Classes
+# 1.5 The Detals of the Functions
 
-All the images will be stored as a matrix whose shape is **height $\times$ weight** or **\[weight $\times$ height\]** 
+## 1.5.1 `cv::imread ()` 
+
+> **Loads an image from a file.**
+
+ **Function Declaration :**
+ - **cv::Mat cv::imread \(const cv::String &filename, int flags = 1\)**
+
+**Parameters :** 
+- `filename` – Name of file to be loaded.  
+- `flags` – Flag that can take values of cv::ImreadModes
+
+```ad-tip
+The function determines the type of an image by the content, not by the file extension.
+
+In the case of color images, the decoded images will have the channels stored in **B G R** order.
+
+When using IMREAD_GRAYSCALE, the codec's internal grayscale conversion will be used, if available. Results may differ to the output of cvtColor() - On Microsoft Windows
+```
+
+## 1.5.2 `cv::imshow ()` 
+
+> Displays an image **in the specified window**.
+> 
+> If the window was created with the **cv::WINDOW_AUTOSIZE** flag, the image is shown with its **original size** , however it is still limited by the screen resolution. 
+> 
+> **Otherwise, the image is scaled to fit the window** . The function may scale the image, depending on its depth: 
+> - If the image is 8-bit unsigned, it is displayed as is. 
+> - If the image is 16-bit unsigned, the pixels are divided by 256. That is, the value range \[0,255\)
+> 
+> And, the windows are **distinguished only by their name** , so if two imgs are shown in the same name windows, **the former one will be covered** .
+
+**Function Declaration :** 
+- **void cv::imshow \(const cv::String &winname, cv::InputArray mat\)**
+
+**Parameters :**
+- `winname` – Name of the window.  
+- `mat` – Image to be shown.
+
+```ad-tip
+This function should be followed by a call to `cv::waitKey` or `cv::pollKey` to perform GUI housekeeping tasks that are necessary to actually show the given image and **make the window respond to mouse and keyboard events**.
+
+Otherwise, it **won't display the image and the window might lock up** .
+
+For example, **waitKey(0)** will display the window **infinitely** until any keypress (it is suitable for image display). **waitKey(25)** will display a frame and wait approximately 25 ms for a key press (suitable for displaying a video **frame-by-frame** ). To remove the window, use `cv::destroyWindow`.
+```
+
+## 1.5.3 `cv::waitKey ()` 
+
+> **Waits for a pressed key** .
+
+**Function Declaration :**
+- **int cv::waitKey (int delay = 0)**
+
+**Parameters :**
+- `delay` – Delay in **milliseconds $ms$**. **0** is the special value that means "**forever**".
+
+```ad-tip
+The functions `waitKey` and `pollKey` are the **only methods in HighGUI** that can **fetch and handle GUI events** , so one of them needs to be called periodically for normal event processing unless HighGUI is used within an environment that takes care of event processing.  
+
+The function **only works if there is at least one HighGUI window** created and the window is active. If there are several HighGUI windows, any of them can be active.
+```

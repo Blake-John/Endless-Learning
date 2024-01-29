@@ -4,5 +4,8 @@
   "strictLineBreaks": false,
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "./imgs",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "showLineNumber": false,
+  "spellcheck": false,
+  "useMarkdownLinks": true
 }

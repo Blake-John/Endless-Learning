@@ -8,10 +8,11 @@
   "obsidian-tasks-plugin",
   "obsidian-minimal-settings",
   "obsidian-excalidraw-plugin",
-  "table-editor-obsidian",
   "obsidian-style-settings",
   "obsidian-icon-folder",
   "obsidian-admonition",
   "obsidian-projects",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-regex-pipeline",
+  "obsidian-regex-replace"
 ]
