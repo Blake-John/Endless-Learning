@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07 C and C++/串口通信.md",
+                "file": "03 Linux/0.安装Linux.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "07 C and C++/串口通信.md",
+                "file": "03 Linux/0.安装Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "07 C and C++/串口通信.md",
+                "file": "03 Linux/0.安装Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "07 C and C++/串口通信.md"
+                "file": "03 Linux/0.安装Linux.md"
               }
             }
           }
@@ -175,11 +175,11 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "833431ade1f0fc76",
+  "active": "7afa3c714a177286",
   "lastOpenFiles": [
+    "07 C and C++/串口通信.md",
     "13 STM32/09 串口通信.md",
     "04 Git/Git.md",
-    "07 C and C++/串口通信.md",
     "13 STM32/imgs/接收文本数据包状态图.png",
     "13 STM32/imgs/接收Hex数据包状态图.png",
     "13 STM32/未命名.md",
