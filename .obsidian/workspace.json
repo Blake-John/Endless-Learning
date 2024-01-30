@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Linux/0.安装Linux.md",
+                "file": "07 C and C++/串口通信.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5
+    "width": 237.5,
+    "collapsed": true
   },
   "right": {
     "id": "5c0d6b931c5b5cd2",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03 Linux/0.安装Linux.md",
+                "file": "07 C and C++/串口通信.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03 Linux/0.安装Linux.md",
+                "file": "07 C and C++/串口通信.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Linux/0.安装Linux.md"
+                "file": "07 C and C++/串口通信.md"
               }
             }
           }
@@ -177,8 +178,9 @@
   },
   "active": "7afa3c714a177286",
   "lastOpenFiles": [
-    "07 C and C++/串口通信.md",
     "13 STM32/09 串口通信.md",
+    "07 C and C++/串口通信.md",
+    "03 Linux/0.安装Linux.md",
     "04 Git/Git.md",
     "13 STM32/imgs/接收文本数据包状态图.png",
     "13 STM32/imgs/接收Hex数据包状态图.png",
@@ -218,7 +220,6 @@
     "12 OpenCV/C++/Notes/03 CHAPTER 3.md",
     "12 OpenCV/C++/Notes/06 CHAPTER 6.md",
     "12 OpenCV/C++/Notes/02 CHAPTER 2.md",
-    "03 Linux/0.安装Linux.md",
     "03 Linux/4.显卡管理.md",
     "07 C and C++/C++/imgs/13.ClassImgs",
     "07 C and C++/C++/imgs/14.StringImgs",
