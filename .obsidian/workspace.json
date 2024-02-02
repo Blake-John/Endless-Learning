@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "23453eec83044c5b",
+        "id": "572e6ead9176e032",
         "type": "tabs",
         "children": [
           {
-            "id": "7afa3c714a177286",
+            "id": "eb28bb6a1915cc17",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03 Linux/Arch/Hyprland/04 waybar.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5,
-    "collapsed": true
+    "width": 237.5
   },
   "right": {
     "id": "5c0d6b931c5b5cd2",
@@ -100,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03 Linux/Arch/Hyprland/04 waybar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03 Linux/Arch/Hyprland/04 waybar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Linux/Arch/Hyprland/04 waybar.md"
+                "file": "12 OpenCV/Python/00 OpenCV简介.md"
               }
             }
           }
@@ -176,22 +168,25 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "7afa3c714a177286",
+  "active": "833431ade1f0fc76",
   "lastOpenFiles": [
-    "03 Linux/Arch/Hyprland/imgs/Interactive CSS Editor.png",
-    "03 Linux/Arch/Hyprland/04 waybar.md",
-    "03 Linux/Arch/Hyprland/imgs",
+    "12 OpenCV/C++/Notes/06 CHAPTER 6.md",
+    "12 OpenCV/Python/00 OpenCV简介.md",
+    "12 OpenCV/Python",
+    "03 Linux/Arch/03 基本使用.md",
+    "03 Linux/Arch/02 桌面环境.md",
+    "03 Linux/Arch/01 安装.md",
     "03 Linux/Arch/Hyprland/05 组件.md",
+    "03 Linux/Arch/Hyprland/01 安装Hyprland.md",
+    "03 Linux/Arch/Hyprland/04 waybar.md",
+    "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
+    "03 Linux/Arch/Hyprland/imgs/Interactive CSS Editor.png",
+    "03 Linux/Arch/Hyprland/imgs",
     "03 Linux/Arch/Hyprland/03 终端.md",
     "03 Linux/Arch/Hyprland/04 软件启动.md",
     "03 Linux/Arch/Hyprland/07 ranger.md",
     "03 Linux/Arch/Hyprland/05 Nvim.md",
-    "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
-    "03 Linux/Arch/Hyprland/01 安装Hyprland.md",
-    "03 Linux/Arch/03 基本使用.md",
     "03 Linux/Arch/Hyprland",
-    "03 Linux/Arch/02 桌面环境.md",
-    "03 Linux/Arch/01 安装.md",
     "03 Linux/Ubuntu/1.基本使用手册.md",
     "03 Linux/Arch",
     "03 Linux/Ubuntu/0.安装Linux.md",
@@ -211,7 +206,6 @@
     "00 Excalidraw/Drawing 2024-01-24 14.42.20.excalidraw.md",
     "05 SSH/1.SSH.md",
     "05 SSH/2.SSH-连接Windows.md",
-    "13 STM32/imgs/配置USART基本思路.md",
     "13 STM32/imgs/数据采样.png",
     "13 STM32/imgs/输入采样示意图.png",
     "未命名.canvas",
@@ -222,7 +216,6 @@
     "13 STM32/imgs",
     "14 Camera/imgs/RGBW.png",
     "14 Camera/imgs",
-    "14 Camera",
-    "13 STM32"
+    "14 Camera"
   ]
 }
