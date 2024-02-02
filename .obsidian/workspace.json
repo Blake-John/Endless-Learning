@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "572e6ead9176e032",
+        "id": "9fe448877cc0c250",
         "type": "tabs",
         "children": [
           {
-            "id": "eb28bb6a1915cc17",
+            "id": "0447c01f56853d8b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "12 OpenCV/Python/02 几何变换.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -78,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5
+    "width": 237.5,
+    "collapsed": true
   },
   "right": {
     "id": "5c0d6b931c5b5cd2",
@@ -94,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "12 OpenCV/Python/02 几何变换.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "12 OpenCV/Python/02 几何变换.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "12 OpenCV/Python/00 OpenCV简介.md"
+                "file": "12 OpenCV/Python/02 几何变换.md"
               }
             }
           }
@@ -168,8 +176,25 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "833431ade1f0fc76",
+  "active": "0447c01f56853d8b",
   "lastOpenFiles": [
+    "01 Obsidian/7.搜索和查询.md",
+    "12 OpenCV/Python/imgs/仿射变换.md",
+    "12 OpenCV/Python/02 几何变换.md",
+    "12 OpenCV/Python/imgs/AfterAffine.png",
+    "12 OpenCV/Python/imgs/BeforeTransformation.png",
+    "12 OpenCV/Python/imgs/AfterRotation.png",
+    "12 OpenCV/Python/imgs/KeepOrigin.md",
+    "12 OpenCV/Python/imgs/KeepWhole.md",
+    "12 OpenCV/Python/imgs/坐标变换1.md",
+    "12 OpenCV/Python/imgs/平移变换.png",
+    "12 OpenCV/Python/01 OpenCV 基本操作.md",
+    "12 OpenCV/Python/00 OpenCV 简介.md",
+    "12 OpenCV/Python/imgs/opencv模块.png",
+    "12 OpenCV/Python/imgs/第一幅数字图像.png",
+    "12 OpenCV/Python/imgs",
+    "07 C and C++/串口通信.md",
+    "03 Linux/Arch/Hyprland/04 waybar.md",
     "12 OpenCV/C++/Notes/06 CHAPTER 6.md",
     "12 OpenCV/Python/00 OpenCV简介.md",
     "12 OpenCV/Python",
@@ -178,7 +203,6 @@
     "03 Linux/Arch/01 安装.md",
     "03 Linux/Arch/Hyprland/05 组件.md",
     "03 Linux/Arch/Hyprland/01 安装Hyprland.md",
-    "03 Linux/Arch/Hyprland/04 waybar.md",
     "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
     "03 Linux/Arch/Hyprland/imgs/Interactive CSS Editor.png",
     "03 Linux/Arch/Hyprland/imgs",
@@ -193,29 +217,13 @@
     "03 Linux/Ubuntu/4.显卡管理.md",
     "03 Linux/Ubuntu/Ubuntu 20.04 美化.md",
     "03 Linux/Ubuntu",
-    "03 Linux/Ubuntu/2.软件的安装与管理.md",
-    "03 Linux/Ubuntu/3.文件编辑.md",
-    "07 C and C++/串口通信.md",
-    "13 STM32/09 串口通信.md",
-    "04 Git/Git.md",
     "13 STM32/imgs/接收文本数据包状态图.png",
     "13 STM32/imgs/接收Hex数据包状态图.png",
-    "13 STM32/未命名.md",
     "13 STM32/imgs/可变包长.png",
-    "13 STM32/imgs/固定包长.png",
-    "00 Excalidraw/Drawing 2024-01-24 14.42.20.excalidraw.md",
-    "05 SSH/1.SSH.md",
-    "05 SSH/2.SSH-连接Windows.md",
-    "13 STM32/imgs/数据采样.png",
-    "13 STM32/imgs/输入采样示意图.png",
     "未命名.canvas",
     "00 Excalidraw/流控结构.md.nssyncsc",
     "imgs",
-    "13 STM32/imgs/数据帧1.png",
-    "13 STM32/imgs/数据帧2.png",
     "13 STM32/imgs",
-    "14 Camera/imgs/RGBW.png",
-    "14 Camera/imgs",
-    "14 Camera"
+    "14 Camera/imgs"
   ]
 }
