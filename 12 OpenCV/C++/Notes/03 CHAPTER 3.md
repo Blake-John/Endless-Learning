@@ -26,9 +26,9 @@ int main ()
 
 Result : 
 - Resize1 : 
-	- ![](Resize1.png)
+	- ![](./imgs/Resize1.png)
 - Resize2 : 
-	- ![](Resize2.png)
+	- ![](./imgs/Resize2.png)
 
 ## 3.1.2 `cv::resize ()` 
 
@@ -69,7 +69,7 @@ int main ()
 
 Result : 
 
-![](imgCrop.png)
+![](./imgs/imgCrop.png)
 
 ## 3.2.2 `()` 
 
@@ -145,8 +145,8 @@ We can use `cv::Mat img;` to create an instance.
 
 The code : 
 
-![](Mat_example_code.png)
+![](./imgs/Mat_example_code.png)
 
 The result :
 
-![](Mat_example_result.png)
+![](./imgs/Mat_example_result.png)

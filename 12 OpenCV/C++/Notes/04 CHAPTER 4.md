@@ -25,7 +25,7 @@ int main ()
 
 Result : 
 
-![](create_img.png)
+![](./imgs/create_img.png)
 
 
 ## 4.1.2 `cv::Mat img ()` 
@@ -58,7 +58,7 @@ int main ()
 
 Result : 
 
-![](line.png)
+![](./imgs/line.png)
 
 ## 4.2.2 `cv::line ()` 
 
@@ -102,7 +102,7 @@ int main ()
 
 Result : 
 
-![](rectangle.png)
+![](./imgs/rectangle.png)
 
 ## 4.3.2 `cv::rectangle ()` 
 
@@ -151,7 +151,7 @@ int main ()
 
 Result : 
 
-![](circle.png)
+![](./imgs/circle.png)
 
 ## 4.4.2 `cv::circle ()` 
 
@@ -202,7 +202,7 @@ int main ()
 
 Result : 
 
-![](putText.png)
+![](./imgs/putText.png)
 
 ## 4.5.2 `cv::putText ()` 
 

@@ -21,7 +21,8 @@ pip install jupyter
 2. Or through [Anaconda](https://docs.anaconda.com/anaconda/install/) that conveniently installs Python, Jupyter Notebook, Orange, and other commonly used tools for data science. To do it with Anaconda, please, follow these steps:
     
     - Download and install Anaconda, following the instructions on the download page.
-    - Run it. You will see this page:![Anaconda screenshot](AnacondaShow.png)
+    - Run it. You will see this page:
+    > ![Anaconda screenshot](./imgs/AnacondaShow.png)
     - Find Jupyter Notebook and install it.
     - Off we go!
 
@@ -31,11 +32,11 @@ pip install jupyter
 
 If you used `pip`, type `jupyter notebook` in the Terminal or in the Command prompt. If you installed it with Anaconda, click on the program shortcut. You will see the following lines.
 
-![](jupyter_start.png)
+![](./imgs/jupyter_start.png)
 
 It creates a local web server, and after that, all you need to do is copy and paste the URL to your browser to access the app. You will see the main page and start it **from the working directory** .
 
-![](jupyter_mainpage.png)
+![](./imgs/jupyter_mainpage.png)
 
 To create a new notebook, select `'New' > 'Python 3'`. You can find the _'New'_ button in the upper-right part of the page. Under the _'Notebook'_ tab, you can see available **kernels**.
 
@@ -47,7 +48,7 @@ This kernel is a part of the global **IPython** kernel. IPython (Interactive P
 
 Let's take a look at the Jupyter Notebook interface. In this case, a **notebook** is a document that contains **pieces of code** as well as various text elements (paragraphs, links, and so on).
 
-![](jupyter_interface.png)
+![](./imgs/jupyter_interface.png)
 
 We highlighted the main parts of the interface. Let's have a closer look at them.
 
@@ -75,19 +76,19 @@ We highlighted the main parts of the interface. Let's have a closer look at them
 
 Let's discuss the programming pipeline in more detail. Suppose, we need to write a basic calculator and sum up two integers. Below is an example of this program (screenshots were cropped for readability purposes) :
 
-![](jupyter_example.png)
+![](./imgs/jupyter_example.png)
 
 The results are printed right after the cell. Of course, you can write everything in one cell as well.
 
 By the way, have you noticed **the numbers in the square brackets** to the left of the cells? They **show the order in which the cells were executed**. This order is pivotal in Jupyter Notebook. Let's say you run the middle cell first. What is going to happen in this case?
 
-![](jupyter_example_error.png)
+![](./imgs/jupyter_example_error.png)
 
 It will produce an error since we haven't set our variables! Please, **pay attention to the execution order**.
 
 We can also **install libraries with Jupyter Notebook**. You can **execute terminal commands** directly in your Jupyter Notebook. To do so, put an exclamation mark `!` at the beginning of the command. This will tell the app that it is not a Python command. Wonderful, isn't it?
 
-![](jupyter_example_pip.png)
+![](./imgs/jupyter_example_pip.png)
 
 > [!attention] 
 > We **can't choose the virtual environment if we use the web server of the jupyter** !

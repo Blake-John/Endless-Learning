@@ -58,7 +58,7 @@ pip3 install opencv-python
 在第一次世界大战后，1921年美国科学家发明了BartlaneSystem，并从伦敦传到纽约传输了第一幅数字图像，其 **亮度用离散数值表示**，将图片编码成5个灰度级，在发送端图片被编码并使用打孔带记录，通过系统传输后在接收方使用特殊的打印机恢复成图像。
 
 > 第一幅数字图像
-> ![](第一幅数字图像.png)
+> ![](./imgs/第一幅数字图像.png)
 
 1950年左右，计算机发明，数字图像处理学科正式诞生。
 
@@ -86,7 +86,7 @@ pip3 install opencv-python
 
 # 04 OpenCV 基本模块
 
-![](opencv模块.png)
+![](./imgs/opencv模块.png)
 
 其中 `core` ， `highgui` ， `imgproc` 是最基础的模块：
 

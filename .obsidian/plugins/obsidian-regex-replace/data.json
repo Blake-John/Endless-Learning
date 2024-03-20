@@ -1,6 +1,6 @@
 {
-  "findText": ".png\\]\\]",
-  "replaceText": ".png)",
+  "findText": "\\!\\[(.*)\\]\\((.*)\\)",
+  "replaceText": "![](./imgs/$2)",
   "useRegEx": true,
   "selOnly": false,
   "caseInsensitive": false,

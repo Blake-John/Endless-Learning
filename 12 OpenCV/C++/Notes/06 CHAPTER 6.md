@@ -4,7 +4,7 @@ In this chapter, we are going to warp the img to get the normal perspective of t
 
 We will find out all the card bellow and warp them : 
 
-![](cards.jpg)
+![](./imgs/cards.jpg)
 
 # 6.0 Pipline
 

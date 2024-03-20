@@ -25,7 +25,7 @@ int main ()
 
 Result : 
 
-![](Image_gray.png)
+![](./imgs/Image_gray.png)
 
 ## 2.1.2 `cvtColor ()`
 

@@ -57,7 +57,7 @@ In the code above :
 
 Result : 
 
-![](Image_show.png)
+![](./imgs/Image_show.png)
 
 # 1.3 Read the Videos
 

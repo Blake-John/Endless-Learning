@@ -83,4 +83,4 @@ Windows安装C++版OpenCV也需要从源码进行编译，但是用于编译的�
 
 ### 3. Add the Path to the Environment
 
-![](windows_env_path.png)
+![](./imgs/windows_env_path.png)

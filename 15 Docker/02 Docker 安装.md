@@ -2,7 +2,7 @@
 
 Docker 的基本结构如下 : 
 
-![](DockerStruct.png)
+![](./imgs/DockerStruct.png)
 
 ## 1.1 镜像 image : 
 
@@ -64,7 +64,7 @@ docker version
 # show the detailed informations
 ```
 
-![](CheckInstallation.png)
+![](./imgs/CheckInstallation.png)
 
 To enable Docker Desktop to start on sign in, from the Docker menu, select **Settings** > **General** > **Start Docker Desktop when you sign in to your computer**.
 
@@ -80,7 +80,7 @@ systemctl --user stop docker-desktop
 docker run hello-world
 ```
  
- ![](TestRun.png)
+ ![](./imgs/TestRun.png)
 
 We can also check the image we have pulled from the repository by : 
 
@@ -88,7 +88,7 @@ We can also check the image we have pulled from the repository by :
 docker images
 ```
 
-![](CheckImages.png)
+![](./imgs/CheckImages.png)
 
 # 3 Uninstall
 

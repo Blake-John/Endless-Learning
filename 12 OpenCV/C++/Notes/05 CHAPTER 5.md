@@ -44,7 +44,7 @@ int main ()
 
 Result : 
 
-![](HSV.png)
+![](./imgs/HSV.png)
 
 # 5.2 Color Range
 
@@ -79,5 +79,5 @@ int main ()
 
 Result : 
 
-![](inRange.png)
+![](./imgs/inRange.png)
 

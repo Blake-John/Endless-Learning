@@ -6,9 +6,9 @@
 
 ## 0.2 How do the CMake work ?
 
-![CMake工作.png](CMake工作.png)
+![](./imgs/CMake工作.png)
 
-![添加项目的操作.png](添加项目的操作.png)
+![](./imgs/添加项目的操作.png)
 
 ## 0.3 语法特性
 
@@ -17,7 +17,7 @@
 	- 参数之间用 `空格` 或 `;` 分开
 
 ```CMake
-	<command> (<parameter1> <parameter2> ...)
+<command> (<parameter1> <parameter2> ...)
 ```
 
 2. 特色：
@@ -25,13 +25,13 @@
 	- **参数** 和 **变量** 是 **大小写相关的** 
 
 ```CMake
-	set (HELLO hello.cpp)
-	set (hello main.cpp)
-	# HELLO 和 hello 的内容不一
+set (HELLO hello.cpp)
+set (hello main.cpp)
+# HELLO 和 hello 的内容不一
 
-	add_executable (main main.cpp)
-	ADD_EXECUTABLE (main main.cpp)
-	# 指令一样
+add_executable (main main.cpp)
+ADD_EXECUTABLE (main main.cpp)
+# 指令一样
 ```
 
 3. 特殊：
@@ -45,9 +45,9 @@
 假设我们现在有这样一个只含有一个源文件的项目
 
 ```
-	program
-		├── main.cpp
-		└── main_g++
+program
+	├── main.cpp
+	└── main_g++
 ```
 
 ### 1.1.1 CMake文件
@@ -57,9 +57,9 @@
 对于这个项目，我们需要在 `CMakeLists.txt` 文件中写入：
 
 ```CMake
-	cmake_minimum_required (VERSION 3.10)
-	project (HELLO_CMAKE)
-	add_executable (main main.cpp)
+cmake_minimum_required (VERSION 3.10)
+project (HELLO_CMAKE)
+add_executable (main main.cpp)
 ```
 
 ### 1.1.2 编译命令
@@ -67,10 +67,10 @@
 编辑完 `CMakeLists.txt` ，我们便需要对该项目进行编译信息的生成，对项目进行编译，我们可以在命令行中输入以下指令：
 
 ```bash
-	mkdir build
-	cd build
-	cmake ..
-	make -j10
+mkdir build
+cd build
+cmake ..
+make -j10
 ```
 
 ### 1.1.3 编译结果
@@ -78,16 +78,16 @@
 在经过上述的操作后，我们会获得一个 **可执行文件** ，该可执行文件位于 `build` 目录下，调用该文件就可以运行我们编写的 C++ 代码
 
 ```
-	program
-		├── build
-		│   ├── CMakeCache.txt
-		│   ├── CMakeFiles/
-		│   ├── cmake_install.cmake
-		│   ├── main (目标可执行文件，是由我们代码生成的可执行文件)
-		│   └── Makefile (生成的用于 make 编译项目的 Makefile)
-		├── CMakeLists.txt (我们编写的 CMakeLists.txt 文件)
-		├── main.cpp
-		└── main_g++
+program
+	├── build
+	│   ├── CMakeCache.txt
+	│   ├── CMakeFiles/
+	│   ├── cmake_install.cmake
+	│   ├── main (目标可执行文件，是由我们代码生成的可执行文件)
+	│   └── Makefile (生成的用于 make 编译项目的 Makefile)
+	├── CMakeLists.txt (我们编写的 CMakeLists.txt 文件)
+	├── main.cpp
+	└── main_g++
 ```
 
 ## 1.2 讲解
@@ -124,47 +124,47 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 最小的CMake工程由单一源文件组成，简单的CMake工程由多个简单的源文件组成，并且这些源文件存放于同一目录下。这时，我们只需要一个 `CMakeLists.txt` 来进行工程的编译，这种工程的目录一般为：
 
 ```
-	project
-		|__ build
-		|__ main.cpp
-		|__ CMakeLists.txt
+project
+	|__ build
+	|__ main.cpp
+	|__ CMakeLists.txt
 ```
 
 或者是
 
 ```
-	project
-		|__ build
-		|__ main.cpp
-		|__ mylib.cpp
-		|__ CMakeLists.txt
+project
+	|__ build
+	|__ main.cpp
+	|__ mylib.cpp
+	|__ CMakeLists.txt
 ```
 
 这个时候，我们只需要将 `main.cpp` 和 `mylib.cpp` 一起生成可执行文件即可，其 `CMakeLists.txt` 如下：
 
 ```CMake
-	cmake_minimum_required (VERSION 3.10)
-	project (TEST)
-	add_executable (main main.cpp mylib.cpp)
+cmake_minimum_required (VERSION 3.10)
+project (TEST)
+add_executable (main main.cpp mylib.cpp)
 ```
 
 2. 复杂的目录结构：
 对于一些比较复杂的项目，可能会包含许多 **头文件** ， **源文件** ，和一些 **依赖库** 。此时，我们就需要更为复杂的 `CMakeLists.txt` 进行编译信息的生成。这种项目的特点便是 **实现不同功能的代码分门别类，分别存放于不同文件夹下** ，如：
 
 ```
-	CMakeI
-		├── CMakeLists.txt
-		├── common
-		│   ├── CMakeLists.txt
-		│   ├── kalman
-		│   └── math
-		├── main.cpp
-		├── modules
-		│   ├── A1
-		│   ├── A2
-		│   ├── M1
-		│   └── M2
-		└── README.md
+CMakeI
+	├── CMakeLists.txt
+	├── common
+	│   ├── CMakeLists.txt
+	│   ├── kalman
+	│   └── math
+	├── main.cpp
+	├── modules
+	│   ├── A1
+	│   ├── A2
+	│   ├── M1
+	│   └── M2
+	└── README.md
 
 ```
 
@@ -204,23 +204,23 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 若习惯将目标可执行文件的名称设置为项目的名称，则可以：
 
 ```CMake
-	add_executable (${PROJECT_NAME} main.cpp)
+add_executable (${PROJECT_NAME} main.cpp)
 ```
 
 若由多个源文件生成一个可执行文件，则可以：
 
 ```CMake
-	set (SRC_LIST a.cpp b.cpp c.cpp)
-	add_executable (${PROJECT_NAME} ${SRC_LIST})
+set (SRC_LIST a.cpp b.cpp c.cpp)
+add_executable (${PROJECT_NAME} ${SRC_LIST})
 ```
 
 若源文件分多个文件存放，则可以通过 `aux_source_directory ()` 来获取一个目录下的所有文件，并存储于变量中
 
 ```CMake
-	aux_source_directory (<dir> <variable_name>)
-	
-	aux_source_directory (/mylib SRC_LIST)
-	add_executable (${PROJECT_NAME} main.cpp ${SRC_LIST})
+aux_source_directory (<dir> <variable_name>)
+
+aux_source_directory (/mylib SRC_LIST)
+add_executable (${PROJECT_NAME} main.cpp ${SRC_LIST})
 ```
 
 ## 3.2 指定 C++版本
@@ -228,8 +228,8 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 我们在编写的时候可以指定 C++ 的编译版本。注意，从 GCC/G++ 6.1 开始，当不指定任何 C++ 版本标准时，默认版本为 c++14
 
 ```CMake
-	set (CMAKE_CXX_STANDARD 11)
-	set (CMAKE_CXX_STANDARD_REQUIRED TRUE)
+set (CMAKE_CXX_STANDARD 11)
+set (CMAKE_CXX_STANDARD_REQUIRED TRUE)
 ```
 
 ## 3.3 添加库
@@ -248,22 +248,22 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 假设我们有这样一个项目：
 
 ```CMake
-	HELLO_WORLD
-		|__ CMakeLists.txt
-		|__ MathFunctions
-		|	|__ CMakeLists.txt
-		|	|__ include
-		|		|__ mathfunc.h
-		|	|__src
-		|		|__ mathfunc.cpp
-		|__ main.cpp
+HELLO_WORLD
+	|__ CMakeLists.txt
+	|__ MathFunctions
+	|	|__ CMakeLists.txt
+	|	|__ include
+	|		|__ mathfunc.h
+	|	|__src
+	|		|__ mathfunc.cpp
+	|__ main.cpp
 ```
 
 则在 `HELLO_WORLD/MathFunctions/CMakeLists.txt` 中应该写入：
 
 ```CMake
-	add_library (mathfunc ./src/mathfunc.cpp)
-	target_include_directories (mathfunc PUBLIC ./include)
+add_library (mathfunc ./src/mathfunc.cpp)
+target_include_directories (mathfunc PUBLIC ./include)
 ```
 
 - `add_library` 设置以 `mathfunc.cpp` 文件生成名为 `mathfunc` 的 **静态库** 
@@ -278,7 +278,7 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 当我们在子模块中的 `CMakeLists.txt` 中编写好库的生成规则时，还需要将子模块添加到整个项目中，这样构建项目的时候才能根据子模块中的 `CMakeLists.txt` 文件对子模块进行构建。我们应该在 `HELLO_WORLD/CMakeLists.txt` 中写到：
 
 ```CMake
-	add_subdirectory (MathFunctions)
+add_subdirectory (MathFunctions)
 ```
 
 这样，子模块 `MathFunctions` 就会在构建整个项目的时候被找到并进行构建
@@ -292,19 +292,19 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 当库文件链接头文件时选择的是 `PRIVATE` 属性，表示该链接是 **私有于该目标的属性** ，其他目标在链接当前目标的时候， **无法访问该属性** ，这时我们需要包含这些头文件，才能在主函数中调用该库：
 
 ```CMake
-	# HELLO_WORLD/MathFunctions/CMakeLists.txt
-	add_library (mathfunc ./src/mathfunc.cpp)
-	target_include_directories (mathfunc PRIVATE ./include)
+# HELLO_WORLD/MathFunctions/CMakeLists.txt
+add_library (mathfunc ./src/mathfunc.cpp)
+target_include_directories (mathfunc PRIVATE ./include)
 
-	# HELLO_WORLD/CMakeLists.txt
-	cmake_minimum_required (VERSION 3.10)
-	project (HELLO_WORLD)
+# HELLO_WORLD/CMakeLists.txt
+cmake_minimum_required (VERSION 3.10)
+project (HELLO_WORLD)
 
-	add_subdirectory (MathFunctions)
+add_subdirectory (MathFunctions)
 
-	add_executable (main main.cpp)
-	target_include_directories (main PRIVATE ./MathFunctions/include)
-	target_link_libraries (main mathfunc)
+add_executable (main main.cpp)
+target_include_directories (main PRIVATE ./MathFunctions/include)
+target_link_libraries (main mathfunc)
 ```
 
 #### 2. `PUBLIC` 链接
@@ -312,18 +312,18 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 当库文件链接头文件时选择的是 `PUBLIC` 属性，表示该链接是 **该目标的公有属性** ，其他目标在链接当前目标的时候，当前目标会共享该属性，即其他目标 **能够直接访问该目标所绑定的头文件** ：
 
 ```CMake
-	# HELLO_WORLD/MathFunctions/CMakeLists.txt
-	add_library (mathfunc ./src/mathfunc.cpp)
-	target_include_directories (mathfunc PUBLIC ./include)
+# HELLO_WORLD/MathFunctions/CMakeLists.txt
+add_library (mathfunc ./src/mathfunc.cpp)
+target_include_directories (mathfunc PUBLIC ./include)
 
-	# HELLO_WORLD/CMakeLists.txt
-	cmake_minimum_required (VERSION 3.10)
-	project (HELLO_WORLD)
+# HELLO_WORLD/CMakeLists.txt
+cmake_minimum_required (VERSION 3.10)
+project (HELLO_WORLD)
 
-	add_subdirectory (MathFunctions)
+add_subdirectory (MathFunctions)
 
-	add_executable (main main.cpp)
-	target_link_library (main mathfunc)
+add_executable (main main.cpp)
+target_link_library (main mathfunc)
 ```
 
 ## 3.4 编译
@@ -331,17 +331,17 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 在一般编译中，我们选择在项目的根目录下新建 `build` 文件夹用于存放编译信息和编译产物，项目 `HELLO_WORLD` 的 `build` 目录为：
 
 ```
-	build
-		├── CMakeCache.txt
-		├── CMakeFiles/
+build
+	├── CMakeCache.txt
+	├── CMakeFiles/
+	├── cmake_install.cmake
+	├── main*
+	├── Makefile
+	└── MathFunctions/
+		├── CMakeFiles
 		├── cmake_install.cmake
-		├── main*
-		├── Makefile
-		└── MathFunctions/
-			├── CMakeFiles
-			├── cmake_install.cmake
-			├── libmathfunc.a
-			└── Makefile
+		├── libmathfunc.a
+		└── Makefile
 ```
 
 - `CMakeCache.txt` 为存放缓存变量，编译信息的文件 
@@ -370,10 +370,10 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 >  `子模块` ：通过 `include` 找到的 `.cmake` 文件或者通过 `add_subdirectory ()` 找到的包含 `CMakeLists.txt` 的目录
 
 ```CMake
-	set (A "a") # 将 A 的值设置为 "a"
-	set (B ${A} "b") # 将 B 的值设置为 "a", "b"
+set (A "a") # 将 A 的值设置为 "a"
+set (B ${A} "b") # 将 B 的值设置为 "a", "b"
 
-	unset (A) # 解除变量 A 的定义
+unset (A) # 解除变量 A 的定义
 ```
 
 ### 4.1.2 缓存变量
@@ -393,8 +393,8 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 `CMAKE_C_FLAGS` 是 C 文件编译选项，而 `CMAKE_CXX_FLAGS` 是 C++ 文件编译选项。一般情况下， **这两项没有默认值** ，但是我们设置的值会 **作为附加参数追加在编译命令之后** 
 
 ```CMake
-	set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-	# 在 CMAKE_CXX_FLAGS 后追加 -std=c++11 选项
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+# 在 CMAKE_CXX_FLAGS 后追加 -std=c++11 选项
 ```
 
 > 在上面的代码中，为了保证默认编译选项保持不变，能够正常执行编译命令，我们设置其值的时候调用它本身 `${CMAKE_CXX_FLAGS}` 来赋值，并加上我们想要的选项 `-std=c++11` 。这个可以理解为 `a += 1`
@@ -406,11 +406,11 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 - 发布时需要选择 Release
 
 ```CMake
-	set (CMAKE_BUILD_TYPE Debug)
-	# 设置编译类型为 Debug
+set (CMAKE_BUILD_TYPE Debug)
+# 设置编译类型为 Debug
 
-	set (CMAKE_BUILD_TYPE Release)
-	# 设置编译类型为 Release
+set (CMAKE_BUILD_TYPE Release)
+# 设置编译类型为 Release
 ```
 
 3. `CMAKE_CXX_STANDARD` 和 `CMAKE_CXX_STANDARD_REQUIRED`
@@ -418,10 +418,10 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 其中， `CMAKE_CXX_STANDARD` 用于指定 C++ 编译版本， `CMAKE_CXX_STANDARD_REQUIRED` 则用于选择是否使用指定版本
 
 ```CMake
-	set (CMAKE_CXX_STANDARD 11)
-	# 设置 C++ 编译版本为 c++11
+set (CMAKE_CXX_STANDARD 11)
+# 设置 C++ 编译版本为 c++11
 
-	set (CMAKE_CXX_STANDARD_REQUIRED True)
+set (CMAKE_CXX_STANDARD_REQUIRED True)
 ```
 
 ##### 2. 与项目相关
@@ -431,8 +431,8 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 3. `PROJECT_BINARY_DIR` : 项目的 **二进制路径**
 
 ```CMake
-	# 可以这样使用与项目相关的变量
-	add_executable (${PROJECT_NAME} main.cpp)
+# 可以这样使用与项目相关的变量
+add_executable (${PROJECT_NAME} main.cpp)
 ```
 
 > 注意 : `CMAKE_SOURCE_DIR` 与 `PROJECT_SOURCE_DIR` 默认都为项目根目录路径
@@ -445,22 +445,22 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 4. `CMAKE_CURRENT_BINARY_DIR` : 指的是 **当前 `CMakeLists.txt` 所在子模块编译发生的目录**
 
 ```
-	├── CMakeCache.txt
+├── CMakeCache.txt
+├── CMakeFiles
+├── cmake_install.cmake
+├── compile_commands.json
+├── detectfunc (detectfunc 模块的编译目录)
+|	├── CMakeFiles
+|	├── cmake_install.cmake
+|	├── libdetectfunc.a
+|	└── Makefile
+├── main
+├── Makefile
+└── mathfunc (mathfunc 模块的编译目录)
 	├── CMakeFiles
 	├── cmake_install.cmake
-	├── compile_commands.json
-	├── detectfunc (detectfunc 模块的编译目录)
-	|	├── CMakeFiles
-	|	├── cmake_install.cmake
-	|	├── libdetectfunc.a
-	|	└── Makefile
-	├── main
-	├── Makefile
-	└── mathfunc (mathfunc 模块的编译目录)
-		├── CMakeFiles
-		├── cmake_install.cmake
-		├── libmathfunc.a
-		└── Makefile
+	├── libmathfunc.a
+	└── Makefile
 ```
 
 从上面的目录结构中，我们可以看出，对于每一个子模块，都有相应的 **编译目录** ，而不是将所有编译放在同一个文件夹中
@@ -500,22 +500,22 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 2. `ON` or `OFF`
 
 ```CMake
-	option (<variable_name> [comment] <value>)
-	option (USE_CUDA "choose to use cuda or not" OFF)
+option (<variable_name> [comment] <value>)
+option (USE_CUDA "choose to use cuda or not" OFF)
 ```
 
 ##### 2. 一般自定义缓存变量
 
 ```CMake
-	# 定义缓存变量
-	set (<variable_name> <value> CACHE <type> [comment] [FORCE])
-	set (USE_CUDA OFF CACHE BOOL "choose to use cuda or not")
-	set (MYLIB_PATH /home/mylib CACHE PATH "the path to my libs")
-	set (MY_INCLUDE "include" CACHE PATH "the path to include dir")
+# 定义缓存变量
+set (<variable_name> <value> CACHE <type> [comment] [FORCE])
+set (USE_CUDA OFF CACHE BOOL "choose to use cuda or not")
+set (MYLIB_PATH /home/mylib CACHE PATH "the path to my libs")
+set (MY_INCLUDE "include" CACHE PATH "the path to include dir")
 
-	# 解除缓存变量
-	unset (<variable_name> CACHE)
-	unset (USE_CUDA CACHE)
+# 解除缓存变量
+unset (<variable_name> CACHE)
+unset (USE_CUDA CACHE)
 ```
 
 - 使用 `CACHE` 指定改变量为缓存变量
@@ -546,11 +546,11 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 查看缓存条目主要有两种方式：
 1. 通过 `cmake-gui` 查看
 
-![cmake-gui查看缓存条目.png](cmake-gui查看缓存条目.png)
+![](./imgs/cmake-gui查看缓存条目.png)
 
 2. 通过调用 `cmake` 的时候使用 `-L` 选项来查看
 
-![](cmake%20-L%20查看缓存条目.png)
+![](./imgs/cmake%20-L%20查看缓存条目.png)
 
 > 注意：
 > 这两种方式均要对项目进行构建编译信息后才能查看，原因是我们可能会定义一些外部缓存条目用于编译信息的构建，如 OpenCV 有着大量外部缓存条目
@@ -566,13 +566,13 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 在实际编译中，我们会通过使用 `-D` 选项或使用 `cmake-gui` 来设置缓存条目，而非在 `CMakeLists.txt` 文档中进行定义，如在从源码构建 OpenCV 项目的时候，我们就需要使用命令 : 
 
 ```bash
-	cmake -DBUILD_EXAMPLES=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_TESTS=OFF -DBUILD_opencv_python3=OFF -DBUILD_opencv_python_bindings_generator=OFF -DBUILD_opencv_python_tests=OFF -DBUILD_JAVA=OFF -DBUILD_opencv_java_bindings_generator=OFF -DBUILD_opencv_js=OFF -DBUILD_opencv_js_bindings_generator=OFF -DBUILD_opencv_dnn=ON -DBUILD_opencv_ml=ON -DOPENCL_FOUND=OFF -DBUILD_opencv_gapi=OFF -DOPENCV_ENABLE_NONFREE=ON -DENABLE_FAST_MATH=ON -DWITH_GSTREAMER=ON -DCMAKE_BUILD_TYPE=Release ..
+cmake -DBUILD_EXAMPLES=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_TESTS=OFF -DBUILD_opencv_python3=OFF -DBUILD_opencv_python_bindings_generator=OFF -DBUILD_opencv_python_tests=OFF -DBUILD_JAVA=OFF -DBUILD_opencv_java_bindings_generator=OFF -DBUILD_opencv_js=OFF -DBUILD_opencv_js_bindings_generator=OFF -DBUILD_opencv_dnn=ON -DBUILD_opencv_ml=ON -DOPENCL_FOUND=OFF -DBUILD_opencv_gapi=OFF -DOPENCV_ENABLE_NONFREE=ON -DENABLE_FAST_MATH=ON -DWITH_GSTREAMER=ON -DCMAKE_BUILD_TYPE=Release ..
 
 ```
 
 或者通过GUI：
 
-![cmake-gui设置缓存条目.png](cmake-gui设置缓存条目.png)
+![](./imgs/cmake-gui设置缓存条目.png)
 
 ## 4.2 常用与语句块
 
@@ -587,7 +587,7 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 `if (EXISTS <path>)` 
 
 ```CMake
-	if (NOT EXISTS ${CMAKE_CURRENT_BINARY_DIR}/test)
+if (NOT EXISTS ${CMAKE_CURRENT_BINARY_DIR}/test)
 ```
 
 ###### 2. `IS_DIRECTORY` 
@@ -638,11 +638,11 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 `if (<variable1> MATCH <re>)`
 
 ```CMake
-	if (CMAKE_SYSTEM_NAME MATCH "Linux")
-		message (STATUS "Current Platform : Linux")
-	elseif (CMAKE_SYSTEM_NAME MATCH "Windows")
-		message (STATUS "Current Platform : Windows")
-	endif ()
+if (CMAKE_SYSTEM_NAME MATCH "Linux")
+	message (STATUS "Current Platform : Linux")
+elseif (CMAKE_SYSTEM_NAME MATCH "Windows")
+	message (STATUS "Current Platform : Windows")
+endif ()
 ```
 
 #### 4.2.1.3 逻辑操作符
@@ -654,13 +654,13 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 ### 4.2.2 条件控制
 
 ```CMake
-	if (<condition>)
-		<codes>
-	elseif (<condition>)
-		<codes>
-	else ()
-		<codes>
-	endif ()
+if (<condition>)
+	<codes>
+elseif (<condition>)
+	<codes>
+else ()
+	<codes>
+endif ()
 ```
 
 > 注意：每次结束判断不能忘记加 `endif ()` 语句
@@ -670,19 +670,19 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 #### 1. `foreach` 
 
 ```CMake
-	foreach (<循环变量> <循环目标>)
-		<codes>
-	endforeach ()
+foreach (<循环变量> <循环目标>)
+	<codes>
+endforeach ()
 ```
 
 ```CMake
-	foreach (i 1 2 3)
-		message ("value : ${i}")
-	endforeach ()
+foreach (i 1 2 3)
+	message ("value : ${i}")
+endforeach ()
 
-	# value : 1
-	# value : 2
-	# value : 3
+# value : 1
+# value : 2
+# value : 3
 ```
 
 #### 2. `RANGE`
@@ -690,23 +690,23 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 与 `Python` 中的 `range` 函数 [[|使用方法]] 相同，但不需要括号，而且在 `Python` 中， `range ()` 左闭右开，在 `CMake` 中， `RANGE` 为闭区间
 
 ```CMake
-	foreach (i RANGE 2)
-		message ("value : ${i}")
-	endforeach ()
+foreach (i RANGE 2)
+	message ("value : ${i}")
+endforeach ()
 
-	# value : 0
-	# value : 1
-	# value : 2
+# value : 0
+# value : 1
+# value : 2
 ```
 
 ```CMake
-	foreach (i RANGE 1 5 2)
-		message ("value : ${i}")
-	endforeach ()
+foreach (i RANGE 1 5 2)
+	message ("value : ${i}")
+endforeach ()
 
-	# value : 1
-	# value : 3
-	# value : 5
+# value : 1
+# value : 3
+# value : 5
 ```
 
 ```ad-attention
@@ -721,18 +721,18 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 `可执行文件` 在 `CMake` 中视为一个 **变量** ，具有 `TARGET` 属性，通过 `add_executable ()` 命令进行构建，所以将库文件或头文件路径链接到可执行文件时的命令为 `target_link_libraries ()` 或 `target_include_directories ()` ：
 
 ```CMake
-	cmake_minimum_required (VERSION 3.10)
-	project (HELLO_WORLD)
-	add_executable (main main.cpp)
+cmake_minimum_required (VERSION 3.10)
+project (HELLO_WORLD)
+add_executable (main main.cpp)
 
-	target_link_libraries (main mylib)
+target_link_libraries (main mylib)
 ```
 
 如果需要使用到 **第三方库** ，则需要手动为其添加库和头文件的链接，如 `OpenCV` 库，我们可以通过 `find_package ()` 来找到我们想要的库：
 
 ```CMake
-	find_package (<package> [mode])
-	find_package (OpenCV REQUIRED)
+find_package (<package> [mode])
+find_package (OpenCV REQUIRED)
 ```
 
 其中， `REQUIRED` 选项会在没有找到相应包的时候 **停止整个项目的构建** 
@@ -740,8 +740,8 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 然后，我们可以将 `OpenCV` 包链接到目标文件：
 
 ```CMake
-	target_include_directories (main PUBLIC ${OpenCV_INCLUDE_DIRS})
-	target_link_libraries (main ${OpenCV_LIBS})
+target_include_directories (main PUBLIC ${OpenCV_INCLUDE_DIRS})
+target_link_libraries (main ${OpenCV_LIBS})
 ```
 
 ## 5.2 库文件的构建
@@ -769,32 +769,32 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 假设有这样一个文件架构：
 
 ```
-	project1
-    ├── CMakeLists.txt
-    ├── MyLib1
-	|	├── include
-	|	├── src
-	|	└── CMakeLists.txt(待创建)
-    └── main.cpp
+project1
+├── CMakeLists.txt
+├── MyLib1
+|	├── include
+|	├── src
+|	└── CMakeLists.txt(待创建)
+└── main.cpp
 ```
 
 根据上面的实践，我们已经知道，在多文件架构中，每一个模块最好使用独立的 `CMakeLists.txt` 进行管理，因此，我们在 `/Mylib1/CMakeLists.txt` 中写：
 
 ```CMake
-	add_library (mylib1 STATIC ./src/mylib1.cpp)
+add_library (mylib1 STATIC ./src/mylib1.cpp)
 ```
 
 同时，由于该库存在非默认包含路径，需要：
 
 ```CMake
-	target_include_directories (mylib1 PUBLIC ./include)
+target_include_directories (mylib1 PUBLIC ./include)
 ```
 
 如果该库使用了第三方库的内容，也需要将第三方库链接到该库
 
 ```CMake
-	target_include_directories (mylib1 PUBLIC <third_lib_include_path>)
-	target_link_libraries (mylib1 <third_lib>)
+target_include_directories (mylib1 PUBLIC <third_lib_include_path>)
+target_link_libraries (mylib1 <third_lib>)
 ```
 
 ```ad-attention
@@ -823,27 +823,27 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 假设在刚刚的文件架构基础上上再添加一个用于构建接口库的模块：
 
 ```
-	project1
-    ├── CMakeLists.txt
-    ├── MyLib1
-	|	├── include
-	|	|	└──MyLib1.hpp
-	|	├── src
-	|	|	└──MyLib1.cpp
-	|	└── CMakeLists.txt
-	├── MyLib2
-	|	├── include
-	|	|	└──MyLib2.hpp
-	|	└── CMakeLists.txt(待创建)
-    └── main.cpp
+project1
+├── CMakeLists.txt
+├── MyLib1
+|	├── include
+|	|	└──MyLib1.hpp
+|	├── src
+|	|	└──MyLib1.cpp
+|	└── CMakeLists.txt
+├── MyLib2
+|	├── include
+|	|	└──MyLib2.hpp
+|	└── CMakeLists.txt(待创建)
+└── main.cpp
 ```
 
 创建接口库的语法与创建普通库类似，只不过少了源文件的添加，在 `/Mylib2/CMakeLists.txt` 中，我们写入：
 
 ```CMake
-	add_library (mylib2 INTERFACE)
+add_library (mylib2 INTERFACE)
 
-	target_include_directories (mylib2 INTERFACE include)
+target_include_directories (mylib2 INTERFACE include)
 ```
 
 - 我们设置生成的库的属性为 `INTERFACE` 并且不对其添加源文件
@@ -869,8 +869,8 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 用于指定构建工具 CMake 的最小版本要求
 
 ```CMake
-	cmake_minimum_required (VERSION <version>)
-	cmake_minimum_required (VERSION 3.10)
+cmake_minimum_required (VERSION <version>)
+cmake_minimum_required (VERSION 3.10)
 ```
 
 ## 2. `project ()`
@@ -878,10 +878,10 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 用于定义工程的名称，版本和支持的语言
 
 ```CMake
-	project (<project_name> [VERSION <version>] [language])
-	project (HELLO_WORLD)
-	project (HELLO_WORLD VERSION 1.0)
-	project (HELLO_WORLD VERSION 1.0 C++)
+project (<project_name> [VERSION <version>] [language])
+project (HELLO_WORLD)
+project (HELLO_WORLD VERSION 1.0)
+project (HELLO_WORLD VERSION 1.0 C++)
 ```
 
 - `<project_name>` 会存贮在环境变量 `PROJECT_NAME` 中
@@ -892,11 +892,11 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 用于[[CMake#4.1 变量|定义变量和解除变量]] 
 
 ```CMake
-	set (<variable_name> <value>)
-	unset (<variable_name>)
-	
-	set (<variable_name> <value> CACHE <type> [discription] [FORCE])
-	unset (<variable_name> CACHE)
+set (<variable_name> <value>)
+unset (<variable_name>)
+
+set (<variable_name> <value> CACHE <type> [discription] [FORCE])
+unset (<variable_name> CACHE)
 ```
 
 ## 4. `include_directories ()` 
@@ -904,7 +904,7 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 向工程添加多个特定的头文件路径
 
 ```CMake
-	include_directories (<path>)
+include_directories (<path>)
 ```
 
 ## 5. `link_directories ()` 
@@ -912,7 +912,7 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 向工程添加多个特定的库文件路径
 
 ```CMake
-	link_directories (<path>)
+link_directories (<path>)
 ```
 
 ## 6. `add_library ()` 
@@ -920,7 +920,7 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 [[CMake#3.3.1 生成目标库|生成目标库]] ， [[CMake#5.2 库文件的构建|构建库文件]] 
 
 ```CMake
-	add_library (<lib_name> [SHARED|STATIC|MOUDLE] <source>)
+add_library (<lib_name> [SHARED|STATIC|MOUDLE] <source>)
 ```
 
 ## 7. `add_compile_options ()` 
@@ -928,8 +928,8 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 添加编译参数
 
 ```CMake
-	add_compile_options (<option>)
-	add_compile_options (-Wall -std=c++11 -O2)
+add_compile_options (<option>)
+add_compile_options (-Wall -std=c++11 -O2)
 ```
 
 ## 8. `add_executable ()` 
@@ -937,7 +937,7 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 [[CMake#5.1 可执行文件的构建|构建可执行文件]] 
 
 ```CMake
-	add_executable (<exe_name> <source>)
+add_executable (<exe_name> <source>)
 ```
 
 ## 9. `target_link_libraries ()`
@@ -945,7 +945,7 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 [[CMake#3.3.2 链接可执行文件和目标库|为target添加需要链接的库]] 
 
 ```CMake
-	target_link_libraries (<target> <lib>)
+target_link_libraries (<target> <lib>)
 ```
 
 ## 10. `target_include_directories ()` 
@@ -953,7 +953,7 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 [[CMake#3.3.1 生成目标库|为target添加头文件路径]] 
 
 ```CMake
-	target_include_directories (<target> <PUBLIC|PRIVATE|INTERFACE> <path>)
+target_include_directories (<target> <PUBLIC|PRIVATE|INTERFACE> <path>)
 ```
 
 ## 11. `add_subdirectory ()`
@@ -961,7 +961,7 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 向CMake项目中添加子模块
 
 ```CMake
-	add_subdirectory (<path>)
+add_subdirectory (<path>)
 ```
 
 > 注意：
@@ -972,8 +972,8 @@ CMake工程由 **源文件** ， **CMakeLists.txt** ， **编译信息** 组成�
 发现一个目录下所有源代码文件并将其存储在一个变量中
 
 ```CMake
-	aux_source_directory (<path> <variable_name>)
-	
-	aux_source_directory (. SRC)
-	add_executable (main ${SRC})
+aux_source_directory (<path> <variable_name>)
+
+aux_source_directory (. SRC)
+add_executable (main ${SRC})
 ```

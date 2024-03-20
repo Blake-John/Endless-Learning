@@ -13,7 +13,7 @@
 	- gdb
 
 ```bash
-	sudo apt install gcc g++ gdb build-essential
+sudo apt install gcc g++ gdb build-essential
 ```
 
 ## 0.3 编译
@@ -22,17 +22,17 @@
 - 然后通过 `make` 来编译项目
 
 ```bash
-	sudo apt install cmake make
+sudo apt install cmake make
 ```
 
 ## 0.4 确认是否安装成功
 
 ```bash
-	gcc --version
-	g++ --version
-	gdb --version
-	cmake --version
-	make --version
+gcc --version
+g++ --version
+gdb --version
+cmake --version
+make --version
 ```
 
 # 01 GCC编译器
@@ -49,7 +49,7 @@
 在Linux中，我们可以直接通过命令行调用 gcc/g++ 来编译程序，如：
 
 ```bash
-	g++ test.cpp -o test
+g++ test.cpp -o test
 ```
 
 - 上面的命令会调用 g++ 编译器将 `test.cpp` 编译成一个 **可执行的二进制文件** ，并且该文件名由参数 `-o` 指定，为 `test`
@@ -63,18 +63,18 @@
 
 假设我们有如下代码：
 
-![src.png](src.png)
+![](./imgs/src.png)
 
 ### 1.1.1 预处理 Pre-Processing
 
 ```bash
-	g++ -E test.cpp -o test.i
+g++ -E test.cpp -o test.i
 ```
 
 - `-E` 选项指示编译器仅对输入文件进行 **[[02.How C++ Work#2.2.1 Preprocess Statement|预处理]]** 
 - 通过这一步生成的文件如下所示：
 
-![preprocess.png](preprocess.png)
+![](./imgs/preprocess.png)
 
 - 可以看到，在我们编写的代码中
 	1. `#include <iostream>` 变成了长达 28639 行的代码
@@ -83,21 +83,21 @@
 ### 1.1.2 编译 Compiling
 
 ```bash
-	g++ -S preprocess.i -o compile.s
+g++ -S preprocess.i -o compile.s
 ```
 
 - `-S` 选项指示编译器对输入文件进行 **[[02.How C++ Work#2.2.2 Compiled|编译]]** 
 
 通过这一步生成的文件如下：
 
-![compile.png](compile.png)
+![](./imgs/compile.png)
 
 - 这个文件中的代码都是汇编语言
 
 ### 1.1.3 汇编 Assembling
 
 ```bash
-	g++ -C compile.s -o assembling.o
+g++ -C compile.s -o assembling.o
 ```
 
 - `-C` 选项指示编译器把代码编译为 **机械语言 (二进制文件)** ，通常情况下，编译和汇编会同时进行
@@ -111,12 +111,12 @@
 ### 1.1.4 链接 Linking
 
 ```bash
-	g++ assembling.o -o example
+g++ assembling.o -o example
 ```
 
 - 这一步会将二进制文件编译成可执行文件，并且将需要的库进行 **[[02.How C++ Work#2.2.3 Link|链接]]** ，链接完成后我们可以执行该文件
 
-![example_target.png](example_target.png)
+![](./imgs/example_target.png)
 
 ## 1.2 重要编译参数
 
@@ -125,12 +125,12 @@
 > 编译带调试信息的可执行文件
 
 ```bash
-	g++ -g example.cpp -o example_gdb
+g++ -g example.cpp -o example_gdb
 ```
 
 - `-g` 选项会指示编译器产生能被 **GNU调试器GDB所使用的调试信息** 
 
-![example_gdb.png](example_gdb.png)
+![](./imgs/example_gdb.png)
 
 ### 1.2.2 `-O<n>`
 
@@ -141,20 +141,20 @@
 所谓优化，就是省略代码中从未使用过的变量，直接将常量表达式用结果值代替，减少不必要的代码，提高可执行文件的运行效率
 
 ```bash
-	g++ example.cpp -O example
-	# 同时减小代码的长度和执行时间，其效果等同于 -O1
+g++ example.cpp -O example
+# 同时减小代码的长度和执行时间，其效果等同于 -O1
 
-	g++ example.cpp -O0 example
-	# 表示不作优化
+g++ example.cpp -O0 example
+# 表示不作优化
 
-	g++ example.cpp -O1 example
-	# 默认优化
+g++ example.cpp -O1 example
+# 默认优化
 
-	g++ example.cpp -O2 example
-	# 除了完成 -O1 的优化之外，还进行一些额外的调整工作，如指令调整
+g++ example.cpp -O2 example
+# 除了完成 -O1 的优化之外，还进行一些额外的调整工作，如指令调整
 
-	g++ example.cpp -O3 example
-	# 包括一些循环展开与处理特性相关的工作
+g++ example.cpp -O3 example
+# 包括一些循环展开与处理特性相关的工作
 ```
 
 在实际编译过程中，我们常使用 `-O2` 选项，此外， `-O<n>` 选项会使编译的速度降低，但是 **代码的执行速度通常会更快** 
@@ -166,16 +166,16 @@
 `-l` 是用来指定程序要链接的库， `-l`  **紧跟**着的参数就是库名
 
 ```bash
-	g++ -l<lib> example.cpp -o example
-	g++ -lglog example.cpp -o example
+g++ -l<lib> example.cpp -o example
+g++ -lglog example.cpp -o example
 ```
 
 - `-l` 选项会在 `/lib` ， `/usr/lib` 和 `/usr/local/lib` 等目录下检索目标库
 - 若库文件不在上述三个目录中，如自建库，则需要调用 `-L` 指定 **库文件所在目录** 
 
 ```bash
-	g++ -L<path_to_lib> -l<lib> example.cpp -o example
-	g++ -L/mylib -lmylib example.cpp -o example
+g++ -L<path_to_lib> -l<lib> example.cpp -o example
+g++ -L/mylib -lmylib example.cpp -o example
 ```
 
 ### 1.2.4 `-I`
@@ -185,8 +185,8 @@
 g++ 会自动在 `/usr/include` 目录中查找头文件，若是头文件不在其中，我们需要使用 `-I` 来指定头文件存放的位置
 
 ```bash
-	g++ -I<path_to_headfile> example.cpp -o example
-	g++ -I/myinclude example.cpp -o example
+g++ -I<path_to_headfile> example.cpp -o example
+g++ -I/myinclude example.cpp -o example
 ```
 
 - `-I` 选项可以使用绝对路径，也可以使用相对路径
@@ -196,7 +196,7 @@ g++ 会自动在 `/usr/include` 目录中查找头文件，若是头文件不在
 > 打印 gcc/g++ 提供的警告信息
 
 ```bash
-	g++ -Wall example.cpp -o example
+g++ -Wall example.cpp -o example
 ```
 
 ### 1.2.6 `-w`
@@ -204,7 +204,7 @@ g++ 会自动在 `/usr/include` 目录中查找头文件，若是头文件不在
 > 关闭所有警告信息
 
 ```bash
-	g++ -w example.cpp -o example
+g++ -w example.cpp -o example
 ```
 
 ### 1.2.7 `-std==<version>`
@@ -212,8 +212,8 @@ g++ 会自动在 `/usr/include` 目录中查找头文件，若是头文件不在
 > 设置编译标准
 
 ```bash
-	g++ -std=c++14 example.cpp -o example
-	# 以 c++14 的标准来编译文件
+g++ -std=c++14 example.cpp -o example
+# 以 c++14 的标准来编译文件
 ```
 
 ### 1.2.8 `-D`
@@ -240,16 +240,16 @@ g++ 会自动在 `/usr/include` 目录中查找头文件，若是头文件不在
 ### 1. 编译库文件，生成 `.o` 文件
 
 ```bash
-	g++ -c -I../include mylib.cpp
-	# 会默认生成 .o 文件，或者可以写详细
-	g++ -I../include -c mylib.cpp -o mylib.o
+g++ -c -I../include mylib.cpp
+# 会默认生成 .o 文件，或者可以写详细
+g++ -I../include -c mylib.cpp -o mylib.o
 ```
 
 ### 2. 生成静态库 `libmylib.a`
 
 ```bash
-	ar rs <lib> <target_file>
-	ar rs libmylib.a mylib.o
+ar rs <lib> <target_file>
+ar rs libmylib.a mylib.o
 ```
 
 - 其中 `ar rs` 为归档命令
@@ -257,23 +257,23 @@ g++ 会自动在 `/usr/include` 目录中查找头文件，若是头文件不在
 ### 3. 将 `main.cpp` 编译汇编并链接静态库
 
 ```bash
-	g++ main.cpp -Iinclude -Lsrc -lmylib -o static_main
+g++ main.cpp -Iinclude -Lsrc -lmylib -o static_main
 ```
 
 ```ad-seealso
 对于静态库，若没有重复使用的想法，则可以直接将目标库和主函数一起打包成可执行文件
 
 ```bash
-	g++ main.cpp -c
-	# 生成 main.o
+g++ main.cpp -c
+# 生成 main.o
 
-	g++ -I../include -c mylib.cpp
-	# 生成 mylib.o
+g++ -I../include -c mylib.cpp
+# 生成 mylib.o
 
-	g++ main.o ./src/mylib.o -o static1_main
+g++ main.o ./src/mylib.o -o static1_main
 
-	# 甚至可以更简单
-	g++ main.cpp ./src/mylib.cpp -Iinclude -o static2_main
+# 甚至可以更简单
+g++ main.cpp ./src/mylib.cpp -Iinclude -o static2_main
 ``````
 
 
@@ -282,13 +282,13 @@ g++ 会自动在 `/usr/include` 目录中查找头文件，若是头文件不在
 ### 1. 编译文件，生成 `.o` 文件
 
 ```bash
-	g++ -c -I../include -fPIC mylibc.cpp
+g++ -c -I../include -fPIC mylibc.cpp
 ```
 
 ### 2. 将 `.o` 文件装为动态库 `.so` 
 
 ```bash
-	g++ --shared mylib.o -o libmylib.so
+g++ --shared mylib.o -o libmylib.so
 ```
 
 > 上面两条指令也可以合成一条
@@ -297,7 +297,7 @@ g++ 会自动在 `/usr/include` 目录中查找头文件，若是头文件不在
 ### 3. 链接动态库
 
 ```bash
-	g++ main.cpp -Iinclude -Lsrc -lmylib -o dynamic_main
+g++ main.cpp -Iinclude -Lsrc -lmylib -o dynamic_main
 ```
 
 > 注意：编译器会 **默认链接动态库** ！当 `src` 目录中同时有 `.a` 和 `.so` 的库时，优先链接 `.so` 的动态库
@@ -305,11 +305,11 @@ g++ 会自动在 `/usr/include` 目录中查找头文件，若是头文件不在
 ### 4. 运行
 
 ```bash
-	LD_LIBRARY_PATH=<path> <target_file>
-	LD_LIBRARY_PATH=src ./dynamic_main
+LD_LIBRARY_PATH=<path> <target_file>
+LD_LIBRARY_PATH=src ./dynamic_main
 ```
 
-> [[Cpp环境配置及编译器使用#^1bb61b|原因]]
+> [原因](Cpp环境配置及编译器使用#^1bb61b)
 
 # 03 GDB调试器
 
@@ -331,34 +331,34 @@ g++ 会自动在 `/usr/include` 目录中查找头文件，若是头文件不在
 ### 1. 开始调试
 
 ```bash
-	gdb <target_file>
-	gdb main
+gdb <target_file>
+gdb main
 ```
 
 ### 2. 查看帮助
 
 ```gdb
-	help (h)
-	help <target_parameter>
+help (h)
+help <target_parameter>
 ```
 
 ### 3. 执行相关
 
 ```gdb
-	run (r)
-	# 重新开始运行文件
+run (r)
+# 重新开始运行文件
 
-	start
-	# 单步执行，运行程序，停在第一行执行语句
+start
+# 单步执行，运行程序，停在第一行执行语句
 
-	next (n)
-	# 单步调试（逐过程，会执行完一整个函数）
+next (n)
+# 单步调试（逐过程，会执行完一整个函数）
 
-	step (s)
-	# 逐行/逐语句
+step (s)
+# 逐行/逐语句
 
-	continue
-	# 继续运行
+continue
+# 继续运行
 ```
 
 ### 4. 监视相关
@@ -366,41 +366,41 @@ g++ 会自动在 `/usr/include` 目录中查找头文件，若是头文件不在
 #### 查看代码
 
 ```gdb
-	list (l)
-	# 查看源代码
+list (l)
+# 查看源代码
 
-	list-<n>
-	# 查看第n行代码
+list-<n>
+# 查看第n行代码
 
-	list <function>
-	# 查看指定函数代码
+list <function>
+# 查看指定函数代码
 ```
 
 #### 变量及栈帧
 
 ```gdb
-	set
-	# 设置变量的值
+set
+# 设置变量的值
 
-	backtrace (bt)
-	# 查看函数的栈帧和层级关系
+backtrace (bt)
+# 查看函数的栈帧和层级关系
 
-	frame (f)
-	# 切换函数的栈帧
+frame (f)
+# 切换函数的栈帧
 
-	info (i)
-	# 查看函数内部局部变量的值
+info (i)
+# 查看函数内部局部变量的值
 
-	finish
-	# 结束当前函数，返回到函数的调用点
+finish
+# 结束当前函数，返回到函数的调用点
 
-	print (p)
-	# 打印值及地址
+print (p)
+# 打印值及地址
 ```
 
 ### 5. 退出
 
 ```gdb
-	quit (q)
-	# 退出 gdb
+quit (q)
+# 退出 gdb
 ```
