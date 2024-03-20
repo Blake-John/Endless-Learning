@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiDocker",
       "LiCamera",
       "SiStmicroelectronics",
       "SiOpencv",
-      "RiProjectorLine",
-      "SiOnnx"
+      "RiProjectorLine"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -42,5 +42,6 @@
   "Project": "RiProjectorLine",
   "12 OpenCV": "SiOpencv",
   "13 STM32": "SiStmicroelectronics",
-  "14 Camera": "LiCamera"
+  "14 Camera": "LiCamera",
+  "15 Docker": "SiDocker"
 }

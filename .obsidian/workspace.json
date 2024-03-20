@@ -13,7 +13,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "12 OpenCV/Python/02 几何变换.md",
+                "file": "03 Linux/Arch/03 基础配置和工具.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "531ec01e8559a697",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "15 Docker/02 Docker 安装.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da356f4087f5bfde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 Linux/Arch/01 基本安装.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "struct",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5,
-    "collapsed": true
+    "width": 237.5
   },
   "right": {
     "id": "5c0d6b931c5b5cd2",
@@ -100,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "12 OpenCV/Python/02 几何变换.md",
+                "file": "03 Linux/Arch/03 基础配置和工具.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "12 OpenCV/Python/02 几何变换.md",
+                "file": "03 Linux/Arch/03 基础配置和工具.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "12 OpenCV/Python/02 几何变换.md"
+                "file": "03 Linux/Arch/03 基础配置和工具.md"
               }
             }
           }
@@ -157,11 +182,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-projects:Open projects": false,
+      "obsidian-regex-pipeline:Regex Rulesets": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -170,60 +197,56 @@
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
       "audio-recorder:开始/结束录音": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-projects:Open projects": false,
-      "obsidian-regex-pipeline:Regex Rulesets": false,
       "obsidian-memos:Memos": false
     }
   },
   "active": "0447c01f56853d8b",
   "lastOpenFiles": [
-    "01 Obsidian/7.搜索和查询.md",
-    "12 OpenCV/Python/imgs/仿射变换.md",
-    "12 OpenCV/Python/02 几何变换.md",
-    "12 OpenCV/Python/imgs/AfterAffine.png",
-    "12 OpenCV/Python/imgs/BeforeTransformation.png",
-    "12 OpenCV/Python/imgs/AfterRotation.png",
-    "12 OpenCV/Python/imgs/KeepOrigin.md",
-    "12 OpenCV/Python/imgs/KeepWhole.md",
-    "12 OpenCV/Python/imgs/坐标变换1.md",
-    "12 OpenCV/Python/imgs/平移变换.png",
-    "12 OpenCV/Python/01 OpenCV 基本操作.md",
-    "12 OpenCV/Python/00 OpenCV 简介.md",
-    "12 OpenCV/Python/imgs/opencv模块.png",
-    "12 OpenCV/Python/imgs/第一幅数字图像.png",
-    "12 OpenCV/Python/imgs",
-    "07 C and C++/串口通信.md",
-    "03 Linux/Arch/Hyprland/04 waybar.md",
-    "12 OpenCV/C++/Notes/06 CHAPTER 6.md",
-    "12 OpenCV/Python/00 OpenCV简介.md",
-    "12 OpenCV/Python",
-    "03 Linux/Arch/03 基本使用.md",
+    "03 Linux/Arch/imgs/tlpui.png",
+    "03 Linux/Arch/03 基础配置和工具.md",
+    "03 Linux/Arch/imgs/Pasted image 20240320165514.png",
+    "03 Linux/Arch/imgs/power-profile.png",
+    "03 Linux/Arch/imgs/obs.png",
+    "03 Linux/Arch/imgs/spectacle.png",
+    "03 Linux/Arch/imgs/wallpaper.png",
+    "03 Linux/Arch/imgs/color_and_theme.png",
+    "03 Linux/Arch/imgs/touchpad.png",
+    "03 Linux/Arch/imgs/double-click.png",
+    "03 Linux/Arch/imgs/session.png",
     "03 Linux/Arch/02 桌面环境.md",
-    "03 Linux/Arch/01 安装.md",
-    "03 Linux/Arch/Hyprland/05 组件.md",
-    "03 Linux/Arch/Hyprland/01 安装Hyprland.md",
-    "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
-    "03 Linux/Arch/Hyprland/imgs/Interactive CSS Editor.png",
-    "03 Linux/Arch/Hyprland/imgs",
-    "03 Linux/Arch/Hyprland/03 终端.md",
-    "03 Linux/Arch/Hyprland/04 软件启动.md",
-    "03 Linux/Arch/Hyprland/07 ranger.md",
-    "03 Linux/Arch/Hyprland/05 Nvim.md",
-    "03 Linux/Arch/Hyprland",
-    "03 Linux/Ubuntu/1.基本使用手册.md",
-    "03 Linux/Arch",
+    "03 Linux/Arch/01 基本安装.md",
+    "03 Linux/Arch/04 开发工具.md",
+    "15 Docker/02 Docker 安装.md",
+    "03 Linux/Arch/imgs",
     "03 Linux/Ubuntu/0.安装Linux.md",
-    "03 Linux/Ubuntu/4.显卡管理.md",
-    "03 Linux/Ubuntu/Ubuntu 20.04 美化.md",
-    "03 Linux/Ubuntu",
-    "13 STM32/imgs/接收文本数据包状态图.png",
-    "13 STM32/imgs/接收Hex数据包状态图.png",
-    "13 STM32/imgs/可变包长.png",
-    "未命名.canvas",
-    "00 Excalidraw/流控结构.md.nssyncsc",
-    "imgs",
-    "13 STM32/imgs",
-    "14 Camera/imgs"
+    "03 Linux/Ubuntu/1.基本使用手册.md",
+    "06 Python/14 Sets.md",
+    "16 Machine Learning/01.Introduction.md",
+    "16 Machine Learning/imgs",
+    "06 Python/13 Identity Value.md",
+    "16 Machine Learning",
+    "07 C and C++/C++/09.Pointers.md",
+    "06 Python/12 Jupyter Notebook.md",
+    "06 Python/imgs",
+    "06 Python/11 Global vs Local. Scopes.md",
+    "06 Python/10 Pip.md",
+    "15 Docker/03 Docker 底层原理.md",
+    "03 Linux/Arch/01 安装.md",
+    "03 Linux/Arch/Hyprland/04 waybar.md",
+    "03 Linux/Arch/Hyprland/05 组件.md",
+    "03 Linux/Arch/Hyprland/03 终端.md",
+    "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
+    "03 Linux/Arch/Hyprland/01 安装Hyprland.md",
+    "12 OpenCV/Python/02 几何变换.md",
+    "12 OpenCV/C++/Notes/02 CHAPTER 2.md",
+    "12 OpenCV/C++/Notes/04 CHAPTER 4.md",
+    "12 OpenCV/C++/Notes/05 CHAPTER 5.md",
+    "15 Docker/imgs/imgs",
+    "15 Docker/03 Docker 安装",
+    "07 C and C++/串口通信",
+    "15 Docker/imgs",
+    "15 Docker",
+    "14 Camera/未命名",
+    "未命名.canvas"
   ]
 }
