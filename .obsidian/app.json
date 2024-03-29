@@ -9,5 +9,5 @@
   "spellcheck": false,
   "useMarkdownLinks": true,
   "newLinkFormat": "relative",
-  "vimMode": true
+  "vimMode": false
 }

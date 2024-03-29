@@ -80,6 +80,85 @@
       ],
       "id": "906f53aa-7dc0-49be-b9a5-e12195e84e4e",
       "name": "知识库数据集"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": true,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "Project/2024SRP",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "524e48ba-b547-4835-9725-fae123c9a65c",
+          "name": "表格",
+          "type": "table"
+        },
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "4a6b0f21-4c6d-4249-9964-b6fe58a18003",
+          "name": "看板",
+          "type": "board"
+        },
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "1a9b97f9-5c66-470b-95f7-6d38a63cdcd0",
+          "name": "日历",
+          "type": "calendar"
+        },
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "909814fe-874c-4f25-bdbe-05d40a11cf0b",
+          "name": "画册",
+          "type": "gallery"
+        }
+      ],
+      "id": "8dac9c3d-98a8-4425-9f57-b1ff517a1e4f",
+      "name": "2024SRP"
     }
   ],
   "preferences": {

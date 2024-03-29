@@ -4,42 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9fe448877cc0c250",
+        "id": "f0236f1eb678b0a6",
         "type": "tabs",
         "children": [
           {
-            "id": "0447c01f56853d8b",
+            "id": "cc7963b27893f400",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "16 Machine Learning/01.Introduction.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "531ec01e8559a697",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "15 Docker/02 Docker 安装.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "da356f4087f5bfde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03 Linux/Arch/01 基本安装.md",
+                "file": "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -75,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "struct",
+                "query": "tag:plans",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "16 Machine Learning/01.Introduction.md",
+                "file": "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "16 Machine Learning/01.Introduction.md",
+                "file": "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "16 Machine Learning/01.Introduction.md"
+                "file": "03 Linux/Arch/Hyprland/02 配置Hyprland.md"
               }
             }
           }
@@ -182,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,44 +175,47 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "0447c01f56853d8b",
+  "active": "cc7963b27893f400",
   "lastOpenFiles": [
-    "15 Docker/03 Docker 底层原理.md",
-    "15 Docker/02 Docker 安装.md",
-    "15 Docker/01 Docker 概述.md",
-    "15 Docker/imgs/虚拟机结构.md",
-    "15 Docker/00 Docker 学习路径.md",
-    "14 Camera/摄像头成像原理.md",
-    "13 STM32/09 串口通信.md",
-    "13 STM32/06 TIM定时器.md",
-    "12 OpenCV/Python/02 几何变换.md",
-    "12 OpenCV/Python/imgs/坐标变换1.md",
-    "12 OpenCV/Python/imgs/KeepOrigin.md",
-    "12 OpenCV/Python/01 OpenCV 基本操作.md",
-    "12 OpenCV/Python/00 OpenCV 简介.md",
-    "12 OpenCV/C++/Notes/CMake of OpenCV.md",
-    "12 OpenCV/C++/Notes/06 CHAPTER 6.md",
-    "12 OpenCV/C++/Notes/05 CHAPTER 5.md",
-    "12 OpenCV/C++/Notes/04 CHAPTER 4.md",
-    "12 OpenCV/C++/Notes/03 CHAPTER 3.md",
-    "12 OpenCV/C++/Notes/02 CHAPTER 2.md",
-    "12 OpenCV/C++/Notes/01 CHAPTER 1.md",
-    "12 OpenCV/C++/Notes/00 Introduction.md",
-    "11 ONNX/部署ONNX.md",
-    "10 ChatGLM/本地部署ChatGLM3.md",
-    "09 Algorithms/递归与递推/递归与递推.md",
-    "09 Algorithms/Hello-algo/02 复杂度分析.md",
-    "09 Algorithms/Hello-algo/01 初始算法.md",
+    "03 Linux/Arch/Hyprland/01 安装Hyprland.md",
+    "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
+    "03 Linux/Arch/Hyprland/03 终端.md",
+    "03 Linux/Arch/Hyprland/05 组件.md",
+    "03 Linux/Arch/Hyprland/04 waybar.md",
+    "16 Machine Learning/02.Linear Regression.md",
+    "16 Machine Learning/imgs/linear_regression.png",
+    "16 Machine Learning/01.Introduction.md",
+    "06 Python/Class.md",
+    "06 Python/14 Sets.md",
+    "16 Machine Learning/imgs/group_customers.png",
+    "16 Machine Learning/imgs/clustering.png",
+    "16 Machine Learning/imgs/classification_for_tumor.png",
+    "16 Machine Learning/imgs/Regression_for_house_price.png",
+    "Project/2024SRP/Plannings.md",
+    "08 ROS/01 ROS 概述与环境搭建.md",
+    "Project/2024SRP/StudyRoute.md",
+    "00 HOME.md",
+    "08 ROS/imgs/turtle_test.png",
+    "06 Python/Working with strings.md",
+    "08 ROS/imgs/traditon_vs_modern.png",
+    "08 ROS/imgs/Robot_component.png",
+    "08 ROS/imgs/ROS_components.png",
+    "08 ROS/imgs",
+    "06 Python/13 Identity Value.md",
+    "00 Plans.md",
+    "Project/2024SRP/01 Studying",
+    "03 Linux/工具集.md",
+    "03 Linux/Ubuntu/3.文件编辑.md",
+    "03 Linux/Ubuntu/4.显卡管理.md",
+    "03 Linux/Ubuntu/2.软件的安装与管理.md",
+    "03 Linux/Ubuntu/0.安装Linux.md",
+    "03 Linux/Ubuntu/1.基本使用手册.md",
+    "Project/13 OCR-Python.md",
+    "Project/2024SRP",
+    "Project/Summary.md",
+    "00 templates/日记模板.md",
+    "CHANGELOG.md",
     "07 C and C++/C++/imgs/14.StringImgs/屏幕截图 2023-11-25 114922.png",
-    "03 Linux/Arch/imgs/tlpui.png",
-    "03 Linux/Arch/imgs/Pasted image 20240320165514.png",
-    "03 Linux/Arch/imgs/power-profile.png",
-    "03 Linux/Arch/imgs/obs.png",
-    "03 Linux/Arch/imgs/spectacle.png",
-    "03 Linux/Arch/imgs/wallpaper.png",
-    "03 Linux/Arch/imgs/color_and_theme.png",
-    "03 Linux/Arch/imgs/touchpad.png",
-    "03 Linux/Arch/imgs/double-click.png",
     "03 Linux/Arch/imgs",
     "16 Machine Learning/imgs",
     "16 Machine Learning",
@@ -245,9 +223,6 @@
     "15 Docker/imgs/imgs",
     "15 Docker/03 Docker 安装",
     "07 C and C++/串口通信",
-    "15 Docker/imgs",
-    "15 Docker",
-    "14 Camera/未命名",
     "未命名.canvas"
   ]
 }

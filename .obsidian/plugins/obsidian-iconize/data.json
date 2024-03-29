@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FabConnectdevelop",
+      "SiNeutralinojs",
+      "LiListTodo",
       "SiDocker",
-      "LiCamera",
-      "SiStmicroelectronics",
-      "SiOpencv",
-      "RiProjectorLine"
+      "LiCamera"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -43,5 +43,7 @@
   "12 OpenCV": "SiOpencv",
   "13 STM32": "SiStmicroelectronics",
   "14 Camera": "LiCamera",
-  "15 Docker": "SiDocker"
+  "15 Docker": "SiDocker",
+  "00 Plans.md": "LiListTodo",
+  "16 Machine Learning": "FabConnectdevelop"
 }
