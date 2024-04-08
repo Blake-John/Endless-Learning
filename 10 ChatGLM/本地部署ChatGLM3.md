@@ -1,6 +1,6 @@
 # 0.环境配置
 ## 0.1 显卡
-关于显卡驱动的安装，可以参照[[4.显卡管理|显卡管理]]，建议在官网下载驱动![[4.显卡管理#3.2 在官网下载驱动]]![[4.显卡管理#4.查看、切换显卡]]
+关于显卡驱动的安装，可以参照[[../03 Linux/Ubuntu/2.显卡管理|显卡管理]]，建议在官网下载驱动![[../03 Linux/Ubuntu/2.显卡管理#3.2 在官网下载驱动]]![[../03 Linux/Ubuntu/2.显卡管理#4.查看、切换显卡]]
 ## 0.2 CUDA Toolkit
 - 若没有安装好 `CUDA library (cudart)`，或者没有将其 **初始化**，都会导致运行 ChatGLM3 时产生错误 -> `RuntimeError: Library cudart is not initialized`
 ### 0.2.1 安装 CUDA Toolkit

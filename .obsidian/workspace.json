@@ -4,16 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "f0236f1eb678b0a6",
+        "id": "a2d338d2cc6d23e6",
         "type": "tabs",
         "children": [
           {
-            "id": "cc7963b27893f400",
+            "id": "73db78b7ea677d12",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Linux/终端配置.md",
+                "file": "03 Linux/3.文件编辑与权限.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ebe848e5bddc091d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 Linux/Arch/01 基本安装.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03 Linux/终端配置.md",
+                "file": "03 Linux/3.文件编辑与权限.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03 Linux/终端配置.md",
+                "file": "03 Linux/3.文件编辑与权限.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Linux/终端配置.md"
+                "file": "03 Linux/3.文件编辑与权限.md"
               }
             }
           }
@@ -169,51 +182,52 @@
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
       "audio-recorder:开始/结束录音": false,
-      "obsidian-memos:Memos": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "obsidian-projects:Open projects": false,
-      "obsidian-regex-pipeline:Regex Rulesets": false
+      "obsidian-regex-pipeline:Regex Rulesets": false,
+      "obsidian-memos:Memos": false
     }
   },
-  "active": "cc7963b27893f400",
+  "active": "73db78b7ea677d12",
   "lastOpenFiles": [
-    "03 Linux/Arch/04 开发工具.md",
-    "03 Linux/工具集.md",
-    "03 Linux/Arch/03 基础配置和工具.md",
-    "03 Linux/终端配置.md",
-    "03 Linux/imgs/fish_config.png",
-    "03 Linux/Arch/Hyprland/04 waybar.md",
-    "03 Linux/Arch/Hyprland/03 终端.md",
-    "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
+    "03 Linux/imgs/rmsyboliclink.png",
+    "03 Linux/3.文件编辑与权限.md",
+    "03 Linux/imgs/symboliclink.png",
+    "03 Linux/imgs/ls_info.png",
+    "03 Linux/imgs/ls_hl.png",
+    "03 Linux/Ubuntu/2.显卡管理.md",
+    "03 Linux/imgs/ls_dev.png",
+    "03 Linux/2.包管理器.md",
+    "03 Linux/Arch/01 基本安装.md",
+    "03 Linux/Arch/02 桌面环境.md",
+    "03 Linux/1.基本使用手册.md",
+    "03 Linux/Ubuntu/1.软件的安装与管理.md",
+    "03 Linux/imgs/neofetch_ip.png",
+    "03 Linux/Ubuntu/0.安装Linux.md",
     "03 Linux/Arch/Hyprland/01 安装Hyprland.md",
+    "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
+    "03 Linux/Arch/Hyprland/03 终端.md",
+    "03 Linux/Arch/Hyprland/04 waybar.md",
+    "03 Linux/Arch/Hyprland/05 组件.md",
+    "03 Linux/Arch/03 基础配置和工具.md",
+    "03 Linux/Arch/04 开发工具.md",
+    "03 Linux/Ubuntu/Ubuntu 20.04 美化.md",
+    "12 OpenCV/Python/02 几何变换.md",
+    "03 Linux/终端配置.md",
+    "03 Linux/工具集.md",
+    "03 Linux/imgs/fish_config.png",
     "03 Linux/imgs/wd.png",
     "03 Linux/imgs/duf.png",
     "03 Linux/imgs/dust.png",
-    "03 Linux/imgs/btop.png",
-    "03 Linux/imgs/tealdeer.png",
-    "03 Linux/imgs/lsd.png",
-    "03 Linux/imgs/bat.png",
     "03 Linux/imgs",
     "08 ROS/01 ROS 概述与环境搭建.md",
-    "03 Linux/Arch/Hyprland/05 组件.md",
     "16 Machine Learning/02.Linear Regression.md",
-    "16 Machine Learning/imgs/linear_regression.png",
     "16 Machine Learning/01.Introduction.md",
     "06 Python/Class.md",
     "06 Python/14 Sets.md",
     "Project/2024SRP/Plannings.md",
-    "Project/2024SRP/StudyRoute.md",
-    "00 HOME.md",
-    "06 Python/Working with strings.md",
     "08 ROS/imgs",
-    "06 Python/13 Identity Value.md",
-    "00 Plans.md",
     "Project/2024SRP/01 Studying",
-    "03 Linux/Ubuntu/3.文件编辑.md",
-    "03 Linux/Ubuntu/4.显卡管理.md",
-    "03 Linux/Ubuntu/2.软件的安装与管理.md",
-    "03 Linux/Ubuntu/0.安装Linux.md",
-    "03 Linux/Ubuntu/1.基本使用手册.md",
     "Project/2024SRP",
     "03 Linux/Arch/imgs",
     "16 Machine Learning/imgs",
