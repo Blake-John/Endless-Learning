@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "73db78b7ea677d12",
+            "id": "ebe848e5bddc091d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Linux/3.文件编辑与权限.md",
+                "file": "03 Linux/4.脚本.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,25 @@
             }
           },
           {
-            "id": "ebe848e5bddc091d",
+            "id": "9b9d02e315334f13",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Linux/Arch/01 基本安装.md",
+                "file": "03 Linux/1.基本使用手册.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1fabf30b065806a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 Linux/3.文件编辑与权限.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -96,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5
+    "width": 237.5,
+    "collapsed": true
   },
   "right": {
     "id": "5c0d6b931c5b5cd2",
@@ -112,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03 Linux/3.文件编辑与权限.md",
+                "file": "03 Linux/4.脚本.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03 Linux/3.文件编辑与权限.md",
+                "file": "03 Linux/4.脚本.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Linux/3.文件编辑与权限.md"
+                "file": "03 Linux/4.脚本.md"
               }
             }
           }
@@ -188,44 +202,45 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "73db78b7ea677d12",
+  "active": "ebe848e5bddc091d",
   "lastOpenFiles": [
-    "03 Linux/imgs/rmsyboliclink.png",
-    "03 Linux/3.文件编辑与权限.md",
-    "03 Linux/imgs/symboliclink.png",
-    "03 Linux/imgs/ls_info.png",
-    "03 Linux/imgs/ls_hl.png",
-    "03 Linux/Ubuntu/2.显卡管理.md",
-    "03 Linux/imgs/ls_dev.png",
-    "03 Linux/2.包管理器.md",
-    "03 Linux/Arch/01 基本安装.md",
+    "01 Obsidian/3.Markdown.md",
+    "01 Obsidian/imgs/imgs_show.png",
+    "01 Obsidian/imgs",
+    "03 Linux/4.脚本.md",
+    "03 Linux/Arch/03 基础配置和工具.md",
     "03 Linux/Arch/02 桌面环境.md",
+    "03 Linux/Arch/04 开发工具.md",
+    "03 Linux/imgs/unset_variable.png",
+    "03 Linux/imgs/guess2.png",
+    "03 Linux/imgs/Pasted image 20240426160518.png",
+    "03 Linux/imgs/guess1.png",
     "03 Linux/1.基本使用手册.md",
+    "03 Linux/imgs/echo_out.png",
+    "03 Linux/工具集.md",
+    "03 Linux/imgs/hello_sh.png",
+    "03 Linux/3.文件编辑与权限.md",
+    "03 Linux/Arch/imgs/Pasted image 20240421120434.png",
+    "03 Linux/Arch/imgs/Pasted image 20240421120644.png",
+    "03 Linux/Arch/imgs/Pasted image 20240421120633.png",
+    "03 Linux/Arch/01 基本安装.md",
+    "03 Linux/Ubuntu/2.显卡管理.md",
+    "03 Linux/2.包管理器.md",
     "03 Linux/Ubuntu/1.软件的安装与管理.md",
-    "03 Linux/imgs/neofetch_ip.png",
     "03 Linux/Ubuntu/0.安装Linux.md",
     "03 Linux/Arch/Hyprland/01 安装Hyprland.md",
     "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
     "03 Linux/Arch/Hyprland/03 终端.md",
     "03 Linux/Arch/Hyprland/04 waybar.md",
     "03 Linux/Arch/Hyprland/05 组件.md",
-    "03 Linux/Arch/03 基础配置和工具.md",
-    "03 Linux/Arch/04 开发工具.md",
     "03 Linux/Ubuntu/Ubuntu 20.04 美化.md",
     "12 OpenCV/Python/02 几何变换.md",
     "03 Linux/终端配置.md",
-    "03 Linux/工具集.md",
-    "03 Linux/imgs/fish_config.png",
-    "03 Linux/imgs/wd.png",
-    "03 Linux/imgs/duf.png",
-    "03 Linux/imgs/dust.png",
     "03 Linux/imgs",
     "08 ROS/01 ROS 概述与环境搭建.md",
     "16 Machine Learning/02.Linear Regression.md",
     "16 Machine Learning/01.Introduction.md",
     "06 Python/Class.md",
-    "06 Python/14 Sets.md",
-    "Project/2024SRP/Plannings.md",
     "08 ROS/imgs",
     "Project/2024SRP/01 Studying",
     "Project/2024SRP",
@@ -234,7 +249,6 @@
     "16 Machine Learning",
     "06 Python/imgs",
     "15 Docker/imgs/imgs",
-    "15 Docker/03 Docker 安装",
     "未命名.canvas"
   ]
 }
