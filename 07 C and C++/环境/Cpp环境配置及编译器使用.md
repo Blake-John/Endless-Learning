@@ -71,7 +71,7 @@ g++ test.cpp -o test
 g++ -E test.cpp -o test.i
 ```
 
-- `-E` 选项指示编译器仅对输入文件进行 **[[02.How C++ Work#2.2.1 Preprocess Statement|预处理]]** 
+- `-E` 选项指示编译器仅对输入文件进行 **[[../C++/01 Basic/02.How C++ Work#2.2.1 Preprocess Statement|预处理]]** 
 - 通过这一步生成的文件如下所示：
 
 ![](./imgs/preprocess.png)
@@ -86,7 +86,7 @@ g++ -E test.cpp -o test.i
 g++ -S preprocess.i -o compile.s
 ```
 
-- `-S` 选项指示编译器对输入文件进行 **[[02.How C++ Work#2.2.2 Compiled|编译]]** 
+- `-S` 选项指示编译器对输入文件进行 **[[../C++/01 Basic/02.How C++ Work#2.2.2 Compiled|编译]]** 
 
 通过这一步生成的文件如下：
 
@@ -114,7 +114,7 @@ g++ -C compile.s -o assembling.o
 g++ assembling.o -o example
 ```
 
-- 这一步会将二进制文件编译成可执行文件，并且将需要的库进行 **[[02.How C++ Work#2.2.3 Link|链接]]** ，链接完成后我们可以执行该文件
+- 这一步会将二进制文件编译成可执行文件，并且将需要的库进行 **[[../C++/01 Basic/02.How C++ Work#2.2.3 Link|链接]]** ，链接完成后我们可以执行该文件
 
 ![](./imgs/example_target.png)
 

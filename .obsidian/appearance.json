@@ -1,9 +1,15 @@
 {
   "accentColor": "",
-  "cssTheme": "Minimal",
+  "cssTheme": "Prism",
   "theme": "moonstone",
   "nativeMenus": false,
   "baseFontSize": 15,
-  "monospaceFontFamily": "Hack",
-  "textFontFamily": ""
+  "monospaceFontFamily": "",
+  "textFontFamily": "",
+  "enabledCssSnippets": [
+    "MCL Gallery Cards",
+    "MCL Multi Column",
+    "MCL Wide Views",
+    "custom-admonitions.2607bc"
+  ]
 }

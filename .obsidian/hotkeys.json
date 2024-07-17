@@ -44,14 +44,6 @@
       "key": "S"
     }
   ],
-  "file-explorer:open": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "F"
-    }
-  ],
   "editor:open-search": [],
   "editor:cycle-list-checklist": [
     {
@@ -137,14 +129,6 @@
       "key": "B"
     }
   ],
-  "outline:open-for-current": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "D"
-    }
-  ],
   "obsidian-excalidraw-plugin:insert-link": [],
   "editor:save-file": [],
   "obsidian-excalidraw-plugin:insert-link-to-element": [],
@@ -228,6 +212,63 @@
         "Shift"
       ],
       "key": "C"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "obsidian-memos:show-thino-in-popover": [],
+  "obsidian-memos:open-thino-in-right-sidebar": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ],
+  "outline:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "D"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "markdown:add-metadata-property": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": ";"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "P"
+    }
+  ],
+  "properties:open-local": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "P"
     }
   ]
 }

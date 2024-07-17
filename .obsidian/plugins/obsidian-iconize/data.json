@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "FabConnectdevelop",
-      "SiNeutralinojs",
-      "LiListTodo",
-      "SiDocker",
-      "LiCamera"
+      "TiInnerShadowRight",
+      "TiRobot",
+      "RiRobot2Line",
+      "RiTodoLine",
+      "RiTaskLine"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -36,8 +36,6 @@
   "07 C and C++": "SiC",
   "08 ROS": "SiRos",
   "09 Algorithms": "SiThealgorithms",
-  "00 HOME.md": "FasHouse",
-  "10 ChatGLM": "SiChromatic",
   "11 ONNX": "SiOnnx",
   "Project": "RiProjectorLine",
   "12 OpenCV": "SiOpencv",
@@ -45,5 +43,13 @@
   "14 Camera": "LiCamera",
   "15 Docker": "SiDocker",
   "00 Plans.md": "LiListTodo",
-  "16 Machine Learning": "FabConnectdevelop"
+  "16 Machine Learning": "FabConnectdevelop",
+  "17 Deep Learning": "TiMoodNeutral",
+  "10 Local Model": "SiOpenai",
+  "18 Qt": "SiQt",
+  "HomePage": "BoBxsHome",
+  "00 Todo.md": "RiTodoLine",
+  "00 Done.md": "RiTaskLine",
+  "19 SLAM": "TiInnerShadowRight",
+  "20 Robotic": "RiRobot2Line"
 }

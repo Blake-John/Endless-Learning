@@ -1,0 +1,252 @@
+{
+  "main": {
+    "id": "7249b8e0e4572b8d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dee747da2d90c69d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "abdd56b42e847301",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07 C and C++/C++/04 Superior/10. Variant.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "82658460c30fe2ef",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1b9b515b48926e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "833431ade1f0fc76",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fedc637bc3862ce8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "宏",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "66874e4047ea66fc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 279.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "5c0d6b931c5b5cd2",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c8530d940dea805",
+        "type": "tabs",
+        "dimension": 51.838879159369526,
+        "children": [
+          {
+            "id": "9a7b860b92013e02",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "07 C and C++/C++/04 Superior/10. Variant.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "13955fbf04be76ac",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b2c50c073831809f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "342184ffaae39422",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "07 C and C++/C++/04 Superior/10. Variant.md"
+              }
+            }
+          },
+          {
+            "id": "d63471dec9f8a888",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "07 C and C++/C++/04 Superior/10. Variant.md"
+              }
+            }
+          },
+          {
+            "id": "05e47fe2fd732ea0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "07 C and C++/C++/04 Superior/10. Variant.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "c95abeaee460dc97",
+        "type": "tabs",
+        "dimension": 48.16112084063047,
+        "children": [
+          {
+            "id": "36dc511f9a76f6b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Todo.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 331.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-memos:Thino": false,
+      "obsidian-regex-pipeline:Regex Rulesets": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "audio-recorder:开始/结束录音": false,
+      "random-note:开始漫游笔记": false
+    }
+  },
+  "active": "abdd56b42e847301",
+  "lastOpenFiles": [
+    "07 C and C++/C++/04 Superior/Superior.md",
+    "07 C and C++/C++/04 Superior/10. Variant.md",
+    "07 C and C++/C++/04 Superior/09. Optional.md",
+    "07 C and C++/C++/04 Superior/08. Structure Binding.md",
+    "07 C and C++/C++/04 Superior/07. Precompiled Headers.md",
+    "07 C and C++/C++/02 Class/07. Virtual Function.md",
+    "07 C and C++/串口通信/串口通信方案.md",
+    "07 C and C++/串口通信/Linux串口操作.md",
+    "07 C and C++/C++/03 Advanced/Advanced.md",
+    "07 C and C++/C++/02 Class/Class.md",
+    "07 C and C++/C++/02 Class/15. Virtual Destructor.md",
+    "07 C and C++/C++/02 Class/16. Virtual Destructor.md",
+    "07 C and C++/C++/04 Superior/06. Type Cast.md",
+    "07 C and C++/C++/04 Superior/05. Union.md",
+    "07 C and C++/C++/04 Superior/04. Sorting.md",
+    "07 C and C++/C++/02 Class/06. Inheritance.md",
+    "07 C and C++/C++/02 Class/08. Visibility.md",
+    "07 C and C++/C++/04 Superior/imgs/md_array_on_stack.md",
+    "07 C and C++/C++/04 Superior/imgs/md_array_on_heap.md",
+    "07 C and C++/C++/04 Superior/03. Multi-Dimensional Array.md",
+    "07 C and C++/C++/04 Superior/imgs/ml3_2_md_h.png",
+    "07 C and C++/C++/04 Superior/imgs/ml3_1_md_h.png",
+    "07 C and C++/C++/04 Superior/imgs/ml2_1_md_h.png",
+    "07 C and C++/C++/04 Superior/imgs/Pasted image 20240710141634.png",
+    "07 C and C++/C++/04 Superior/imgs/ml2_2_md_h.png",
+    "07 C and C++/C++/04 Superior/imgs/ml1_md_h.png",
+    "07 C and C++/C++/04 Superior/imgs/md_array.png",
+    "07 C and C++/C++/04 Superior/imgs/md_array_s.png",
+    "07 C and C++/C++/04 Superior/imgs/Pasted image 20240710141147.png",
+    "07 C and C++/C++/04 Superior/imgs/thread_id.png",
+    "07 C and C++/C++/04 Superior/imgs/2d_array_on_stack.md",
+    "Excalidraw",
+    "07 C and C++/C++/01 Basic/11.Array.md",
+    "07 C and C++/C++/04 Superior/02. Timer.md",
+    "07 C and C++/C++/04 Superior/01. Thread.md",
+    "07 C and C++/C++/04 Superior/imgs",
+    "HomePage/HOME.md",
+    "HomePage/Gallery/Basic/C and C++.md",
+    "07 C and C++/C++/04 Superior",
+    "07 C and C++/C++/03 Advanced/imgs",
+    "Project/2024夏令营/任务/imgs",
+    "Project/2024夏令营/资料/了解CV和RoboMaster视觉组.pdf",
+    "Project/2024夏令营/资料/了解CV和RoboMaster视觉组 （beta）.pdf",
+    "Project/2024夏令营/任务",
+    "Project/2024夏令营/资料",
+    "Project/2024夏令营/工作记录",
+    "未命名.canvas"
+  ]
+}

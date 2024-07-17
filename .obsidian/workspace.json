@@ -4,49 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "a2d338d2cc6d23e6",
+        "id": "9351454ad8a8d0c3",
         "type": "tabs",
         "children": [
           {
-            "id": "ebe848e5bddc091d",
+            "id": "ab44692665ff8f43",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Linux/4.脚本.md",
-                "mode": "source",
+                "file": "HomePage/HOME.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           },
           {
-            "id": "9b9d02e315334f13",
+            "id": "7a7cd30170a10f29",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Linux/1.基本使用手册.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1fabf30b065806a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03 Linux/3.文件编辑与权限.md",
+                "file": "00 Done.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -75,8 +63,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:plans",
-                "matchingCase": false,
+                "query": "",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -91,26 +79,12 @@
               "type": "bookmarks",
               "state": {}
             }
-          },
-          {
-            "id": "b3ca12b1d16c17fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 Obsidian/7.搜索和查询.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 237.5,
-    "collapsed": true
+    "width": 237.5
   },
   "right": {
     "id": "5c0d6b931c5b5cd2",
@@ -119,6 +93,7 @@
       {
         "id": "6c8530d940dea805",
         "type": "tabs",
+        "dimension": 51.838879159369526,
         "children": [
           {
             "id": "e38f54127c0779ad",
@@ -126,14 +101,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03 Linux/4.脚本.md",
+                "file": "00 Done.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -143,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03 Linux/4.脚本.md",
+                "file": "00 Done.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,94 +136,133 @@
             }
           },
           {
-            "id": "fe8f170581af0c6b",
+            "id": "b2c50c073831809f",
             "type": "leaf",
             "state": {
-              "type": "calendar",
-              "state": {}
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
             }
           },
           {
-            "id": "4729c975c48aaf77",
+            "id": "342184ffaae39422",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "00 Done.md"
+              }
+            }
+          },
+          {
+            "id": "d63471dec9f8a888",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Linux/4.脚本.md"
+                "file": "00 Done.md"
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
+      },
+      {
+        "id": "c95abeaee460dc97",
+        "type": "tabs",
+        "dimension": 48.16112084063047,
+        "children": [
+          {
+            "id": "36dc511f9a76f6b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Todo.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 331.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
       "audio-recorder:开始/结束录音": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-projects:Open projects": false,
-      "obsidian-regex-pipeline:Regex Rulesets": false,
-      "obsidian-memos:Memos": false
+      "obsidian-regex-pipeline:Regex Rulesets": true,
+      "random-note:开始漫游笔记": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-memos:Thino": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "ebe848e5bddc091d",
+  "active": "7a7cd30170a10f29",
   "lastOpenFiles": [
-    "01 Obsidian/3.Markdown.md",
-    "01 Obsidian/imgs/imgs_show.png",
-    "01 Obsidian/imgs",
-    "03 Linux/4.脚本.md",
-    "03 Linux/Arch/03 基础配置和工具.md",
-    "03 Linux/Arch/02 桌面环境.md",
-    "03 Linux/Arch/04 开发工具.md",
-    "03 Linux/imgs/unset_variable.png",
-    "03 Linux/imgs/guess2.png",
-    "03 Linux/imgs/Pasted image 20240426160518.png",
-    "03 Linux/imgs/guess1.png",
-    "03 Linux/1.基本使用手册.md",
-    "03 Linux/imgs/echo_out.png",
-    "03 Linux/工具集.md",
-    "03 Linux/imgs/hello_sh.png",
-    "03 Linux/3.文件编辑与权限.md",
-    "03 Linux/Arch/imgs/Pasted image 20240421120434.png",
-    "03 Linux/Arch/imgs/Pasted image 20240421120644.png",
-    "03 Linux/Arch/imgs/Pasted image 20240421120633.png",
-    "03 Linux/Arch/01 基本安装.md",
-    "03 Linux/Ubuntu/2.显卡管理.md",
-    "03 Linux/2.包管理器.md",
-    "03 Linux/Ubuntu/1.软件的安装与管理.md",
-    "03 Linux/Ubuntu/0.安装Linux.md",
-    "03 Linux/Arch/Hyprland/01 安装Hyprland.md",
-    "03 Linux/Arch/Hyprland/02 配置Hyprland.md",
-    "03 Linux/Arch/Hyprland/03 终端.md",
-    "03 Linux/Arch/Hyprland/04 waybar.md",
-    "03 Linux/Arch/Hyprland/05 组件.md",
-    "03 Linux/Ubuntu/Ubuntu 20.04 美化.md",
+    "00 Plans.md",
+    "00 Todo.md",
+    "19 SLAM/视觉SLAM十四讲 从理论到实践_高翔; 张涛; 等.pdf",
+    "Project/Summary.md",
+    "HomePage/HOME.md",
+    "HomePage/Gallery/Module/SLAM.md",
+    "HomePage/Gallery/Module/ROS.md",
+    "HomePage/Gallery/Module/Robotic.md",
+    "HomePage/Gallery/Basic/C and C++.md",
+    "Project/2024夏令营/工作记录/My Holiday Camp.md",
+    "19 SLAM/04 Camera.md",
+    "20 Robotic/02 Translation and Rotation.md",
+    "Project/2024夏令营/任务/通用任务.md",
+    "20 Robotic/03 Rotation Matrix.md",
+    "20 Robotic/04 Ratation Angles.md",
+    "20 Robotic/05 Transformation Matrix.md",
+    "19 SLAM/03 Rigid Body Motion.md",
+    "19 SLAM/02 Math Expression.md",
+    "19 SLAM/01 Introduction.md",
+    "19 SLAM/Untitled.pdf",
+    "14 Camera/摄像头成像原理.md",
+    "20 Robotic/imgs/刚体的的位移向量.png",
+    "20 Robotic/06 Operator.md",
+    "20 Robotic/imgs/Pasted image 20240715112127.png",
+    "20 Robotic/01 Introduction.md",
     "12 OpenCV/Python/02 几何变换.md",
-    "03 Linux/终端配置.md",
-    "03 Linux/imgs",
-    "08 ROS/01 ROS 概述与环境搭建.md",
-    "16 Machine Learning/02.Linear Regression.md",
-    "16 Machine Learning/01.Introduction.md",
-    "06 Python/Class.md",
-    "08 ROS/imgs",
-    "Project/2024SRP/01 Studying",
-    "Project/2024SRP",
-    "03 Linux/Arch/imgs",
-    "16 Machine Learning/imgs",
-    "16 Machine Learning",
-    "06 Python/imgs",
-    "15 Docker/imgs/imgs",
+    "20 Robotic/imgs/逆变换.png",
+    "20 Robotic/imgs/连续变换.png",
+    "07 C and C++/CMake/CMake Commands.md",
+    "20 Robotic/imgs/转动和移动的顺序.png",
+    "20 Robotic/imgs/欧拉角变化.png",
+    "20 Robotic/imgs/沿Y_A旋转.png",
+    "20 Robotic/imgs/沿X_A旋转.png",
+    "20 Robotic/imgs/沿Z_A旋转.png",
+    "20 Robotic/imgs/坐标系转换.png",
+    "20 Robotic/imgs",
+    "19 SLAM/Drawing 2024-07-15 09.28.23.excalidraw.md",
+    "20 Robotic",
+    "19 SLAM",
+    "SLAM",
+    "Project/2024夏令营/资料/了解CV和RoboMaster视觉组.pdf",
+    "07 C and C++/环境/Cpp环境配置及编译器使用.md",
+    "07 C and C++/C++/01 Basic/02.How C++ Work.md",
+    "18 Qt/906264+Qt6C+++开发指南.pdf",
+    "17 Deep Learning/Pattern Recognition and Machine Learning (Christopher M. Bishop) (Z-Library).pdf",
+    "17 Deep Learning/Deep Learning (Ian Goodfellow, Yoshua Bengio, Aaron Courville) (Z-Library).pdf",
     "未命名.canvas"
   ]
 }

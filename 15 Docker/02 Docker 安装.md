@@ -33,6 +33,10 @@ For non-Gnome Desktop environments, `gnome-terminal` **must be installed** :
 sudo pacman -S gnome-terminal
 ```
 
+> [!Note]
+> Now, this is not the necessity
+
+
 ## 2.2 Install Docker Desktop
 
 We can use the AUR package to install the package, so it requires `yay` or `paru` etc. [See Also](03%20Linux/Arch/01%20基本安装#3.6.4%20Yay)
@@ -41,7 +45,11 @@ We can use the AUR package to install the package, so it requires `yay` or `paru
 yay -S docker-desktop
 ```
 
-## 2.3 Launch Docker Desktop
+> [!note] 
+> Or alternatively ,we can only install the docker server : 
+> `sudo pacman -S docker` 
+
+## 2.3 Launch Docker Service
 
 To start Docker Desktop for Linux, search **Docker Desktop** on the **Applications** menu and open it. This launches the Docker menu icon and opens the Docker Dashboard, reporting the status of Docker Desktop.
 
@@ -49,6 +57,15 @@ Alternatively, open a terminal and run :
 
 ```bash
 systemctl --user start docker-desktop
+```
+
+If we only install the docker server, we need to start the service and add the user to the group `docker` : 
+
+```bash
+sudo usermod -aG docker blake
+# add the user to the docker group
+sudo systemctl enable docker
+# start the docker service
 ```
 
 ## 2.4 Check Installation

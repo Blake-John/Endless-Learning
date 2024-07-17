@@ -144,4 +144,4 @@ say_hello('Nick')  # 'Hello, Nick!'
 
 Another theory to explain the phenomena is about the **Memory Usage** , you can think of the object is the **specific memory address** , every time the variable refer to the same object is actually getting the value from the same memory address.
 
-See also -> [The Pointer in C++](09.Pointers.md)
+See also -> [The Pointer in C++](../07%20C%20and%20C++/C++/01%20Basic/09.Pointers.md)

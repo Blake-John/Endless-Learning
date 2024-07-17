@@ -2,7 +2,7 @@
 
 In this chapter, we are going to warp the img to get the normal perspective of the img.
 
-We will find out all the card bellow and warp them : 
+We will find out all the card below and warp them : 
 
 ![](./imgs/cards.jpg)
 

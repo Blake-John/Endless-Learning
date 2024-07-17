@@ -1,18 +1,15 @@
 [
-  "calendar-beta",
   "file-explorer-note-count",
-  "obsidian-mind-map",
-  "obsidian-pandoc",
-  "dataview",
   "obsidian-memos",
   "obsidian-tasks-plugin",
-  "obsidian-minimal-settings",
-  "obsidian-excalidraw-plugin",
-  "obsidian-style-settings",
   "obsidian-icon-folder",
-  "obsidian-admonition",
-  "obsidian-projects",
-  "obsidian-git",
   "obsidian-regex-pipeline",
-  "obsidian-regex-replace"
+  "obsidian-regex-replace",
+  "table-editor-obsidian",
+  "contribution-graph",
+  "obsidian-excalidraw-plugin",
+  "obsidian-admonition",
+  "obsidian-style-settings",
+  "dataview",
+  "pdf-plus"
 ]

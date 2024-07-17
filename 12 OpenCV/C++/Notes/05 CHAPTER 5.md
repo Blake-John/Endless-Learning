@@ -48,7 +48,7 @@ Result :
 
 # 5.2 Color Range
 
-In the `HSV` color space, we can use the scalar of the **color range** to get the **mask** , **a Gray Scalar img**, of the color we want, in which **the color of the specific pixel in range will be set to `255` (white), and the color out of range (above or bellow) will be set to `0` (black)** .
+In the `HSV` color space, we can use the scalar of the **color range** to get the **mask** , **a Gray Scalar img**, of the color we want, in which **the color of the specific pixel in range will be set to `255` (white), and the color out of range (above or below) will be set to `0` (black)** .
 
 Let's just assume that we want to get the color in the range of 
 - `H` : 79 ~ 150

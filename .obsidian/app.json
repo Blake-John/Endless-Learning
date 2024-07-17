@@ -9,5 +9,13 @@
   "spellcheck": false,
   "useMarkdownLinks": true,
   "newLinkFormat": "relative",
-  "vimMode": false
+  "vimMode": false,
+  "propertiesInDocument": "hidden",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }

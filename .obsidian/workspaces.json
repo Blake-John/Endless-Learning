@@ -1,1 +1,220 @@
-{}
+{
+  "workspaces": {
+    "HOME": {
+      "main": {
+        "id": "7249b8e0e4572b8d",
+        "type": "split",
+        "children": [
+          {
+            "id": "d8623e3b8ecd80d8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b03785ca0b15500d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "HomePage/HOME.md",
+                    "mode": "preview",
+                    "backlinks": true,
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "82658460c30fe2ef",
+        "type": "split",
+        "children": [
+          {
+            "id": "d1b9b515b48926e0",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "833431ade1f0fc76",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "fedc637bc3862ce8",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#includes",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "66874e4047ea66fc",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 237.5
+      },
+      "right": {
+        "id": "5c0d6b931c5b5cd2",
+        "type": "split",
+        "children": [
+          {
+            "id": "6c8530d940dea805",
+            "type": "tabs",
+            "dimension": 29.24901185770751,
+            "children": [
+              {
+                "id": "e38f54127c0779ad",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "HomePage/HOME.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "9a7b860b92013e02",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "HomePage/HOME.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "13955fbf04be76ac",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "fe8f170581af0c6b",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "4729c975c48aaf77",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "HomePage/HOME.md"
+                  }
+                }
+              },
+              {
+                "id": "2611a0165e5b499f",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "HomePage/HOME.md"
+                  }
+                }
+              }
+            ],
+            "currentTab": 5
+          },
+          {
+            "id": "c95abeaee460dc97",
+            "type": "tabs",
+            "dimension": 27.17391304347826,
+            "children": [
+              {
+                "id": "36dc511f9a76f6b5",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "00 Todo.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "f2eb1ac41408bb30",
+            "type": "tabs",
+            "dimension": 43.57707509881423,
+            "children": [
+              {
+                "id": "7d018cc1dea1cace",
+                "type": "leaf",
+                "state": {
+                  "type": "thino_view",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 331.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "obsidian-excalidraw-plugin:新建绘图文件": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "workspaces:管理工作区布局": false,
+          "audio-recorder:开始/结束录音": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-regex-pipeline:Regex Rulesets": false,
+          "random-note:开始漫游笔记": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-memos:Thino": false,
+          "homepage:Open homepage": false
+        }
+      },
+      "active": "b03785ca0b15500d",
+      "mtime": "2024-06-27T16:53:18+08:00"
+    }
+  },
+  "active": "HOME"
+}
