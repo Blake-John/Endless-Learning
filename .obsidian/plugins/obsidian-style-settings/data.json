@@ -37,5 +37,6 @@
   "obsidian-prism-theme@@pt-icon-folder-accent": false,
   "obsidian-prism-theme@@pt-disable-callout-styling": false,
   "obsidian-prism-theme@@pt-disable-blur": true,
-  "obsidian-prism-theme@@pt-custom-vault-banner": false
+  "obsidian-prism-theme@@pt-custom-vault-banner": false,
+  "obsidian-prism-theme@@color-schemes-dt": "pt-color-scheme-raven-dt"
 }

@@ -4,37 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "9351454ad8a8d0c3",
+        "id": "9f5b0f80aab75ffa",
         "type": "tabs",
         "children": [
           {
-            "id": "ab44692665ff8f43",
+            "id": "1508736651c7ec90",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HomePage/HOME.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7a7cd30170a10f29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 Done.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"activation function\"",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 Done.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 Done.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "00 Done.md"
-              }
+              "state": {}
             }
           },
           {
@@ -162,9 +139,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "00 Done.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -215,54 +190,54 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "7a7cd30170a10f29",
+  "active": "1508736651c7ec90",
   "lastOpenFiles": [
-    "00 Plans.md",
-    "00 Todo.md",
-    "19 SLAM/视觉SLAM十四讲 从理论到实践_高翔; 张涛; 等.pdf",
-    "Project/Summary.md",
-    "HomePage/HOME.md",
-    "HomePage/Gallery/Module/SLAM.md",
-    "HomePage/Gallery/Module/ROS.md",
-    "HomePage/Gallery/Module/Robotic.md",
-    "HomePage/Gallery/Basic/C and C++.md",
-    "Project/2024夏令营/工作记录/My Holiday Camp.md",
-    "19 SLAM/04 Camera.md",
-    "20 Robotic/02 Translation and Rotation.md",
-    "Project/2024夏令营/任务/通用任务.md",
-    "20 Robotic/03 Rotation Matrix.md",
-    "20 Robotic/04 Ratation Angles.md",
-    "20 Robotic/05 Transformation Matrix.md",
-    "19 SLAM/03 Rigid Body Motion.md",
-    "19 SLAM/02 Math Expression.md",
-    "19 SLAM/01 Introduction.md",
-    "19 SLAM/Untitled.pdf",
-    "14 Camera/摄像头成像原理.md",
-    "20 Robotic/imgs/刚体的的位移向量.png",
-    "20 Robotic/06 Operator.md",
-    "20 Robotic/imgs/Pasted image 20240715112127.png",
-    "20 Robotic/01 Introduction.md",
-    "12 OpenCV/Python/02 几何变换.md",
-    "20 Robotic/imgs/逆变换.png",
-    "20 Robotic/imgs/连续变换.png",
-    "07 C and C++/CMake/CMake Commands.md",
-    "20 Robotic/imgs/转动和移动的顺序.png",
-    "20 Robotic/imgs/欧拉角变化.png",
-    "20 Robotic/imgs/沿Y_A旋转.png",
-    "20 Robotic/imgs/沿X_A旋转.png",
-    "20 Robotic/imgs/沿Z_A旋转.png",
-    "20 Robotic/imgs/坐标系转换.png",
-    "20 Robotic/imgs",
-    "19 SLAM/Drawing 2024-07-15 09.28.23.excalidraw.md",
-    "20 Robotic",
-    "19 SLAM",
-    "SLAM",
     "Project/2024夏令营/资料/了解CV和RoboMaster视觉组.pdf",
-    "07 C and C++/环境/Cpp环境配置及编译器使用.md",
-    "07 C and C++/C++/01 Basic/02.How C++ Work.md",
-    "18 Qt/906264+Qt6C+++开发指南.pdf",
-    "17 Deep Learning/Pattern Recognition and Machine Learning (Christopher M. Bishop) (Z-Library).pdf",
-    "17 Deep Learning/Deep Learning (Ian Goodfellow, Yoshua Bengio, Aaron Courville) (Z-Library).pdf",
+    "07 C and C++/CMake/CMake Practice.pdf",
+    "17 Deep Learning/Yolo/YOLO系列教程.pdf",
+    "17 Deep Learning/1. Basic/08 Random Initialization.md",
+    "17 Deep Learning/1. Basic/07 Gradient Descent.md",
+    "17 Deep Learning/1. Basic/02 Logistic Regression.md",
+    "17 Deep Learning/1. Basic/06 Activation Function.md",
+    "16 Machine Learning/02.Linear Regression.md",
+    "17 Deep Learning/1. Basic/imgs/local_minimum.png",
+    "17 Deep Learning/1. Basic/imgs/large_alpha.png",
+    "17 Deep Learning/1. Basic/imgs/small_alpha.png",
+    "17 Deep Learning/1. Basic/imgs/J_w_graph.png",
+    "17 Deep Learning/1. Basic/imgs/simultaneously_update.png",
+    "17 Deep Learning/1. Basic/imgs/downhill.png",
+    "17 Deep Learning/1. Basic/imgs/costfunction_normal.png",
+    "16 Machine Learning/05.Converge.md",
+    "16 Machine Learning/14.Activation Function.md",
+    "17 Deep Learning/1. Basic/imgs/leaky_relu.png",
+    "17 Deep Learning/1. Basic/imgs/tanh.png",
+    "17 Deep Learning/1. Basic/imgs/ReLU.png",
+    "17 Deep Learning/1. Basic/Basic.md",
+    "07 C and C++/C++/01 Basic/Basic.md",
+    "17 Deep Learning/1. Basic/05 Neural Network Architecture.md",
+    "17 Deep Learning/1. Basic/04 Vectorization.md",
+    "16 Machine Learning/10.Neural Network Layer.md",
+    "16 Machine Learning/11.Forward Propagation.md",
+    "16 Machine Learning/18.Convolutional Layer.md",
+    "17 Deep Learning/1. Basic/01 Introduction.md",
+    "17 Deep Learning/1. Basic/03 Computing Graph.md",
+    "16 Machine Learning/12.Introduction of Tensorflow and Numpy.md",
+    "16 Machine Learning/09.Neurons and the Brain.md",
+    "16 Machine Learning/19.Backward Propagation.md",
+    "16 Machine Learning/13.Vectorizing.md",
+    "16 Machine Learning/06.Classification-Logistic Regression.md",
+    "17 Deep Learning/Book/Deep Learning (Ian Goodfellow, Yoshua Bengio, Aaron Courville) (Z-Library).pdf",
+    "17 Deep Learning/1. Basic/imgs",
+    "12 OpenCV/Python/00 OpenCV 简介.md",
+    "HomePage/Gallery/Module/Machine Learning.md",
+    "17 Deep Learning/2. Improving Network/Improving Network.md",
+    "17 Deep Learning/5. Sequence Model",
+    "17 Deep Learning/4. Convolutional",
+    "17 Deep Learning/3. Structuring Project",
+    "17 Deep Learning/2. Improving Network",
+    "HomePage/HOME.md",
+    "17 Deep Learning/1. Basic",
+    "16 Machine Learning/Code",
     "未命名.canvas"
   ]
 }
