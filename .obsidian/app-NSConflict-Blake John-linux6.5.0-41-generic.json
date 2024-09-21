@@ -1,0 +1,14 @@
+{
+  "trashOption": "local",
+  "newFileLocation": "current",
+  "strictLineBreaks": false,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./imgs",
+  "showUnsupportedFiles": true,
+  "showLineNumber": false,
+  "spellcheck": false,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "vimMode": false,
+  "propertiesInDocument": "hidden"
+}

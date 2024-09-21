@@ -5,4 +5,6 @@
 > - [04 Vectorization](04%20Vectorization.md)
 > - [05 Neural Network Architecture](05%20Neural%20Network%20Architecture.md)
 > - [06 Activation Function](06%20Activation%20Function.md)
+> - [07 Gradient Descent](07%20Gradient%20Descent.md)
+> - [08 Random Initialization](08%20Random%20Initialization.md)
 

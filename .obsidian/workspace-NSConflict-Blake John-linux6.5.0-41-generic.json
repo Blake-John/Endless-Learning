@@ -1,0 +1,251 @@
+{
+  "main": {
+    "id": "7249b8e0e4572b8d",
+    "type": "split",
+    "children": [
+      {
+        "id": "48f86f5d81885888",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "545d9f37a8a44c98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HomePage/HOME.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "82658460c30fe2ef",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1b9b515b48926e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "833431ade1f0fc76",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fedc637bc3862ce8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "66874e4047ea66fc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 237.5
+  },
+  "right": {
+    "id": "5c0d6b931c5b5cd2",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c8530d940dea805",
+        "type": "tabs",
+        "dimension": 51.838879159369526,
+        "children": [
+          {
+            "id": "e38f54127c0779ad",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "HomePage/HOME.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9a7b860b92013e02",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "HomePage/HOME.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "13955fbf04be76ac",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b2c50c073831809f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "342184ffaae39422",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "HomePage/HOME.md"
+              }
+            }
+          },
+          {
+            "id": "d63471dec9f8a888",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "HomePage/HOME.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "c95abeaee460dc97",
+        "type": "tabs",
+        "dimension": 48.16112084063047,
+        "children": [
+          {
+            "id": "36dc511f9a76f6b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Todo.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 331.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "audio-recorder:开始/结束录音": false,
+      "obsidian-regex-pipeline:Regex Rulesets": true,
+      "random-note:开始漫游笔记": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-memos:Thino": false
+    }
+  },
+  "active": "545d9f37a8a44c98",
+  "lastOpenFiles": [
+    "07 C and C++/C++/13.Class.md",
+    "07 C and C++/C++/09.Pointers.md",
+    "07 C and C++/C++/15.Const.md",
+    "07 C and C++/C++/16.Mutable.md",
+    "06 Python/Class.md",
+    "07 C and C++/C++/14.String.md",
+    "07 C and C++/C++/11.Array.md",
+    "18 Qt/Note.md",
+    "从++.md",
+    "03 Linux/1.基本使用手册.md",
+    "03 Linux/4.脚本.md",
+    "18 Qt/906264+Qt6C+++开发指南.pdf",
+    "18 Qt/01 Introduction.md",
+    "Project/2024夏令营/My Holiday Camp.md",
+    "17 Deep Learning/Pattern Recognition and Machine Learning (Christopher M. Bishop) (Z-Library).pdf",
+    "17 Deep Learning/Deep Learning (Ian Goodfellow, Yoshua Bengio, Aaron Courville) (Z-Library).pdf",
+    "HomePage/HOME.md",
+    "00 diaries/2024-06-29-星期六.md",
+    "00 Todo.md",
+    "00 Plans.md",
+    "00 Done.md",
+    "00",
+    "03 Linux/5.vim.md",
+    "Project/2024夏令营",
+    "Project/13 OCR-Python.md",
+    "Project/2024SRP/StudyRoute.md",
+    "Project/2024SRP/Plannings.md",
+    "HomePage/Gallery/Module/STM32.md",
+    "HomePage/Gallery/Module/ROS.md",
+    "HomePage/Gallery/Module/Qt.md",
+    "HomePage/Gallery/Module/OpenCV.md",
+    "01 Obsidian/imgs/imgs_show.png",
+    "HomePage/Gallery/Module",
+    "HomePage/Gallery/Basic",
+    "HomePage/Gallery/Tool",
+    "HomePage/Gallery",
+    "HomePage",
+    "HomePage/wall.jpg",
+    "18 Qt/imgs/empty_qt_pro.png",
+    "18 Qt/imgs/add_prefix.png",
+    "18 Qt/imgs/location_dialog.png",
+    "18 Qt/imgs/qt_resource_file.png",
+    "18 Qt/imgs/property.png",
+    "18 Qt/imgs/design_body.png",
+    "18 Qt/imgs/summary.png",
+    "18 Qt/imgs/kit.png",
+    "未命名.canvas"
+  ]
+}

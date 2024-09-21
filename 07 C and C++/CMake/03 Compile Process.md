@@ -34,7 +34,7 @@ project
 
 这个时候，我们只需要将 `main.cpp` 和 `mylib.cpp` 一起生成可执行文件即可，其 `CMakeLists.txt` 如下：
 
-```CMake
+[04 Write CMakeLists](04%20Write%20CMakeLists.md)```CMake
 cmake_minimum_required (VERSION 3.10)
 project (TEST)
 add_executable (main main.cpp mylib.cpp)

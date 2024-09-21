@@ -1,0 +1,53 @@
+{
+  "settings": {
+    "migrated": 3,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "none",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "RiTodoLine",
+      "RiTaskLine",
+      "BoBxsHome",
+      "SiQt",
+      "SiOpenai"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconsBackgroundCheckEnabled": false
+  },
+  "01 Obsidian": "SiObsidian",
+  "00 diaries": "FasBook",
+  "00 Excalidraw": "RiFlowChart",
+  "00 templates": "RiBookletLine",
+  "02 Visual Studio Code": "SiVisualstudiocode",
+  "03 Linux": "SiLinux",
+  "04 Git": "SiGit",
+  "05 SSH": "RiRemoteControlLine",
+  "06 Python": "SiPython",
+  "07 C and C++": "SiC",
+  "08 ROS": "SiRos",
+  "09 Algorithms": "SiThealgorithms",
+  "11 ONNX": "SiOnnx",
+  "Project": "RiProjectorLine",
+  "12 OpenCV": "SiOpencv",
+  "13 STM32": "SiStmicroelectronics",
+  "14 Camera": "LiCamera",
+  "15 Docker": "SiDocker",
+  "00 Plans.md": "LiListTodo",
+  "16 Machine Learning": "FabConnectdevelop",
+  "17 Deep Learning": "TiMoodNeutral",
+  "10 Local Model": "SiOpenai",
+  "18 Qt": "SiQt",
+  "HomePage": "BoBxsHome",
+  "00 Todo.md": "RiTodoLine",
+  "00 Done.md": "RiTaskLine"
+}

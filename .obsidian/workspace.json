@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "9f5b0f80aab75ffa",
+        "id": "045dc30eb1e1415b",
         "type": "tabs",
         "children": [
           {
-            "id": "1508736651c7ec90",
+            "id": "af1a8abc6e7966a6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "17 Deep Learning/3. Structuring Project/01 Evaluation Metric.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"activation function\"",
+                "query": "Conflict",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,6 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "17 Deep Learning/3. Structuring Project/01 Evaluation Metric.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "17 Deep Learning/3. Structuring Project/01 Evaluation Metric.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {}
+              "state": {
+                "file": "17 Deep Learning/3. Structuring Project/01 Evaluation Metric.md"
+              }
             }
           },
           {
@@ -139,11 +148,13 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "17 Deep Learning/3. Structuring Project/01 Evaluation Metric.md"
+              }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
         "id": "c95abeaee460dc97",
@@ -172,6 +183,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-memos:Thino": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
@@ -184,60 +196,59 @@
       "obsidian-regex-pipeline:Regex Rulesets": true,
       "random-note:开始漫游笔记": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-memos:Thino": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "1508736651c7ec90",
+  "active": "af1a8abc6e7966a6",
   "lastOpenFiles": [
+    "17 Deep Learning/4. Computer Vision/未命名.md",
+    "17 Deep Learning/3. Structuring Project/01 Evaluation Metric.md",
+    "17 Deep Learning/11 Backward Propagation.md",
+    "17 Deep Learning/03 Forward Propagation.md",
+    "07 C and C++/CMake/03 Compile Process.md",
+    "17 Deep Learning/2. Improving Network/07 Multiclass Classification.md",
+    "17 Deep Learning/2. Improving Network/imgs/softmax_neural.png",
+    "17 Deep Learning/10 Convolutional Layer.md",
+    "17 Deep Learning/09 Advanced Optimization.md",
+    "06 Python/13 Identity Value.md",
+    "17 Deep Learning/06 Activation Function.md",
+    "17 Deep Learning/1. Basic/06 Activation Function.md",
+    "17 Deep Learning/05 Vectorizing.md",
+    "17 Deep Learning/08 Multi-label Classification.md",
+    "07 C and C++/环境/Cpp环境配置及编译器使用.md",
+    "12 OpenCV/C++/Notes/06 CHAPTER 6.md",
+    "06 Python/13 Identity Value-NSConflict-Blake John-linux6.5.0-41-generic.md",
+    "07 C and C++/环境/Cpp环境配置及编译器使用-NSConflict-Blake John-linux6.5.0-41-generic.md",
+    "16 Machine Learning/06.Classification-Logistic Regression.md",
+    "12 OpenCV/C++/Notes/06 CHAPTER 6-NSConflict-Blake John-linux6.5.0-41-generic.md",
+    "12 OpenCV/C++/Notes/05 CHAPTER 5-NSConflict-Blake John-linux6.5.0-41-generic.md",
+    "12 OpenCV/C++/Notes/05 CHAPTER 5.md",
+    "07 C and C++/CMake/05 CMake Program.md",
+    "07 C and C++/CMake/05 CMake Program-NSConflict-Blake John-linux6.5.0-41-generic.md",
+    "07 C and C++/CMake/04 Write CMakeLists.md",
+    "07 C and C++/CMake/04 Write CMakeLists-NSConflict-Blake John-linux6.5.0-41-generic.md",
+    "07 C and C++/CMake/03 Compile Process-NSConflict-Blake John-linux6.5.0-41-generic.md",
+    "17 Deep Learning/2. Improving Network/imgs/lr_decay.png",
+    "17 Deep Learning/2. Improving Network/imgs/Pasted image 20240908151158.png",
+    "17 Deep Learning/2. Improving Network/imgs/rmsprop.png",
+    "17 Deep Learning/2. Improving Network/imgs/gdm.png",
+    "17 Deep Learning/2. Improving Network/imgs/gd.png",
+    "17 Deep Learning/2. Improving Network/imgs/different_batch_size.png",
+    "17 Deep Learning/2. Improving Network/imgs/normalize_inputs.png",
+    "16 Machine Learning/imgs/early_stop.png",
+    "16 Machine Learning/imgs/data_augmentation.png",
+    "17 Deep Learning/2. Improving Network/imgs/imgs",
+    "17 Deep Learning/2. Improving Network/imgs",
+    "21 PointNet/Note.pdf",
+    "21 PointNet/imgs",
+    "21 PointNet",
+    "Project/2024夏令营/任务/Untitled.pdf",
+    "Project/2024夏令营/任务/imgs/imgs",
     "Project/2024夏令营/资料/了解CV和RoboMaster视觉组.pdf",
     "07 C and C++/CMake/CMake Practice.pdf",
     "17 Deep Learning/Yolo/YOLO系列教程.pdf",
-    "17 Deep Learning/1. Basic/08 Random Initialization.md",
-    "17 Deep Learning/1. Basic/07 Gradient Descent.md",
-    "17 Deep Learning/1. Basic/02 Logistic Regression.md",
-    "17 Deep Learning/1. Basic/06 Activation Function.md",
-    "16 Machine Learning/02.Linear Regression.md",
-    "17 Deep Learning/1. Basic/imgs/local_minimum.png",
-    "17 Deep Learning/1. Basic/imgs/large_alpha.png",
-    "17 Deep Learning/1. Basic/imgs/small_alpha.png",
-    "17 Deep Learning/1. Basic/imgs/J_w_graph.png",
-    "17 Deep Learning/1. Basic/imgs/simultaneously_update.png",
-    "17 Deep Learning/1. Basic/imgs/downhill.png",
-    "17 Deep Learning/1. Basic/imgs/costfunction_normal.png",
-    "16 Machine Learning/05.Converge.md",
-    "16 Machine Learning/14.Activation Function.md",
-    "17 Deep Learning/1. Basic/imgs/leaky_relu.png",
-    "17 Deep Learning/1. Basic/imgs/tanh.png",
-    "17 Deep Learning/1. Basic/imgs/ReLU.png",
-    "17 Deep Learning/1. Basic/Basic.md",
-    "07 C and C++/C++/01 Basic/Basic.md",
-    "17 Deep Learning/1. Basic/05 Neural Network Architecture.md",
-    "17 Deep Learning/1. Basic/04 Vectorization.md",
-    "16 Machine Learning/10.Neural Network Layer.md",
-    "16 Machine Learning/11.Forward Propagation.md",
-    "16 Machine Learning/18.Convolutional Layer.md",
-    "17 Deep Learning/1. Basic/01 Introduction.md",
-    "17 Deep Learning/1. Basic/03 Computing Graph.md",
-    "16 Machine Learning/12.Introduction of Tensorflow and Numpy.md",
-    "16 Machine Learning/09.Neurons and the Brain.md",
-    "16 Machine Learning/19.Backward Propagation.md",
-    "16 Machine Learning/13.Vectorizing.md",
-    "16 Machine Learning/06.Classification-Logistic Regression.md",
-    "17 Deep Learning/Book/Deep Learning (Ian Goodfellow, Yoshua Bengio, Aaron Courville) (Z-Library).pdf",
-    "17 Deep Learning/1. Basic/imgs",
-    "12 OpenCV/Python/00 OpenCV 简介.md",
-    "HomePage/Gallery/Module/Machine Learning.md",
-    "17 Deep Learning/2. Improving Network/Improving Network.md",
-    "17 Deep Learning/5. Sequence Model",
-    "17 Deep Learning/4. Convolutional",
-    "17 Deep Learning/3. Structuring Project",
-    "17 Deep Learning/2. Improving Network",
-    "HomePage/HOME.md",
-    "17 Deep Learning/1. Basic",
-    "16 Machine Learning/Code",
     "未命名.canvas"
   ]
 }
